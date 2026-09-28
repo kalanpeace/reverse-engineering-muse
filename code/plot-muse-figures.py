@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Draw the 16 figures in "Reverse Engineering How Muse Shops".
+"""Draw the 15 figures in "Reverse Engineering How Muse Shops".
 
 Every plotted number is read from this dataset's data/ files and checked against
 the value the report prints, so a figure cannot drift from its text.
@@ -20,7 +20,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
 REPO = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -206,47 +206,14 @@ def fig_how_muse_shops():
     c.save("fig-how-muse-shops")
 
 
-# ---------------------------------------------------------------- 02 Where the ranking happens
-def fig_where_ranking_happens():
-    c = Canvas(2, "Where the ranking happens", 6.2, ["Program recordings, decoded client code and Muse's own statements · September 2026"])
-    ax = c.axes(0, 6.2)
-    blank(ax)
-    layers = [
-        ("META'S SERVERS", "The scores and the first order are decided here.", "ranking_score · seller_quality · the formula", GRAY, BLACK, 0.2),
-        ("THE WALL", "", "", None, None, 0.075),
-        ("MUSE'S COMPUTER", "Sends the search off, then reads, numbers and prints the products.",
-         "meta-catalog-search passes the request to a protected worker (.sock)", "white", CHARCOAL, 0.2),
-        ("MUSE'S AI", "Picks a few products and checks them in a browser.", "", "white", CHARCOAL, 0.14),
-        ("THE SHOPPER", "Sees 2 or 3 cards.", "", SAGE_WASH, CHARCOAL, 0.14),
-    ]
-    gap = (1 - sum(layer[-1] for layer in layers)) / (len(layers) - 1)
-    y = 1
-    for label, line, detail, fill, edge, h in layers:
-        y -= h
-        if label == "THE WALL":
-            ax.add_patch(Rectangle((0, y), 1, h, fc=BLACK, ec=BLACK))
-            ax.text(0.03, y + h / 2, label, family=MONO, fontsize=12.5, color="white", va="center")
-            ax.text(0.97, y + h / 2, "neither I nor anyone outside Meta can reach past it", family=MONO, fontsize=10, color=SAGE, va="center", ha="right")
-        else:
-            box(ax, 0, y, 1, h, fill=fill, edge=edge)
-            ax.text(0.03, y + h - 0.035, label, family=MONO, fontsize=12, color=BLACK, va="top")
-            ax.text(0.03, y + h - 0.085, line, family=SERIF, fontsize=13, color=BLACK, va="top")
-            if detail:
-                ax.text(0.03, y + 0.03, detail, family=MONO, fontsize=10, color=MUTED, va="bottom")
-        if label != "THE SHOPPER":
-            arrow(ax, (0.5, y - 0.006), (0.5, y - gap + 0.006), color=MUTED)
-        y -= gap
-    c.save("fig-where-ranking-happens")
-
-
-# ---------------------------------------------------------------- 03 Three lists
+# ---------------------------------------------------------------- 02 Three lists
 def fig_three_lists():
     fw = unicorn["flywheel"]
     sizes = fw["sizes_when_unicorn_list_is_100"]
     expect("nesting holds in every search", (fw["returned_within_flywheel"], fw["flywheel_within_unicorn_list"], fw["of_those_with_flywheel_list"]), (417, 417, 417))
     expect("median sizes", (sizes["flywheel"]["median"], sizes["returned"]["median"]), (80, 47))
     expect("flywheel cap", (sizes["flywheel_max"], sizes["flywheel_exactly_80"], sizes["calls"]), (80, 228, 375))
-    c = Canvas(3, "Unicorn's candidates, the flywheel list and the returned products, one inside the next", 3.9, [
+    c = Canvas(2, "Unicorn's candidates, the flywheel list and the returned products, one inside the next", 3.9, [
         f"All raw responses in the evidence · bars: median of the {sizes['calls']} searches where Unicorn listed 100",
         "lines: middle half of those searches · 26–27 September 2026",
     ])
@@ -273,7 +240,7 @@ def fig_three_lists():
     c.save("fig-three-lists")
 
 
-# ---------------------------------------------------------------- 04 Quince
+# ---------------------------------------------------------------- 03 Quince
 def fig_quince():
     neutral = ranking["neutral"]
     expect("neutral run", neutral["run_id"], "neutral_baseline/ncap-n50-run2")
@@ -284,7 +251,7 @@ def fig_quince():
     expect("Quince #41", (positions[40], scores[40]), (41, 0.773438))
     higher = sum(s > scores[40] for s in scores)
     expect("products scoring higher than Quince", higher, 19)
-    c = Canvas(4, "A higher score can sit lower on the list", 4.4,
+    c = Canvas(3, "A higher score can sit lower on the list", 4.4,
                ["neutral_baseline/ncap-n50-run2 · \"stainless steel frying pan\" -n 50 · 43 products · 26 September 2026"])
     ax = c.axes(0.1, 3.55, left=1.2)
     ax.plot(positions, scores, color=GRAY, lw=1.4, zorder=1)
@@ -306,7 +273,7 @@ def fig_quince():
     c.save("fig-quince-score-vs-position")
 
 
-# ---------------------------------------------------------------- 05 Score jumps
+# ---------------------------------------------------------------- 04 Score jumps
 def fig_score_jumps():
     hist = ranking["historical"]
     expect("early runs with a jump", (hist["nonmonotone_runs"], hist["eligible_scored_runs"]), (130, 173))
@@ -319,7 +286,7 @@ def fig_score_jumps():
         ("100-search panel", 41, panel_3plus, "lists with 3 or more products"),
         ("Fashion study", *fashion, "non-empty lists"),
     ]
-    c = Canvas(5, "Share of lists with at least one upward score jump", 3.3, [
+    c = Canvas(4, "Share of lists with at least one upward score jump", 3.3, [
         "Upward jump: a product scores higher than the one right above it.",
         "Separate searches, dates and program versions · 26–27 September 2026",
     ])
@@ -338,7 +305,7 @@ def fig_score_jumps():
     c.save("fig-score-jumps")
 
 
-# ---------------------------------------------------------------- 06 Hydro Flask
+# ---------------------------------------------------------------- 05 Hydro Flask
 def fig_hydro_flask():
     base, brand = ranking["preference"]["BASE"], ranking["preference"]["BRAND"]
     for cond in (base, brand):
@@ -347,7 +314,7 @@ def fig_hydro_flask():
     expect("Hydro Flask product", {b["product_id"], f["product_id"]}, {"27333065053055404"})
     expect("no filter", (b["position"], b["ranking_score"], base["records_per_repeat"][0]), (15, "0.753906", 40))
     expect("brand filter", (f["position"], f["ranking_score"], brand["records_per_repeat"][0]), (6, "0.750000", 47))
-    c = Canvas(6, "Hydro Flask moved up while its score went down", 3.3, [
+    c = Canvas(5, "Hydro Flask moved up while its score went down", 3.3, [
         "color/R02-BASE-1, color/R03-BRAND-1 · product 27333065053055404 · each run 3 times, identical",
         "\"32 oz stainless steel insulated water bottle\" -n 50 --raw · 27 September 2026",
     ])
@@ -375,7 +342,7 @@ def fig_hydro_flask():
     c.save("fig-hydro-flask-position-vs-score")
 
 
-# ---------------------------------------------------------------- 07 Requested vs returned
+# ---------------------------------------------------------------- 06 Requested vs returned
 def fig_requested_vs_returned():
     cb = ranking["count_boundary"]
     expect("Levoit asked 10", cb["L/n10"][0], 63)
@@ -383,7 +350,7 @@ def fig_requested_vs_returned():
     rc = panel["returned_count"]
     expect("panel range", (rc["min"], rc["max"]), (0, 67))
     requested = [1, 9, 10, 11, 20, 50]
-    c = Canvas(7, "Products requested versus products returned", 4.9, [
+    c = Canvas(6, "Products requested versus products returned", 4.9, [
         "boundary36 count runs, 3 repeats each (dots) · Levoit: \"small air purifier for a bedroom\"",
         "Misen: \"stainless steel frying pan\" · 27 September 2026",
     ])
@@ -409,7 +376,7 @@ def fig_requested_vs_returned():
     c.save("fig-requested-vs-returned")
 
 
-# ---------------------------------------------------------------- 08 Query combination
+# ---------------------------------------------------------------- 07 Query combination
 def fig_query_combination():
     comp = ranking["query_composition"]
     for rep in comp:
@@ -417,7 +384,7 @@ def fig_query_combination():
         expect("two queries vs one long query", (rep["AB_JOIN_intersection"], rep["AB_JOIN_union"]), (5, 99))
     stab = ranking["query_stability"]
     expect("A/B/JOIN counts", (stab["A"]["counts"][0], stab["B"]["counts"][0], stab["JOIN"]["counts"][0]), (43, 53, 48))
-    c = Canvas(8, "Combined search found products neither search found alone", 4.4,
+    c = Canvas(7, "Combined search found products neither search found alone", 4.4,
                ["synonyms/R03-A-1, R02-B-1, R05-AB-1, R04-JOIN-1 · 3 interleaved repeats, same counts · 27 September 2026"])
     ax = c.axes(0.1, 3.3, left=2.8, right=WIDTH - 0.5)
     rows = [
@@ -446,9 +413,9 @@ def fig_query_combination():
     c.save("fig-query-combination")
 
 
-# ---------------------------------------------------------------- 09 Five drop-out points
+# ---------------------------------------------------------------- 08 Five drop-out points
 def fig_five_dropout_points():
-    c = Canvas(9, "Five places a product can drop out", 4.9, ["Fashion shopping tasks · 27 September 2026 · examples, not rates"])
+    c = Canvas(8, "Five places a product can drop out", 4.9, ["Fashion shopping tasks · 27 September 2026 · examples, not rates"])
     ax = c.axes(0, 4.9)
     blank(ax)
     stages = [
@@ -470,7 +437,7 @@ def fig_five_dropout_points():
     c.save("fig-five-dropout-points")
 
 
-# ---------------------------------------------------------------- 10 Returned vs shown
+# ---------------------------------------------------------------- 09 Returned vs shown
 def fig_returned_vs_shown():
     # (task, [(catalog spot, shown?, label, label x-offset)]) from the manuscript's Finding 11 table and frying-pan task.
     rows = [
@@ -482,7 +449,7 @@ def fig_returned_vs_shown():
         ("Lesser-known\ndesigners", [(29, True, "", 0), (52, True, "", 0), (63, True, "", 0)]),
         ("Current dress\ntrends", [(24, False, "Lulus · blocked", 0)]),
     ]
-    c = Canvas(10, "Returned is not the same as shown", 5.9, [
+    c = Canvas(9, "Returned is not the same as shown", 5.9, [
         "Home-goods frying-pan task and fashion tasks · products matched by page, not size or color",
         "27 September 2026 · examples from one chat, not rates",
     ])
@@ -506,13 +473,13 @@ def fig_returned_vs_shown():
     c.save("fig-returned-vs-shown")
 
 
-# ---------------------------------------------------------------- 11 Seller quality mix
+# ---------------------------------------------------------------- 10 Seller quality mix
 def fig_seller_quality_mix():
     order = ["good", "elite", "acceptable", "poor"]
     total = sum(quality_counts.values())
     shares = [f"{quality_counts[q] / total:.1%}" for q in order]
     expect("seller_quality shares", shares, ["82.7%", "15.8%", "1.3%", "0.2%"])
-    c = Canvas(11, "Meta rates every seller: seller_quality labels across 2,542 product records", 3.3,
+    c = Canvas(10, "Meta rates every seller: seller_quality labels across 2,542 product records", 3.3,
                ["Raw-tags collection · 48 searches (12 categories + 4 products, 3 repeats each) · 27 September 2026"])
     ax = c.axes(0.1, 2.5, left=1.9, right=WIDTH - 2.0)
     for i, q in enumerate(order):
@@ -528,7 +495,7 @@ def fig_seller_quality_mix():
     c.save("fig-seller-quality-mix")
 
 
-# ---------------------------------------------------------------- 12 Elite gap by category
+# ---------------------------------------------------------------- 11 Elite gap by category
 def fig_elite_gap():
     cats = raw_tags["elite_and_native_by_category_repeat_1"]
     rows = [(c["query"], c["elite_minus_good_mean_score"], c["elite_records"], c["good_records"]) for c in cats]
@@ -537,7 +504,7 @@ def fig_elite_gap():
     expect("gap range", (round(min(gaps), 3), round(max(gaps), 3)), (-0.027, 0.061))
     expect("native lower in", sum(c["native_minus_non_native_mean_score"] < 0 for c in cats), 10)
     rows.sort(key=lambda r: -r[1])
-    c = Canvas(12, "Elite minus good average score difference, by category", 5.6, [
+    c = Canvas(11, "Elite minus good average score difference, by category", 5.6, [
         "Raw-tags collection, Arm A · 12 category searches, repeat 1 of 3 · 27 September 2026",
         "Averages within a search; products differ in other ways too.",
     ])
@@ -556,7 +523,7 @@ def fig_elite_gap():
     c.save("fig-elite-gap-by-category")
 
 
-# ---------------------------------------------------------------- 13 Taste words
+# ---------------------------------------------------------------- 12 Taste words
 def taste_jaccard(left, right):
     for comp in taste["same_repeat_condition_comparisons"]:
         if comp["left"] == left and comp["right"] == right:
@@ -579,7 +546,7 @@ def fig_taste_words():
         rows.append((f"{word} …", taste_jaccard(cid, "T01"), printed))
     for label, value, printed in rows:
         expect(f"kept for {label}", f"{round(value * 100):.0f}%", printed.replace("about ", ""))
-    c = Canvas(13, "One word swaps out most of the results", 5.4, [
+    c = Canvas(12, "One word swaps out most of the results", 5.4, [
         "Fashion wording study · each wording run 3 times · shared products ÷ all different products, averaged",
         "27 September 2026",
     ])
@@ -597,7 +564,7 @@ def fig_taste_words():
     c.save("fig-taste-words")
 
 
-# ---------------------------------------------------------------- 14 Occasions
+# ---------------------------------------------------------------- 13 Occasions
 def fig_taste_overlap():
     rows = [("Show me women's dresses.", "T11", None)]
     for cid, label in [
@@ -611,7 +578,7 @@ def fig_taste_overlap():
     kept = [r[2] for r in rows[1:]]
     expect("occasion overlap range", (round(min(kept) * 100), round(max(kept) * 100)), (0, 3))
     expect("gallery counts", condition_counts("T16"), [17, 18, 19])
-    c = Canvas(14, "Describe the occasion, get different products", 4.3, [
+    c = Canvas(13, "Describe the occasion, get different products", 4.3, [
         "Fashion wording study · \"Kept\": products in common with \"Show me women's dresses.\"",
         "shared ÷ all different, averaged over 3 repeats · 27 September 2026",
     ])
@@ -635,14 +602,14 @@ def fig_taste_overlap():
     c.save("fig-taste-overlap")
 
 
-# ---------------------------------------------------------------- 15 Same product, different seller
+# ---------------------------------------------------------------- 14 Same product, different seller
 def fig_same_product():
     rows = []
     for pair, printed in zip(raw_tags["same_product_different_store"], [(0.550781, 0.710938), (0.593750, 0.683594), (0.746094, 0.792969)]):
         low, high = ((p["host"], p["seller_quality"], float(p["ranking_score"])) for p in (pair["lower"], pair["higher"]))
         expect(f"{pair['product']} scores", (low[2], high[2]), printed)
         rows.append((pair["product"], low, high))
-    c = Canvas(15, "Same product, different seller, different score", 4.2,
+    c = Canvas(14, "Same product, different seller, different score", 4.2,
                ["Raw-tags collection, repeat 1 · same product in the same search, matched by name · 27 September 2026"])
     ax = c.axes(0.1, 3.4, left=0.55, right=WIDTH - 0.5)
     for i, (label, low, high) in enumerate(rows):
@@ -661,7 +628,7 @@ def fig_same_product():
     c.save("fig-same-product-different-seller")
 
 
-# ---------------------------------------------------------------- 16 Tail
+# ---------------------------------------------------------------- 15 Tail
 def fig_tail_native():
     tail = raw_tags["tail_after_first_score_jump_repeat_1"]
     before = {True: tail["before_jump"].get("native", 0), False: tail["before_jump"].get("non_native", 0)}
@@ -669,7 +636,7 @@ def fig_tail_native():
     expect("lists with a jump", len(tail["lists_with_jump"]), 7)
     expect("before the jump (native, non-native)", (before[True], before[False]), (137, 169))
     expect("after the jump (native, non-native)", (after[True], after[False]), (0, 16))
-    c = Canvas(16, "Products after the score jump are all non-native", 2.9,
+    c = Canvas(15, "Products after the score jump are all non-native", 2.9,
                ["Raw-tags collection, repeat 1 · 7 lists with a jump (4 category, 3 product) · 27 September 2026"])
     c.text(2.5, c.y + 0.15, "■", MONO, 12, SAGE_DEEP)
     c.text(2.72, c.y + 0.15, "Native checkout: true", MONO, 10.5, CHARCOAL)
@@ -693,7 +660,7 @@ def fig_tail_native():
 
 
 for draw in (
-    fig_how_muse_shops, fig_where_ranking_happens, fig_three_lists, fig_quince, fig_score_jumps, fig_hydro_flask,
+    fig_how_muse_shops, fig_three_lists, fig_quince, fig_score_jumps, fig_hydro_flask,
     fig_requested_vs_returned, fig_query_combination, fig_five_dropout_points, fig_returned_vs_shown,
     fig_seller_quality_mix, fig_elite_gap, fig_taste_words, fig_taste_overlap, fig_same_product, fig_tail_native,
 ):

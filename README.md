@@ -13,7 +13,7 @@ Muse is Meta's AI agent. The research asked it to run Meta's product catalog sea
 | [`code/`](code) | The analysis, redaction, figure and animation scripts, and [`check.py`](code/check.py). `check.py`, `analyze_raw_tags.py`, `analyze_unicorn.py`, `analyze_stages.py`, `analyze_ranking_math.py`, the redaction scripts and the figure scripts run on this repository alone. `analyze_upstream.py`, `analyze_query_multiplicity.py`, `analyze_resolver.py` and `decode_saved_windows.py` are included for transparency; they ran against my private working folders and need a parser and extracted files that are not published. |
 | [`data/`](data) | Extracted records and computed results behind every number in the report, including [`unicorn-debug-analysis.json`](data/unicorn-debug-analysis.json) and [`stage-analysis.json`](data/stage-analysis.json) for Part 1, Step 6. |
 | [`notes/`](notes) | Working notes written by the AI agents during the research (Astra, checked by Luna) on 26–27 September, kept mostly as written: ranking math, program analysis, upstream tests, search and SEO evidence, and the [checked facts register](notes/FACTS-CHECKED.md). Some refer to files in my working folder that are not published. Where they differ from the report, the report is current. |
-| [`figures/`](figures) | The report's 16 figures and its animation (`anim-how-muse-shops.gif`, one real search drawn product by product; `code/animate-how-muse-shops.py --variant paper`). |
+| [`figures/`](figures) | The report's 15 figures and its animation (`anim-how-muse-shops.gif`, one real search drawn product by product; `code/animate-how-muse-shops.py --variant paper`). |
 
 ### Evidence folders
 
