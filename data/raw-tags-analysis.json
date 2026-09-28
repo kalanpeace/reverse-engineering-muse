@@ -1,0 +1,260 @@
+{
+  "archive": {
+    "path": "evidence/raw-tags-2026-09-27/raw-tags-20260927T234719067674Z.zip",
+    "original_sha256": "d0fec8cf6ad6c668b3c0f7e988281158e20dfe5da5aef0aa0ef36f95e1a521aa",
+    "redacted_sha256": "05d0b3ae9748541d4d8af5c734e3758e82160450256129612937aba8db630a51",
+    "manifest_files_verified": 148,
+    "members_with_blanked_request_handle": 48
+  },
+  "program": {
+    "sha256": "eb99783b88312a7aa75b843d2323a491f1bde24af5f06e39595f69b86afd240d",
+    "bytes": 11532776
+  },
+  "searches": 48,
+  "product_records": 2542,
+  "seller_quality_counts": {
+    "good": 2103,
+    "elite": 401,
+    "acceptable": 33,
+    "poor": 5
+  },
+  "records_with_shopify_product_id": 2241,
+  "responses_with_complete_flywheel_identifiers": 48,
+  "stability": {
+    "searches": 16,
+    "searches_with_identical_products_in_all_three_repeats": 9,
+    "repeated_product_scores_compared": 1676,
+    "repeated_product_scores_unchanged": 1665
+  },
+  "elite_and_native_by_category_repeat_1": [
+    {
+      "query": "stainless steel frying pan",
+      "run_id": "A-R1-Q01",
+      "elite_records": 16,
+      "good_records": 26,
+      "elite_minus_good_mean_score": 0.015831,
+      "native_records": 20,
+      "non_native_records": 22,
+      "native_minus_non_native_mean_score": -0.070312
+    },
+    {
+      "query": "32 oz insulated water bottle",
+      "run_id": "A-R1-Q02",
+      "elite_records": 8,
+      "good_records": 34,
+      "elite_minus_good_mean_score": 0.057445,
+      "native_records": 27,
+      "non_native_records": 15,
+      "native_minus_non_native_mean_score": -0.014207
+    },
+    {
+      "query": "everyday backpack",
+      "run_id": "A-R1-Q03",
+      "elite_records": 9,
+      "good_records": 56,
+      "elite_minus_good_mean_score": -0.004092,
+      "native_records": 46,
+      "non_native_records": 19,
+      "native_minus_non_native_mean_score": -0.038401
+    },
+    {
+      "query": "office desk chair",
+      "run_id": "A-R1-Q04",
+      "elite_records": 11,
+      "good_records": 52,
+      "elite_minus_good_mean_score": -0.016345,
+      "native_records": 32,
+      "non_native_records": 31,
+      "native_minus_non_native_mean_score": -0.048043
+    },
+    {
+      "query": "bath towel set",
+      "run_id": "A-R1-Q05",
+      "elite_records": 14,
+      "good_records": 37,
+      "elite_minus_good_mean_score": 0.017571,
+      "native_records": 35,
+      "non_native_records": 16,
+      "native_minus_non_native_mean_score": -0.064669
+    },
+    {
+      "query": "men's running shoes",
+      "run_id": "A-R1-Q06",
+      "elite_records": 6,
+      "good_records": 51,
+      "elite_minus_good_mean_score": -0.019301,
+      "native_records": 10,
+      "non_native_records": 47,
+      "native_minus_non_native_mean_score": -0.001521
+    },
+    {
+      "query": "women's dresses",
+      "run_id": "A-R1-Q07",
+      "elite_records": 7,
+      "good_records": 61,
+      "elite_minus_good_mean_score": 0.0088,
+      "native_records": 48,
+      "non_native_records": 20,
+      "native_minus_non_native_mean_score": -0.021224
+    },
+    {
+      "query": "air purifier for a bedroom",
+      "run_id": "A-R1-Q08",
+      "elite_records": 6,
+      "good_records": 53,
+      "elite_minus_good_mean_score": 0.024862,
+      "native_records": 45,
+      "non_native_records": 14,
+      "native_minus_non_native_mean_score": 0.006324
+    },
+    {
+      "query": "burr coffee grinder",
+      "run_id": "A-R1-Q09",
+      "elite_records": 16,
+      "good_records": 55,
+      "elite_minus_good_mean_score": -0.027033,
+      "native_records": 37,
+      "non_native_records": 34,
+      "native_minus_non_native_mean_score": -0.074402
+    },
+    {
+      "query": "cotton bed sheets queen",
+      "run_id": "A-R1-Q10",
+      "elite_records": 8,
+      "good_records": 48,
+      "elite_minus_good_mean_score": 0.026815,
+      "native_records": 25,
+      "non_native_records": 31,
+      "native_minus_non_native_mean_score": -0.085038
+    },
+    {
+      "query": "moisturizer for dry skin",
+      "run_id": "A-R1-Q11",
+      "elite_records": 6,
+      "good_records": 64,
+      "elite_minus_good_mean_score": 0.003296,
+      "native_records": 41,
+      "non_native_records": 29,
+      "native_minus_non_native_mean_score": -0.00572
+    },
+    {
+      "query": "dog bed",
+      "run_id": "A-R1-Q12",
+      "elite_records": 16,
+      "good_records": 43,
+      "elite_minus_good_mean_score": 0.061157,
+      "native_records": 35,
+      "non_native_records": 24,
+      "native_minus_non_native_mean_score": 0.016571
+    }
+  ],
+  "same_product_different_store": [
+    {
+      "product": "Moccamaster KM5 burr grinder",
+      "run_id": "A-R1-Q09",
+      "lower": {
+        "host": "readingcoffee.com",
+        "seller_quality": "good",
+        "ranking_score": "0.550781",
+        "name": "Moccamaster KM5 Burr Grinder"
+      },
+      "higher": {
+        "host": "juliancoffee.com",
+        "seller_quality": "good",
+        "ranking_score": "0.710938",
+        "name": "Moccamaster KM5 Burr Grinder"
+      }
+    },
+    {
+      "product": "Baratza Encore grinder",
+      "run_id": "A-R1-Q09",
+      "lower": {
+        "host": "treelinecoffee.com",
+        "seller_quality": "elite",
+        "ranking_score": "0.593750",
+        "name": "Baratza Encore Grinder"
+      },
+      "higher": {
+        "host": "pegasuscoffee.com",
+        "seller_quality": "elite",
+        "ranking_score": "0.683594",
+        "name": "Baratza Encore Grinder"
+      }
+    },
+    {
+      "product": "Vitamix Explorian E310, black",
+      "run_id": "B-R1-Q03",
+      "lower": {
+        "host": "bestbuy.com",
+        "seller_quality": "good",
+        "ranking_score": "0.746094",
+        "name": "Vitamix - Explorian E310 Blender - Black"
+      },
+      "higher": {
+        "host": "flexshopper.com",
+        "seller_quality": "acceptable",
+        "ranking_score": "0.792969",
+        "name": "Vitamix - Explorian E310 Blender - Black"
+      }
+    }
+  ],
+  "tail_after_first_score_jump_repeat_1": {
+    "lists_with_jump": [
+      {
+        "run_id": "A-R1-Q01",
+        "query": "stainless steel frying pan",
+        "first_jump_position": 40,
+        "list_length": 42
+      },
+      {
+        "run_id": "A-R1-Q06",
+        "query": "men's running shoes",
+        "first_jump_position": 57,
+        "list_length": 57
+      },
+      {
+        "run_id": "A-R1-Q10",
+        "query": "cotton bed sheets queen",
+        "first_jump_position": 54,
+        "list_length": 56
+      },
+      {
+        "run_id": "A-R1-Q12",
+        "query": "dog bed",
+        "first_jump_position": 56,
+        "list_length": 59
+      },
+      {
+        "run_id": "B-R1-Q02",
+        "query": "Hydro Flask 32 oz wide mouth",
+        "first_jump_position": 50,
+        "list_length": 50
+      },
+      {
+        "run_id": "B-R1-Q03",
+        "query": "Vitamix E310",
+        "first_jump_position": 30,
+        "list_length": 32
+      },
+      {
+        "run_id": "B-R1-Q04",
+        "query": "Levoit Core 300 air purifier",
+        "first_jump_position": 26,
+        "list_length": 26
+      }
+    ],
+    "before_jump": {
+      "non_native": 169,
+      "native": 137
+    },
+    "after_jump": {
+      "non_native": 16
+    }
+  },
+  "quince_in_pan_list_repeat_1": {
+    "position": 40,
+    "ranking_score": "0.765625",
+    "previous_ranking_score": "0.546875",
+    "previous_brand": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "method": "Locally installed Apple LLVM objdump; supplied bytes placed unchanged in explicitly constructed ELF64 x86-64 section containers. No inspected code executed.",
+  "tool_version": "Apple LLVM version 17.0.0",
+  "checks": [
+    {
+      "source": "caller-0x4bb230.bin",
+      "stated_base": "0x4bb230",
+      "bytes": 887,
+      "sha256": "ff0fb2f8a64cb14ca265d9b050c29a168fe9251bf99115809f597d6a730b9690",
+      "local_instruction_count": 202,
+      "supplied_instruction_count": 202,
+      "all_input_bytes_decoded": true,
+      "contiguous": true,
+      "differing_addresses_or_instruction_bytes": [],
+      "output": "local-llvm-disassembly/caller-0x4bb230.llvm.stdout.txt"
+    },
+    {
+      "source": "pass-0x4a2cc0.bin",
+      "stated_base": "0x4a2cc0",
+      "bytes": 466,
+      "sha256": "dde271f9045df12dc3477aa35ca852ead39f7afa1cdf607fafb29d6a33e681ea",
+      "local_instruction_count": 116,
+      "supplied_instruction_count": 116,
+      "all_input_bytes_decoded": true,
+      "contiguous": true,
+      "differing_addresses_or_instruction_bytes": [],
+      "output": "local-llvm-disassembly/pass-0x4a2cc0.llvm.stdout.txt"
+    },
+    {
+      "source": "pass-0x4a2ea0.bin",
+      "stated_base": "0x4a2ea0",
+      "bytes": 442,
+      "sha256": "2cd83c05f055ba6c226bd6dd8cd8f94c4eba11abc1e00acd02e9fc8c81fd01c8",
+      "local_instruction_count": 108,
+      "supplied_instruction_count": 108,
+      "all_input_bytes_decoded": true,
+      "contiguous": true,
+      "differing_addresses_or_instruction_bytes": [],
+      "output": "local-llvm-disassembly/pass-0x4a2ea0.llvm.stdout.txt"
+    },
+    {
+      "source": "pred-0x4bb670.bin",
+      "stated_base": "0x4bb670",
+      "bytes": 393,
+      "sha256": "487bc024b997343cd07e65170488e13c294eb71dc3787cda1e479974070dbc02",
+      "local_instruction_count": 114,
+      "supplied_instruction_count": 114,
+      "all_input_bytes_decoded": true,
+      "contiguous": true,
+      "differing_addresses_or_instruction_bytes": [],
+      "output": "local-llvm-disassembly/pred-0x4bb670.llvm.stdout.txt"
+    }
+  ],
+  "all_match": true,
+  "limits": [
+    "Independent decoding of supplied bytes does not authenticate their claimed remote origin.",
+    "Instruction bytes and boundaries are compared; semantic annotations remain analysis.",
+    "This is disassembly, not original Rust source or a recovered server-side ranking formula."
+  ]
+}

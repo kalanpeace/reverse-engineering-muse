@@ -1,0 +1,97 @@
+{
+  "author": "Astra",
+  "model": "gpt-6-astra",
+  "runs": [
+    {
+      "name": "receive",
+      "source": "upstream-two-routes-2026-09-27/extracted/catalog-receive-trace-20260927T042033132301Z",
+      "start_utc": "2026-09-27T04:20:33.133597+00:00",
+      "end_utc": "2026-09-27T04:20:36.096526+00:00",
+      "exit_code": 0,
+      "exception": null,
+      "collector_exact": true,
+      "stdout_bytes": 172837,
+      "stdout_sha256": "880163eabee6667e2ad189faee02dc064f951b3c52049def0746d84396293168",
+      "trace_bytes": 11540,
+      "trace_sha256": "ea8a25de88a5069d121280338e9af9380657938d112c40eab42ea1d0ff478e1a",
+      "products": 43,
+      "upturns": [
+        {
+          "position": 41,
+          "product_id": "25671310895791560",
+          "score": "0.761719",
+          "preceding_score": "0.546875"
+        }
+      ],
+      "syscall_entry_counts": {
+        "close": 56,
+        "connect": 2,
+        "read": 115,
+        "recvfrom": 4,
+        "write": 3,
+        "writev": 1
+      },
+      "fd1_write_or_writev_entries": 0,
+      "worker_socket_reply": {
+        "bytes": 50,
+        "envelope": {
+          "response_bytes": "e30=",
+          "exit_status": {
+            "Code": 0
+          }
+        },
+        "decoded_response_bytes": "{}"
+      }
+    },
+    {
+      "name": "descriptor",
+      "source": "upstream-two-routes-2026-09-27/extracted/catalog-descriptor-trace-20260927T042358578540Z",
+      "start_utc": "2026-09-27T04:23:58.579654+00:00",
+      "end_utc": "2026-09-27T04:24:00.885031+00:00",
+      "exit_code": 0,
+      "exception": null,
+      "collector_exact": true,
+      "stdout_bytes": 172837,
+      "stdout_sha256": "897af5436b43b1c2dc7a7813d3e89157abf244971903359992d8b091d7e499ba",
+      "trace_bytes": 31865,
+      "trace_sha256": "2def61a913c61abf524af3c733f3f79ff9fb409529e0ed5169211c9e48d807da",
+      "products": 43,
+      "upturns": [
+        {
+          "position": 41,
+          "product_id": "25671310895791560",
+          "score": "0.765625",
+          "preceding_score": "0.546875"
+        }
+      ],
+      "syscall_entry_counts": {
+        "close": 56,
+        "connect": 2,
+        "fcntl": 2,
+        "openat": 81,
+        "read": 115,
+        "recvfrom": 4,
+        "sendmsg": 1,
+        "write": 3,
+        "writev": 1
+      },
+      "fd1_write_or_writev_entries": 0,
+      "worker_socket_connect_lines": [
+        35
+      ],
+      "scm_rights_lines": [
+        36
+      ],
+      "passed_descriptor_numbers": "unobserved: values abbreviated in trace"
+    }
+  ],
+  "limits": [
+    "Two separate sampled requests, not a stage comparison of one response.",
+    "The collectors recorded the executable path but not its hash at each invocation; runtime build identity is not independently verified.",
+    "No worker process or remote HTTP response was traced.",
+    "No fd1 write/writev in the captured calls does not rule out untraced output mechanisms.",
+    "SCM_RIGHTS shows a descriptor transfer; descriptor numbers are not visible in the metadata trace.",
+    "Hashes and collector agreement verify artifact consistency, not independent remote execution authentication.",
+    "No ranking calculation or first ordering transformation recovered."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_by": "Astra (gpt-6-astra)",
+  "origin": "Exact line extracted from an earlier locally saved Muse UI accessibility capture; this is an attributed Muse claim, not a runtime trace",
+  "source_path": "catalog-order-trace-2026-09-26/02-binary-trace-progress-ax.txt",
+  "source_sha256": "39ac7e4f52468955b5e558a911a2ca70dacd561f2c6afc312da814e79cb9d678",
+  "source_line": "\t\t\t\t\t\t\t\t\t\t\t62 text The exact remote ranking formula was not recovered  and remains unknown. Client ordinal  rank  (1-based parse order, struct offset +0x168, observed in disassembly) is separate from server  ranking_score .",
+  "review": "Muse labels ranking_score server-side and says exact remote formula was not recovered. Local raw outputs establish score existence; inspected client snippets support ordinal/score distinction under provenance limits, not a complete score-generation trace."
+}

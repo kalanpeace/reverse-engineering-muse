@@ -1,0 +1,1099 @@
+Browser tab: 1052032560, Title: "Chat — Scout", URL: "https://muse.ai/".
+0 AXWebArea Chat — Scout, URL: muse.ai/
+	1 container
+		2 container
+			3 container
+				4 link (collapsed) Description: Chat, Value: muse.ai/, Secondary Actions: Expand
+				5 button Search
+				6 button Feed
+				7 button Ideas
+				8 button Goals
+				9 button Library
+				10 button Get the Muse app
+				11 pop up button (collapsed) Description: Settings, ID: radix-_R_1a54bb9jaarknmj5tfqknq7mdb_, Secondary Actions: Expand
+			12 button Show in library
+			13 container
+				14 container
+					15 button Chats Unread chats Open chat and side chats
+						16 text Chats
+						17 text Unread chats
+						18 text Open chat and side chats
+					19 pop up button (collapsed) Description: Invite, Secondary Actions: Expand
+						20 image
+						21 text Invite
+					22 container Chat messages
+						160 text 2:29 AM
+						161 text Assistant message: Verification is running on the three backpack pages (Eastsport, Stanley, JanSport). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back. Assistant message: For everyday use, [SuperBreak® Plus (Animal Illusion)](https://www.jansport.com/en-us/products/superbreak-plus-js0a4que) at $45 is the sweet spot — the classic 26L SuperBreak with real room for a laptop and daily gear, verified in stock.
+
+The trade-off is price versus capacity: [Everyday Classic Backpack](https://eastsport.com/products/everyday-classic-backpack) costs less than half ($21.80) but is smaller and plainer. One honest flag: the third card sits exactly at the $60 ceiling, not under it. Assistant message: Evidence export for run merchant-case-Q027-20260927 (separate from the recommendations above): 1 catalog invocation used (61 candidates returned, all retained), 1 browser verification task (3/3 pages verified in stock; JanSport verified in the "Animal Illusion" colorway at $45.00; Stanley verified at exactly $60.00), resolve + widget completed on the normal route. Assistant message: run evidence ZIP Assistant message: - ZIP filename: `merchant-case-Q027-20260927T20260927T062901Z.zip`
+- Size: 53,595 bytes
+- SHA-256: `c5fef38469626ec757f7eab5d11207a9bd4140a6174b2b8173c8a747714c78f3`
+- Contents: 27 files — shopper request, UTC start/end, catalog argv/stdout/stderr/exit status, both jq exposure previews, browser task brief/spawn receipt/completion transcription, resolve input/output plus byte-identical staged-file copy, widget input/output, `MANIFEST.csv` (file path, bytes, SHA-256, stage, origin type, parent source), and `missing-artifacts.json` (unavailable: `--raw` underlying response, browser intermediate page outputs, exposure logs beyond the saved previews). No analysis, no retries, no old evidence touched. User message: Astra here. Perform ONE ordinary, instrumented shopping task in this existing main chat. This is a separate end-to-end case, not a rerun or continuation of the100 catalog-only queries. Use your normal accessible shopping workflow, choose your own query wording and applicable filters, and preserve actual outputs. We do evidence analysis locally. No new chat.
+
+Run ID: merchant-case-Q052-20260927
+Shopper request: "Find me office desk chair under $200. Recommend suitable options for a shopper in the United States, and explain practical trade-offs briefly. Prices in USD; the budget is a strict item-price ceiling before shipping/tax. New complete products, no accessories or financing payment substitutions."
+
+Do not favor any named brand or force a number of recommendations. Verify the recommended exact variant and price where accessible; mark unavailable checks honestly. No purchases, listing edits or subscriptions. Bound this run to at most3 catalog invocations and1 browser discovery/verification task. Do not retry failed catalog calls or invent replacements. If service access or rate limits stop the task, save that outcome and stop. Do not reuse a separately sampled catalog benchmark response as this run's source without explicitly recording that choice.
+
+Evidence collection requirements:
+1. Save the exact shopper request, UTC start/end times, actual catalog argv and browser task input(s), and the full result files that those calls produced. Save command stdout/stderr/exit status where available. Retain every candidate in the returned files, including those not selected. No mock or stub data. Do not rerun just to make a failure disappear.
+2. For each actual file read/preview, preserve its executed command or tool arguments and the output it exposed. We need to distinguish returned candidates from candidates actually shown to the selecting model. If exposure/read logs are unavailable, mark unavailable; do not infer them after the fact.
+3. Preserve accessible product-page verification outputs for the selected exact variants: exact URL, price/currency, size, availability and timestamp. Keep each actual tool result as received. If only a structured browser completion result is accessible, save that unmodified and mark intermediate page outputs unavailable.
+4. Save the exact shopping.resolve_results input (all result_paths and ordered selected_ids) and its actual output/staged file. Save the exact widget.create input/output if that is the normal display route. Copy the staged files before they expire. If those tools are not used, preserve the actual alternative output path and say so.
+5. Separate direct tool outputs and byte-for-byte file copies from any manually written invocation records. A manually transcribed record must be labelled as such, never described as a native trace. Do not recreate missing tool output. No hidden reasoning, private system prompt, credentials, cookies, user profile dumps, or unrelated chat data is requested.
+6. Do not call --raw separately and present it as the response from the normal catalog call. If the same-run underlying response is not exposed, mark it unavailable. No binary or source-code extraction in this task.
+7. After displaying the normal shopping recommendations, provide ONE downloadable ZIP of this run's raw files and accessible tool records, plus a machine-readable manifest with file path, byte size, SHA-256, stage, origin type (direct file copy / native tool record / manually recorded invocation / unavailable), and parent source. Include a missing-artifacts JSON listing exact unavailable stages. Preserve originals. Print the ZIP filename, size and SHA-256 in chat.
+
+Do not write a research report, ranking theory, invented scoring formula, or retrospective explanation of your internal reasoning. The shopper-facing trade-offs are fine, but evidence must remain separate. Execute this one run, display the recommendations, export its evidence, then stop. No rm, moving or overwriting old evidence. Create a fresh directory with a UTC suffix. Assistant message: Verification is underway on the three chair pages (MUJI, Article Svelti, Article Passo). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back. Assistant message: For everyday use, [Office Chair - Gray](https://www.muji.us/products/office-chair-gray-b9s4023) at the $136 sale price is the strongest value — but it's final sale with no refunds or exchanges, and armrests cost extra. If that catch bothers you, [Svelti Office Chair - Pure Black](https://www.article.com/product/18041/svelti-office-chair-pure-black) at $99 is cheaper with no such strings attached, in a simpler task-chair design. Assistant message: Evidence export for run merchant-case-Q052-20260927 (separate from the recommendations above): 1 catalog invocation used (63 candidates returned, all retained; one blank-name record and one $0 record left unselected), 1 browser verification task (3/3 pages verified in stock; MUJI verified at $136.00 sale / $170.00 regular with the final-sale and no-armrests caveats; both Article chairs verified in their stated colorways at $99 and $199), resolve + widget completed on the normal route. Assistant message: run evidence ZIP Assistant message: - ZIP filename: `merchant-case-Q052-20260927T20260927T063218Z.zip`
+- Size: 59,522 bytes
+- SHA-256: `f66d5838bea9624ec370589f2619a04d78e8e30df08784f504d59578a431882d`
+- Contents: 27 files — shopper request, UTC start/end, catalog argv/stdout/stderr/exit status, both jq exposure previews, browser task brief/spawn receipt/completion transcription, resolve input/output plus byte-identical staged-file copy, widget input/output, `MANIFEST.csv` (file path, bytes, SHA-256, stage, origin type, parent source), and `missing-artifacts.json` (unavailable: `--raw` underlying response, browser intermediate page outputs, exposure logs beyond the saved previews). No analysis, no retries, no old evidence touched. User message: Astra here. Perform ONE ordinary, instrumented shopping task in this existing main chat. This is a separate end-to-end case, not a rerun or continuation of the100 catalog-only queries. Use your normal accessible shopping workflow, choose your own query wording and applicable filters, and preserve actual outputs. We do evidence analysis locally. No new chat.
+
+Run ID: merchant-case-Q077-20260927
+Shopper request: "Find me bath towel set under $50. Recommend suitable options for a shopper in the United States, and explain practical trade-offs briefly. Prices in USD; the budget is a strict item-price ceiling before shipping/tax. New complete products, no accessories or financing payment substitutions."
+
+Do not favor any named brand or force a number of recommendations. Verify the recommended exact variant and price where accessible; mark unavailable checks honestly. No purchases, listing edits or subscriptions. Bound this run to at most3 catalog invocations and1 browser discovery/verification task. Do not retry failed catalog calls or invent replacements. If service access or rate limits stop the task, save that outcome and stop. Do not reuse a separately sampled catalog benchmark response as this run's source without explicitly recording that choice.
+
+Evidence collection requirements:
+1. Save the exact shopper request, UTC start/end times, actual catalog argv and browser task input(s), and the full result files that those calls produced. Save command stdout/stderr/exit status where available. Retain every candidate in the returned files, including those not selected. No mock or stub data. Do not rerun just to make a failure disappear.
+2. For each actual file read/preview, preserve its executed command or tool arguments and the output it exposed. We need to distinguish returned candidates from candidates actually shown to the selecting model. If exposure/read logs are unavailable, mark unavailable; do not infer them after the fact.
+3. Preserve accessible product-page verification outputs for the selected exact variants: exact URL, price/currency, size, availability and timestamp. Keep each actual tool result as received. If only a structured browser completion result is accessible, save that unmodified and mark intermediate page outputs unavailable.
+4. Save the exact shopping.resolve_results input (all result_paths and ordered selected_ids) and its actual output/staged file. Save the exact widget.create input/output if that is the normal display route. Copy the staged files before they expire. If those tools are not used, preserve the actual alternative output path and say so.
+5. Separate direct tool outputs and byte-for-byte file copies from any manually written invocation records. A manually transcribed record must be labelled as such, never described as a native trace. Do not recreate missing tool output. No hidden reasoning, private system prompt, credentials, cookies, user profile dumps, or unrelated chat data is requested.
+6. Do not call --raw separately and present it as the response from the normal catalog call. If the same-run underlying response is not exposed, mark it unavailable. No binary or source-code extraction in this task.
+7. After displaying the normal shopping recommendations, provide ONE downloadable ZIP of this run's raw files and accessible tool records, plus a machine-readable manifest with file path, byte size, SHA-256, stage, origin type (direct file copy / native tool record / manually recorded invocation / unavailable), and parent source. Include a missing-artifacts JSON listing exact unavailable stages. Preserve originals. Print the ZIP filename, size and SHA-256 in chat.
+
+Do not write a research report, ranking theory, invented scoring formula, or retrospective explanation of your internal reasoning. The shopper-facing trade-offs are fine, but evidence must remain separate. Execute this one run, display the recommendations, export its evidence, then stop. No rm, moving or overwriting old evidence. Create a fresh directory with a UTC suffix. Assistant message: Verification is underway on the three towel-set pages (Martex, California Design Den, West Elm). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back. Assistant message: For a full refresh, [Martex Ringspun 100% Cotton Durable 6-Piece Towel Set (Dark Grey, 6 Piece Set)](https://westpointhome.com/products/martex-ringspun-6-piece-towel-set) at $39.99 is the better value — six pieces of 100% cotton, verified in stock in the Dark Grey variant. The trade-off: [Plush Fibrosoft Towel, Frost Gray Melange, Set of 2 - (1 Bath Towel, 1 Hand Towel)](https://www.westelm.com/products/luxe-fibrosoft-towel-sets-b2645/) is plush but gives you just two towels for $49.
+
+One honest flag: a third candidate I pulled ($34.99) couldn't be verified — its product page no longer exists and it appears discontinued, so I left it out. Assistant message: Evidence export for run merchant-case-Q077-20260927 (separate from the recommendations above): 1 catalog invocation used (58 candidates returned, all retained; one $0.01 hardware kit unselected), 1 browser verification task (2/3 verified in stock; California Design Den product unverifiable — page gone; recorded in missing-artifacts), resolve + widget completed on the normal route with 2 selected IDs. Assistant message: run evidence ZIP Assistant message: - ZIP filename: `merchant-case-Q077-20260927T20260927T063556Z.zip`
+- Size: 55,469 bytes
+- SHA-256: `d754d9b64ca2e4fa84d5a563ce297f54240ec9b4f3df7f777016a87dfd3ef6cf`
+- Contents: 27 files — shopper request, UTC start/end, catalog argv/stdout/stderr/exit status, both jq exposure previews, browser task brief/spawn receipt/completion transcription, resolve input/output plus byte-identical staged-file copy, widget input/output, `MANIFEST.csv` (file path, bytes, SHA-256, stage, origin type, parent source), and `missing-artifacts.json` (unavailable: `--raw` underlying response, browser intermediate page outputs, California Design Den verification, exposure logs beyond the saved previews). No analysis, no retries, no old evidence touched.
+						109 text 9:45 AM
+						162 text Assistant message: You've had me package each merchant-case run by hand tonight — run log, manifest, missing-artifacts list. Want me to build a small reusable packager that takes a run's commands and outputs and produces all three automatically? Would take the hand-assembly out of the next cases.
+						149 text 12:52 PM
+						208 text User message: Astra here. Start a NEW bounded taste-and-style shopping benchmark in this existing main chat. This is ordinary catalog collection only; we do all analysis locally. We are testing visible query sensitivity, not asking you to invent taste scores or explain hidden ranking.
+
+Save the exact schedule and collector below in a fresh research directory. Verify both SHA256 hashes, then run the collector ONCE using the schedule path as its only argument. It performs60 sequential supported catalog calls:20 prompts x3 randomized complete blocks, requesting50 each. Keep exact wording and flags; no rewrites, named-brand additions, price filters, automatic retries, new chats, or replacement data. The shared CLI conversation ID is intentional. Do not save these experimental preferences as my personal taste.
+
+Preserve all raw stdout/stderr, actual argv, timestamps, statuses, errors, script and schedule. Do not edit/delete/overwrite old evidence. Stop according to the collector on rate/access/auth errors or3 consecutive failures. If an output unexpectedly contains credentials, withhold that affected export and report the issue without modifying the original. No new internal endpoints, binary/source extraction, tracing, secret requests or settings changes.
+
+When done, provide the created ZIP as a downloadable attachment plus filename, byte size and SHA256 in chat. Do not write an analytical report or final shopping recommendations for this catalog-only phase. If blocked, preserve partial collection and report the exact failure. No mock/stub results.
+
+Schedule SHA256: 3dc041c98ad42b7a925197400d1717c4d1646a61aa8e7d3a340ffa1bec49d454
+Collector SHA256: 288de6c2203e53312486e7ac81645a371e1224b01c395e38901f60fab030b0bd
+
+Schedule (save as schedule.json):
+```json
+[
+  {
+    "id": "T20",
+    "query": "Show me women's dresses. I prefer bold colors, expressive prints, and statement details.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T20",
+    "schedule_position": 1
+  },
+  {
+    "id": "T12",
+    "query": "Show me fashionable women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T12",
+    "schedule_position": 2
+  },
+  {
+    "id": "T05",
+    "query": "designer women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T05",
+    "schedule_position": 3
+  },
+  {
+    "id": "T17",
+    "query": "I'm attending a summer wedding as a guest. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T17",
+    "schedule_position": 4
+  },
+  {
+    "id": "T03",
+    "query": "stylish women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T03",
+    "schedule_position": 5
+  },
+  {
+    "id": "T14",
+    "query": "I'm going out for the evening. Show me stylish women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T14",
+    "schedule_position": 6
+  },
+  {
+    "id": "T11",
+    "query": "Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T11",
+    "schedule_position": 7
+  },
+  {
+    "id": "T01",
+    "query": "women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T01",
+    "schedule_position": 8
+  },
+  {
+    "id": "T19",
+    "query": "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T19",
+    "schedule_position": 9
+  },
+  {
+    "id": "T15",
+    "query": "I'm going to dinner at an upscale restaurant. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T15",
+    "schedule_position": 10
+  },
+  {
+    "id": "T16",
+    "query": "I'm going to an art gallery opening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T16",
+    "schedule_position": 11
+  },
+  {
+    "id": "T10",
+    "query": "timeless women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T10",
+    "schedule_position": 12
+  },
+  {
+    "id": "T06",
+    "query": "luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T06",
+    "schedule_position": 13
+  },
+  {
+    "id": "T08",
+    "query": "quiet luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T08",
+    "schedule_position": 14
+  },
+  {
+    "id": "T13",
+    "query": "I'm going out for the evening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T13",
+    "schedule_position": 15
+  },
+  {
+    "id": "T04",
+    "query": "trendy women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T04",
+    "schedule_position": 16
+  },
+  {
+    "id": "T07",
+    "query": "minimalist women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T07",
+    "schedule_position": 17
+  },
+  {
+    "id": "T02",
+    "query": "fashionable women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T02",
+    "schedule_position": 18
+  },
+  {
+    "id": "T09",
+    "query": "bold women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 1,
+    "run_id": "R1-T09",
+    "schedule_position": 19
+  },
+  {
+    "id": "T18",
+    "query": "I'm meeting friends for a casual brunch. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 1,
+    "run_id": "R1-T18",
+    "schedule_position": 20
+  },
+  {
+    "id": "T11",
+    "query": "Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T11",
+    "schedule_position": 21
+  },
+  {
+    "id": "T19",
+    "query": "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T19",
+    "schedule_position": 22
+  },
+  {
+    "id": "T20",
+    "query": "Show me women's dresses. I prefer bold colors, expressive prints, and statement details.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T20",
+    "schedule_position": 23
+  },
+  {
+    "id": "T14",
+    "query": "I'm going out for the evening. Show me stylish women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T14",
+    "schedule_position": 24
+  },
+  {
+    "id": "T12",
+    "query": "Show me fashionable women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T12",
+    "schedule_position": 25
+  },
+  {
+    "id": "T16",
+    "query": "I'm going to an art gallery opening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T16",
+    "schedule_position": 26
+  },
+  {
+    "id": "T03",
+    "query": "stylish women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T03",
+    "schedule_position": 27
+  },
+  {
+    "id": "T01",
+    "query": "women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T01",
+    "schedule_position": 28
+  },
+  {
+    "id": "T09",
+    "query": "bold women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T09",
+    "schedule_position": 29
+  },
+  {
+    "id": "T02",
+    "query": "fashionable women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T02",
+    "schedule_position": 30
+  },
+  {
+    "id": "T08",
+    "query": "quiet luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T08",
+    "schedule_position": 31
+  },
+  {
+    "id": "T06",
+    "query": "luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T06",
+    "schedule_position": 32
+  },
+  {
+    "id": "T18",
+    "query": "I'm meeting friends for a casual brunch. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T18",
+    "schedule_position": 33
+  },
+  {
+    "id": "T04",
+    "query": "trendy women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T04",
+    "schedule_position": 34
+  },
+  {
+    "id": "T07",
+    "query": "minimalist women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T07",
+    "schedule_position": 35
+  },
+  {
+    "id": "T05",
+    "query": "designer women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T05",
+    "schedule_position": 36
+  },
+  {
+    "id": "T15",
+    "query": "I'm going to dinner at an upscale restaurant. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T15",
+    "schedule_position": 37
+  },
+  {
+    "id": "T10",
+    "query": "timeless women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 2,
+    "run_id": "R2-T10",
+    "schedule_position": 38
+  },
+  {
+    "id": "T17",
+    "query": "I'm attending a summer wedding as a guest. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T17",
+    "schedule_position": 39
+  },
+  {
+    "id": "T13",
+    "query": "I'm going out for the evening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 2,
+    "run_id": "R2-T13",
+    "schedule_position": 40
+  },
+  {
+    "id": "T03",
+    "query": "stylish women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T03",
+    "schedule_position": 41
+  },
+  {
+    "id": "T02",
+    "query": "fashionable women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T02",
+    "schedule_position": 42
+  },
+  {
+    "id": "T11",
+    "query": "Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T11",
+    "schedule_position": 43
+  },
+  {
+    "id": "T06",
+    "query": "luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T06",
+    "schedule_position": 44
+  },
+  {
+    "id": "T04",
+    "query": "trendy women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T04",
+    "schedule_position": 45
+  },
+  {
+    "id": "T12",
+    "query": "Show me fashionable women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T12",
+    "schedule_position": 46
+  },
+  {
+    "id": "T09",
+    "query": "bold women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T09",
+    "schedule_position": 47
+  },
+  {
+    "id": "T19",
+    "query": "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T19",
+    "schedule_position": 48
+  },
+  {
+    "id": "T07",
+    "query": "minimalist women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T07",
+    "schedule_position": 49
+  },
+  {
+    "id": "T18",
+    "query": "I'm meeting friends for a casual brunch. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T18",
+    "schedule_position": 50
+  },
+  {
+    "id": "T05",
+    "query": "designer women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T05",
+    "schedule_position": 51
+  },
+  {
+    "id": "T17",
+    "query": "I'm attending a summer wedding as a guest. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T17",
+    "schedule_position": 52
+  },
+  {
+    "id": "T20",
+    "query": "Show me women's dresses. I prefer bold colors, expressive prints, and statement details.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T20",
+    "schedule_position": 53
+  },
+  {
+    "id": "T01",
+    "query": "women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T01",
+    "schedule_position": 54
+  },
+  {
+    "id": "T16",
+    "query": "I'm going to an art gallery opening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T16",
+    "schedule_position": 55
+  },
+  {
+    "id": "T14",
+    "query": "I'm going out for the evening. Show me stylish women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T14",
+    "schedule_position": 56
+  },
+  {
+    "id": "T10",
+    "query": "timeless women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T10",
+    "schedule_position": 57
+  },
+  {
+    "id": "T08",
+    "query": "quiet luxury women's dresses",
+    "kind": "short_phrase",
+    "baseline": "T01",
+    "repeat": 3,
+    "run_id": "R3-T08",
+    "schedule_position": 58
+  },
+  {
+    "id": "T13",
+    "query": "I'm going out for the evening. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T13",
+    "schedule_position": 59
+  },
+  {
+    "id": "T15",
+    "query": "I'm going to dinner at an upscale restaurant. Show me women's dresses.",
+    "kind": "sentence",
+    "baseline": "T11",
+    "repeat": 3,
+    "run_id": "R3-T15",
+    "schedule_position": 60
+  }
+]
+```
+
+Collector (save as collector.py):
+```python
+from pathlib import Path
+from datetime import datetime, timezone
+import csv
+import hashlib
+import json
+import subprocess
+import sys
+import time
+import zipfile
+
+
+def utc():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main():
+    schedule_path = Path(sys.argv[1])
+    schedule = json.loads(schedule_path.read_text())
+    assert len(schedule) == 60 and len({q['run_id'] for q in schedule}) == 60
+    root = Path.cwd() / ('taste-style-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'))
+    root.mkdir(exist_ok=False)
+    (root / 'collector.py').write_bytes(Path(__file__).read_bytes())
+    (root / 'schedule.json').write_bytes(schedule_path.read_bytes())
+    tool = Path('/opt/hatch/bin/meta-catalog-search')
+    identity = {'path': str(tool)}
+    try:
+        identity.update({'before_bytes': tool.stat().st_size, 'before_sha256': sha(tool)})
+    except OSError as e:
+        identity['before_error'] = repr(e)
+    errors = 0
+    for q in schedule:
+        dest = root / q['run_id']
+        dest.mkdir()
+        argv = [str(tool), '--query', q['query'], '-n', '50', '--conversation-id', 'taste-style-20260927-Astra-fixed', '--retries', '0', '--timeout-secs', '30', '--raw', '--no-save']
+        receipt = {'author': 'Astra (gpt-6-astra)', 'query': q, 'argv': argv, 'start_utc': utc(), 'exception': None}
+        try:
+            result = subprocess.run(argv, capture_output=True, timeout=45, check=False)
+            stdout, stderr, code = result.stdout, result.stderr, result.returncode
+        except subprocess.TimeoutExpired as e:
+            stdout, stderr, code = e.stdout or b'', e.stderr or b'', None
+            receipt['exception'] = 'collector timeout after 45 seconds'
+        except OSError as e:
+            stdout, stderr, code = b'', b'', None
+            receipt['exception'] = repr(e)
+        (dest / 'stdout.bin').write_bytes(stdout)
+        (dest / 'stderr.bin').write_bytes(stderr)
+        receipt.update({'end_utc': utc(), 'exit_code': code, 'stdout_bytes': len(stdout), 'stderr_bytes': len(stderr), 'stdout_sha256': sha(dest / 'stdout.bin'), 'stderr_sha256': sha(dest / 'stderr.bin')})
+        success = code == 0
+        try:
+            body = json.loads(stdout)
+            responses = body.get('tool_responses', [])
+            success = success and bool(responses) and all(x.get('success') is not False for x in responses)
+        except (ValueError, AttributeError, TypeError):
+            success = False
+        receipt['collector_success'] = success
+        (dest / 'execution.json').write_text(json.dumps(receipt, indent=2) + '\n')
+        errors = 0 if success else errors + 1
+        err = (stderr + stdout[:4096] if not success else stderr).decode('utf-8', 'replace').lower()
+        denied = any(x in err for x in ['rate limit', 'too many requests', 'permission denied', 'unauthorized', 'authentication failed', 'access denied'])
+        print(json.dumps({'run_id': q['run_id'], 'schedule_position': q['schedule_position'], 'exit_code': code, 'success': success}), flush=True)
+        if errors >= 3 or denied:
+            (root / 'STOP.json').write_text(json.dumps({'at': q['run_id'], 'utc': utc(), 'consecutive_failures': errors, 'access_or_rate_error': denied}, indent=2) + '\n')
+            break
+        time.sleep(1)
+    try:
+        identity.update({'after_bytes': tool.stat().st_size, 'after_sha256': sha(tool)})
+    except OSError as e:
+        identity['after_error'] = repr(e)
+    (root / 'tool-identity.json').write_text(json.dumps(identity, indent=2) + '\n')
+    with (root / 'MANIFEST.csv').open('w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=['path', 'bytes', 'sha256'])
+        w.writeheader()
+        for p in sorted(root.rglob('*')):
+            if p.is_file() and p.name != 'MANIFEST.csv':
+                w.writerow({'path': p.relative_to(root).as_posix(), 'bytes': p.stat().st_size, 'sha256': sha(p)})
+    archive = root.with_suffix('.zip')
+    with zipfile.ZipFile(archive, 'x', zipfile.ZIP_DEFLATED) as z:
+        for p in sorted(root.rglob('*')):
+            if p.is_file():
+                z.write(p, p.relative_to(root.parent).as_posix())
+    print(json.dumps({'archive_path': str(archive), 'bytes': archive.stat().st_size, 'sha256': sha(archive), 'attempted': len(list(root.glob('R*/execution.json'))), 'planned': 60, 'stopped': (root / 'STOP.json').exists()}), flush=True)
+
+
+if __name__ == '__main__':
+    main()
+``` Assistant message: Done. All 60 sequential catalog calls completed with no failures and no stop condition. Assistant message: taste-style collection ZIP Assistant message: - ZIP filename: `taste-style-20260927T165255721358Z.zip`
+- Size: 3,487,715 bytes
+- SHA-256: `95e1e8dd5619c7af3211d8c28663608b3cca92936ac1eeafce3ae798cca4bd08`
+
+Evidence notes: both input hashes verified before execution (schedule `3dc041c9…`, collector `288de6c2…`); the collector ran once with the schedule path as its only argument; 60/60 planned calls attempted and successful; raw `stdout.bin`/`stderr.bin`, per-call `execution.json` receipts, collector copy, schedule copy, tool-identity before/after, and `MANIFEST.csv` are inside. No credentials found in outputs; no old evidence touched. User message: Astra here. Now perform ONE ordinary instrumented shopping case in this EXISTING main chat. Run ID: taste-case-T11-20260927. This is separate from the60 direct catalog calls; do not reuse their responses. Treat the shopper request below as a hypothetical test, not a lasting personal preference. Do not edit memories or settings. Do not use the other test prompts as additional shopper preferences.
+
+Shopper request: "Show me women's dresses."
+
+For this test, shop for new adult women's dresses available to a United States shopper; use USD. No price ceiling, no preferred or excluded brand, no assumed size or personal profile. Do not ask follow-up questions: use those stated defaults and note unknown fit/size. Use your normal shopping workflow, choosing actual search wording and ordinary filters yourself. Do not force a number of recommendations or invent an aesthetic/taste score. We want observable actions, not hidden reasoning.
+
+At most2 catalog invocations and1 browser discovery/verification task. No retries for failed catalog calls, no replacement failure samples, no purchases or merchant/listing edits. Stop on rate/access/auth failure and preserve the partial outcome. Do not start a new UI chat. No source or binary extraction.
+
+Preserve in a NEW dated run directory:
+1. Exact shopper text, runID, actual UTC start/end, exact catalog argv, full output files, stdout/stderr/exit status where available. Keep every returned record, not just chosen ones.
+2. Every accessible file-read/preview command and its actual output; unavailable exposure logs stay unavailable.
+3. Exact browser task input and actual completion output; where available retain visited URLs, price/variant checks and timestamps. Clearly label manually transcribed tool records; never synthesize missing page logs.
+4. Actual ordered shopping.resolve_results inputs/results and staged files, then widget.create inputs/output on the normal display route. Label direct file copies, native records and manual invocations separately. If your workflow differs, preserve it rather than forcing those tools.
+5. Save ordinary shopper-facing reasons separately from evidence. They are stated rationales, not proof of internal causes. Never turn a separate --raw call into this run's underlying response. Mark same-run raw numeric scores unavailable when not exposed.
+6. A missing-artifacts.json plus MANIFEST.csv with relative path, bytes, SHA256, stage and origin type. Preserve originals and prior runs.
+
+Display the recommendations normally under the heading "Taste case T11", then provide ONE downloadable evidence ZIP, filename, byte size, SHA256, actual catalog/browser call counts and unavailable stages. Do not write a research report or infer weights. Stop after this case. Assistant message: Browser Assistant message: Verification is underway on the three dress pages (COS, Kiyonna, Reiss). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back. Assistant message: ## Taste case T11
+
+For everyday wear, [Beguiling Border Print Wrap Dress - Sale! (Mauve Border Print)](https://www.kiyonna.com/products/beguiling-border-print-wrap-dress) at the $109.95 sale price is the safer pick — it's in stock across a real size range (0X–5X), though the most popular sizes are already running low. [Valia Cotton Printed Shirt Dress in Rust](https://www.reiss.com/us/en/style/SU526106/AU7246) is the steeper discount at $110 (down from $285), but only two sizes remain, so it's a gamble on fit.
+
+One honest flag: a third candidate I pulled (a $169 COS dress) couldn't be verified — its product page is gone and COS's own search finds nothing, so it appears discontinued and I left it out. Assistant message: Evidence export for run taste-case-T11-20260927 (separate from the recommendations above): 1 catalog invocation used (68 candidates returned, all retained), 1 browser verification task (2/3 verified in stock; COS product unverifiable — 404, recorded in missing-artifacts), resolve + widget completed on the normal route with 2 selected IDs. Same-run raw numeric scores were not exposed by the normal call and are marked unavailable. Assistant message: run evidence ZIP Assistant message: - ZIP filename: `taste-case-T11-20260927T20260927T170121Z.zip`
+- Size: 61,717 bytes
+- SHA-256: `b3d9aca85f80f04480fd53b5fd8d8a4fcb1fa3e49ed7c3b60c9d33f09d7c831f`
+- Contents: 28 files — shopper request, UTC start/end, catalog argv/stdout/stderr/exit status, both jq exposure previews, separate shopper-facing reasons file, browser task brief/spawn receipt/completion transcription, resolve input/output plus byte-identical staged-file copy, widget input/output, `MANIFEST.csv` (file path, bytes, SHA-256, stage, origin type, parent source), and `missing-artifacts.json` (unavailable: `--raw` underlying response, same-run raw numeric scores, browser intermediate page outputs, COS verification, exposure logs beyond the saved previews). No analysis, no retries, no old evidence touched. User message: Astra here. Run this separately prespecified 12-call extension to the completed taste study. Do not rerun or modify the original60 calls. This is catalog-only collection, not normal shopping, and not analysis of taste or trends. Use the exact schedule and collector below, preserving query strings verbatim. Save them as new UTF-8 files with LF and a final newline; verify SHA256 before running. Run collector once with schedule path as its only argument, in a new directory. No changes to memories/settings, no retries, no new UI chat, no other calls or credentials/source access. If either hash differs, stop and report; do not silently repair. Existing supported tool access only. Return the resulting ZIP with filename, size, SHA256 and actual call count, then stop. Do not write an interpretive report.
+
+schedule SHA256: 6578d04152b15bd45f4d57c2df29f9650669653bc3366eb22ac9bbc0f05e1bad
+collector SHA256: 23bde3254edc98551e097277dc7913c1b5678f19d7be284bce799a3b833535bf
+
+schedule.json:
+```json
+[
+  {
+    "id": "T24",
+    "query": "What women's dress styles are fashion writers and shoppers talking about now, as of September 27, 2026? Show me dresses that fit.",
+    "repeat": 1,
+    "run_id": "R1-T24",
+    "schedule_position": 1
+  },
+  {
+    "id": "T22",
+    "query": "Show me women's dresses from widely recognized designer labels.",
+    "repeat": 1,
+    "run_id": "R1-T22",
+    "schedule_position": 2
+  },
+  {
+    "id": "T23",
+    "query": "Show me women's dresses that are trending now, as of September 27, 2026.",
+    "repeat": 1,
+    "run_id": "R1-T23",
+    "schedule_position": 3
+  },
+  {
+    "id": "T21",
+    "query": "Show me women's dresses from lesser-known designer labels.",
+    "repeat": 1,
+    "run_id": "R1-T21",
+    "schedule_position": 4
+  },
+  {
+    "id": "T22",
+    "query": "Show me women's dresses from widely recognized designer labels.",
+    "repeat": 2,
+    "run_id": "R2-T22",
+    "schedule_position": 5
+  },
+  {
+    "id": "T21",
+    "query": "Show me women's dresses from lesser-known designer labels.",
+    "repeat": 2,
+    "run_id": "R2-T21",
+    "schedule_position": 6
+  },
+  {
+    "id": "T23",
+    "query": "Show me women's dresses that are trending now, as of September 27, 2026.",
+    "repeat": 2,
+    "run_id": "R2-T23",
+    "schedule_position": 7
+  },
+  {
+    "id": "T24",
+    "query": "What women's dress styles are fashion writers and shoppers talking about now, as of September 27, 2026? Show me dresses that fit.",
+    "repeat": 2,
+    "run_id": "R2-T24",
+    "schedule_position": 8
+  },
+  {
+    "id": "T21",
+    "query": "Show me women's dresses from lesser-known designer labels.",
+    "repeat": 3,
+    "run_id": "R3-T21",
+    "schedule_position": 9
+  },
+  {
+    "id": "T24",
+    "query": "What women's dress styles are fashion writers and shoppers talking about now, as of September 27, 2026? Show me dresses that fit.",
+    "repeat": 3,
+    "run_id": "R3-T24",
+    "schedule_position": 10
+  },
+  {
+    "id": "T23",
+    "query": "Show me women's dresses that are trending now, as of September 27, 2026.",
+    "repeat": 3,
+    "run_id": "R3-T23",
+    "schedule_position": 11
+  },
+  {
+    "id": "T22",
+    "query": "Show me women's dresses from widely recognized designer labels.",
+    "repeat": 3,
+    "run_id": "R3-T22",
+    "schedule_position": 12
+  }
+]
+```
+
+collector.py:
+```python
+from pathlib import Path
+from datetime import datetime, timezone
+import csv
+import hashlib
+import json
+import subprocess
+import sys
+import time
+import zipfile
+
+
+def utc():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main():
+    schedule_path = Path(sys.argv[1])
+    schedule = json.loads(schedule_path.read_text())
+    assert len(schedule) == 12 and len({q['run_id'] for q in schedule}) == 12
+    root = Path.cwd() / ('taste-style-extension-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'))
+    root.mkdir(exist_ok=False)
+    (root / 'collector.py').write_bytes(Path(__file__).read_bytes())
+    (root / 'schedule.json').write_bytes(schedule_path.read_bytes())
+    tool = Path('/opt/hatch/bin/meta-catalog-search')
+    identity = {'path': str(tool)}
+    try:
+        identity.update({'before_bytes': tool.stat().st_size, 'before_sha256': sha(tool)})
+    except OSError as e:
+        identity['before_error'] = repr(e)
+    errors = 0
+    for q in schedule:
+        dest = root / q['run_id']
+        dest.mkdir()
+        argv = [str(tool), '--query', q['query'], '-n', '50', '--conversation-id', 'taste-style-20260927-Astra-fixed', '--retries', '0', '--timeout-secs', '30', '--raw', '--no-save']
+        receipt = {'author': 'Astra (gpt-6-astra)', 'query': q, 'argv': argv, 'start_utc': utc(), 'exception': None}
+        try:
+            result = subprocess.run(argv, capture_output=True, timeout=45, check=False)
+            stdout, stderr, code = result.stdout, result.stderr, result.returncode
+        except subprocess.TimeoutExpired as e:
+            stdout, stderr, code = e.stdout or b'', e.stderr or b'', None
+            receipt['exception'] = 'collector timeout after 45 seconds'
+        except OSError as e:
+            stdout, stderr, code = b'', b'', None
+            receipt['exception'] = repr(e)
+        (dest / 'stdout.bin').write_bytes(stdout)
+        (dest / 'stderr.bin').write_bytes(stderr)
+        receipt.update({'end_utc': utc(), 'exit_code': code, 'stdout_bytes': len(stdout), 'stderr_bytes': len(stderr), 'stdout_sha256': sha(dest / 'stdout.bin'), 'stderr_sha256': sha(dest / 'stderr.bin')})
+        success = code == 0
+        try:
+            body = json.loads(stdout)
+            responses = body.get('tool_responses', [])
+            success = success and bool(responses) and all(x.get('success') is not False for x in responses)
+        except (ValueError, AttributeError, TypeError):
+            success = False
+        receipt['collector_success'] = success
+        (dest / 'execution.json').write_text(json.dumps(receipt, indent=2) + '\n')
+        errors = 0 if success else errors + 1
+        err = (stderr + stdout[:4096] if not success else stderr).decode('utf-8', 'replace').lower()
+        denied = any(x in err for x in ['rate limit', 'too many requests', 'permission denied', 'unauthorized', 'authentication failed', 'access denied'])
+        print(json.dumps({'run_id': q['run_id'], 'schedule_position': q['schedule_position'], 'exit_code': code, 'success': success}), flush=True)
+        if errors >= 3 or denied:
+            (root / 'STOP.json').write_text(json.dumps({'at': q['run_id'], 'utc': utc(), 'consecutive_failures': errors, 'access_or_rate_error': denied}, indent=2) + '\n')
+            break
+        time.sleep(1)
+    try:
+        identity.update({'after_bytes': tool.stat().st_size, 'after_sha256': sha(tool)})
+    except OSError as e:
+        identity['after_error'] = repr(e)
+    (root / 'tool-identity.json').write_text(json.dumps(identity, indent=2) + '\n')
+    with (root / 'MANIFEST.csv').open('w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=['path', 'bytes', 'sha256'])
+        w.writeheader()
+        for p in sorted(root.rglob('*')):
+            if p.is_file() and p.name != 'MANIFEST.csv':
+                w.writerow({'path': p.relative_to(root).as_posix(), 'bytes': p.stat().st_size, 'sha256': sha(p)})
+    archive = root.with_suffix('.zip')
+    with zipfile.ZipFile(archive, 'x', zipfile.ZIP_DEFLATED) as z:
+        for p in sorted(root.rglob('*')):
+            if p.is_file():
+                z.write(p, p.relative_to(root.parent).as_posix())
+    print(json.dumps({'archive_path': str(archive), 'bytes': archive.stat().st_size, 'sha256': sha(archive), 'attempted': len(list(root.glob('R*/execution.json'))), 'planned': 12, 'stopped': (root / 'STOP.json').exists()}), flush=True)
+
+
+if __name__ == '__main__':
+    main()
+``` Assistant message: Extension collection complete. Verified inputs before execution:
+
+- `schedule.json`: SHA-256 `6578d04152b15bd45f4d57c2df29f9650669653bc3366eb22ac9bbc0f05e1bad` — matched before running.
+- `collector.py`: SHA-256 `23bde3254edc98551e097277dc7913c1b5678f19d7be284bce799a3b833535bf` — matched before running.
+
+Collector executed once in the staging directory, run ID extension root timestamp `20260927T170542712798Z`. Result: **12 of 12 calls succeeded** (exit 0 each), no stop condition, no `STOP.json`.
+
+Evidence ZIP: Assistant message: extension archive Assistant message: - Filename: `taste-style-extension-20260927T170542712798Z.zip`
+- Size: 313,448 bytes
+- SHA-256: `80849fe24bf433b557f2dde9857a9d9063eda1991b4774fd08b7f9d604d0b954`
+- Call count: 12 attempted / 12 successful / 0 failed; collector exit 0; ZIP integrity test passed.
+
+No retries were needed and none were made. Stopping here. User message: Astra here. Now perform ONE ordinary instrumented shopping case in this EXISTING main chat. Run ID: taste-case-T12-20260927. This is separate from the60 direct catalog calls; do not reuse their responses. Treat the shopper request below as a hypothetical test, not a lasting personal preference. Do not edit memories or settings. Do not use the other test prompts as additional shopper preferences.
+
+Shopper request: "Show me fashionable women's dresses."
+
+For this test, shop for new adult women's dresses available to a United States shopper; use USD. No price ceiling, no preferred or excluded brand, no assumed size or personal profile. Do not ask follow-up questions: use those stated defaults and note unknown fit/size. Use your normal shopping workflow, choosing actual search wording and ordinary filters yourself. Do not force a number of recommendations or invent an aesthetic/taste score. We want observable actions, not hidden reasoning.
+
+At most2 catalog invocations and1 browser discovery/verification task. No retries for failed catalog calls, no replacement failure samples, no purchases or merchant/listing edits. Stop on rate/access/auth failure and preserve the partial outcome. Do not start a new UI chat. No source or binary extraction.
+
+Preserve in a NEW dated run directory:
+1. Exact shopper text, runID, actual UTC start/end, exact catalog argv, full output files, stdout/stderr/exit status where available. Keep every returned record, not just chosen ones.
+2. Every accessible file-read/preview command and its actual output; unavailable exposure logs stay unavailable.
+3. Exact browser task input and actual completion output; where available retain visited URLs, price/variant checks and timestamps. Clearly label manually transcribed tool records; never synthesize missing page logs.
+4. Actual ordered shopping.resolve_results inputs/results and staged files, then widget.create inputs/output on the normal display route. Label direct file copies, native records and manual invocations separately. If your workflow differs, preserve it rather than forcing those tools.
+5. Save ordinary shopper-facing reasons separately from evidence. They are stated rationales, not proof of internal causes. Never turn a separate --raw call into this run's underlying response. Mark same-run raw numeric scores unavailable when not exposed.
+6. A missing-artifacts.json plus MANIFEST.csv with relative path, bytes, SHA256, stage and origin type. Preserve originals and prior runs.
+
+Display the recommendations normally under the heading "Taste case T12", then provide ONE downloadable evidence ZIP, filename, byte size, SHA256, actual catalog/browser call counts and unavailable stages. Do not write a research report or infer weights. Stop after this case. Assistant message: Browser Assistant message: Verification is underway on the three dress pages (Diane von Furstenberg, Rails, Abercrombie & Fitch). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back.
+						391 container
+							392 container Shopping results
+								393 content list
+									394 button View details for Tessa Dress (Mirage Ditsy and Mirage Vine White)
+										395 image Tessa Dress (Mirage Ditsy and Mirage Vine White)
+										396 text Tessa Dress (Mirage Ditsy and Mirage Vine White)
+										397 text Diane von Furstenberg · dvf.com
+										398 container
+											399 text $119 Original price $398
+									400 button View details for PRIMROSE DRESS - PALMA STRIPE
+										401 image PRIMROSE DRESS - PALMA STRIPE
+										402 text PRIMROSE DRESS - PALMA STRIPE
+										403 text RAILS · rails.com
+										404 text $268
+									405 button View details for 100% Cotton A&F Bra-Free Dylan Mini Dress (Blue)
+										406 image 100% Cotton A&F Bra-Free Dylan Mini Dress (Blue)
+										407 text 100% Cotton A&F Bra-Free Dylan Mini Dress (Blue)
+										408 text Abercrombie & Fitch · abercrombie.com
+										409 text $90
+							410 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								411 image
+							412 button Reply
+								413 image
+						414 container
+							415 heading Taste case T12, Value: 2
+								416 text Taste case T12
+							417 container
+								418 text The standout here is 
+								419 button Tessa Dress (Mirage Ditsy and Mirage Vine White)
+								420 text  — a designer dress marked down to $119 from $398, though it is final sale, so fit is a one-way bet. If you'd rather skip the discount gamble, 
+								421 button 100% Cotton A&F Bra-Free Dylan Mini Dress (Blue)
+								422 text  at $90 is the easy casual pick.
+							423 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								424 image
+							425 button Reply
+								426 image
+							427 button Copy response
+								428 image
+						429 container
+							430 text Evidence export for run taste-case-T12-20260927 (separate from the recommendations above): 1 catalog invocation used (71 candidates returned, all retained), 1 browser verification task (3/3 verified in stock, no cart/checkout), resolve + widget completed on the normal route with 3 selected IDs. Same-run raw numeric scores were not exposed by the normal call and are marked unavailable. The first spawn attempt returned a non-execution availability response; the identical assignment was then submitted successfully — both recorded in the evidence.
+							431 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								432 image
+							433 button Reply
+								434 image
+							435 button Copy response
+								436 image
+						437 container
+							438 button run evidence ZIP ZIP More options
+								439 text run evidence ZIP
+								440 text ZIP
+								441 pop up button (collapsed) Description: More options, ID: radix-_r_2vr_, Secondary Actions: Expand
+									442 image
+							443 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								444 image
+							445 button Reply
+								446 image
+							447 button Copy response
+								448 image
+						449 container
+							450 content list
+								451 container
+									452 text ZIP filename:  taste-case-T12-20260927T20260927T170736Z.zip
+								453 text Size: 60,924 bytes
+								454 container
+									455 text SHA-256:  6ebf26adaa9cce0ae2b4e43a3761dfeda3730ea6952cb6678915c36e30725521
+								456 container
+									457 text Contents: 29 files — shopper request, UTC start/end, catalog argv/stdout/stderr/exit status, both jq exposure previews, separate shopper-facing reasons file, browser task brief/spawn receipt/spawn-retry note/completion transcription, resolve input/output plus byte-identical staged-file copy, widget input/output,  MANIFEST.csv  (file path, bytes, SHA-256, stage, origin type, parent source), and  missing-artifacts.json  (unavailable:  --raw  underlying response, same-run raw numeric scores, browser intermediate page outputs, exposure logs beyond the saved previews). No analysis, no retries of catalog calls, no old evidence touched.
+							458 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								459 image
+							460 button Reply
+								461 image
+							462 button Copy response
+								463 image
+						464 container
+							465 container
+								466 text You: Astra here. Now perform ONE ordinary instrumented shopping case in this EXISTING main chat. Run ID: taste-case-T19-20260927. This is separate from the60 direct catalog calls; do not reuse their responses. Treat the shopper request below as a hypothetical test, not a lasting personal preference. Do not edit memories or settings. Do not use the other test prompts as additional shopper preferences.
+
+Shopper request: "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos."
+
+For this test, shop for new adult women's dresses available to a United States shopper; use USD. No price ceiling, no preferred or excluded brand, no assumed size or personal profile. Do not ask follow-up questions: use those stated defaults and note unknown fit/size. Use your normal shopping workflow, choosing actual search wording and ordinary filters yourself. Do not force a number of recommendations or invent an aesthetic/taste score. We want observable actions, not hidden reasoning.
+
+At most2 catalog invocations and1 browser discovery/verification task. No retries for failed catalog calls, no replacement failure samples, no purchases or merchant/listing edits. Stop on rate/access/auth failure and preserve the partial outcome. Do not start a new UI chat. No source or binary extraction.
+
+Preserve in a NEW dated run directory:
+1. Exact shopper text, runID, actual UTC start/end, exact catalog argv, full output files, stdout/stderr/exit status where available. Keep every returned record, not just chosen ones.
+2. Every accessible file-read/preview command and its actual output; unavailable exposure logs stay unavailable.
+3. Exact browser task input and actual completion output; where available retain visited URLs, price/variant checks and timestamps. Clearly label manually transcribed tool records; never synthesize missing page logs.
+4. Actual ordered shopping.resolve_results inputs/results and staged files, then widget.create inputs/output on the normal display route. Label direct file copies, native records and manual invocations separately. If your workflow differs, preserve it rather than forcing those tools.
+5. Save ordinary shopper-facing reasons separately from evidence. They are stated rationales, not proof of internal causes. Never turn a separate --raw call into this run's underlying response. Mark same-run raw numeric scores unavailable when not exposed.
+6. A missing-artifacts.json plus MANIFEST.csv with relative path, bytes, SHA256, stage and origin type. Preserve originals and prior runs.
+
+Display the recommendations normally under the heading "Taste case T19", then provide ONE downloadable evidence ZIP, filename, byte size, SHA256, actual catalog/browser call counts and unavailable stages. Do not write a research report or infer weights. Stop after this case.
+							473 container Assistant reaction: 👍
+							467 pop up button (collapsed) Description: More options, ID: radix-_r_30j_, Secondary Actions: Expand
+								468 image
+							469 button Copy response
+								470 image
+							471 button Reply
+								472 image
+						474 container
+							475 container
+								476 image
+								477 text Browser Selecting United States
+								478 button Open browser session
+									479 image Browser snapshot
+								480 button Open browser
+							481 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								482 image
+							483 button Reply
+								484 image
+						485 container
+							486 text Verification is underway on the three dress pages (Courrèges, COS, Calvin Klein). I'll continue with resolution, the shopping presentation, and the evidence export when its result comes back.
+							487 pop up button (collapsed) Description: React, Secondary Actions: Expand
+								488 image
+							489 button Reply
+								490 image
+							491 button Copy response
+								492 image
+			122 container
+				123 button Message Attach file Dictate a message
+					124 text entry area (settable) Message
+					125 button Attach file
+						126 image
+					493 button Dictate a message
+						494 image
+		129 container
+			130 button Scout
+			233 button Scout
+				234 text Scout
+				495 text Verifying products
+		133 container Notifications alt+T
+	134 container grammarly-integration
+		200 text {"mode":"full","isActive":true,"isUserDisabled":false}
+
+The focused UI element is 124 text entry area (settable) Message

@@ -1,0 +1,95 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "method": "Extract byte columns from existing supplied text dumps, wrap as local ELF objects, decode with installed LLVM. No supplied code is executed.",
+  "decoder_version": "Apple LLVM version 17.0.0",
+  "limits": [
+    "Checks internal consistency of supplied byte columns and instruction boundaries, not independent remote provenance.",
+    "These are bytes reconstructed from text already held locally, not newly acquired client code or a full executable.",
+    "Semantic annotations and pseudocode require separate review."
+  ],
+  "windows": [
+    {
+      "source": "muse-research-archive-2026-09-26/phase-two/corrected/catalog-phase2-2026-09-26-v2/code-snippets/window-0x4a98f0-0x4aab7e.txt",
+      "source_text_sha256": "c102b790a04c08eba002dcc0d6ad30c2ba87b66669aa8a6e6feb7b33b036cc7f",
+      "start": "0x4a98f0",
+      "end_exclusive": "0x4aab7e",
+      "bytes_extracted_from_supplied_text": 4750,
+      "extracted_bytes_sha256": "1855cc63b8a49ceb5e675d3080a128a374472ed7e7ca0cf9eb4ba6987ce581e1",
+      "supplied_instruction_count": 1009,
+      "local_instruction_count": 1009,
+      "address_byte_differences": [],
+      "all_bytes_decoded": true,
+      "argv": [
+        "/usr/bin/objdump",
+        "--disassemble",
+        "--disassemble-zeroes",
+        "--x86-asm-syntax=intel",
+        "window-0x4a98f0-0x4aab7e.constructed.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "source": "muse-research-archive-2026-09-26/phase-two/corrected/catalog-phase2-2026-09-26-v2/code-snippets/window-0x48e5c0-0x48e976.txt",
+      "source_text_sha256": "574b1eefd45c5ad51990ebe189057097f28bdd0f28ce70ad531b658ee5900df5",
+      "start": "0x48e5c0",
+      "end_exclusive": "0x48e976",
+      "bytes_extracted_from_supplied_text": 950,
+      "extracted_bytes_sha256": "e487d7a25ae7ac8c169c7f226a35c621b5a02bffff5aba0d9b5e29e751d888f5",
+      "supplied_instruction_count": 208,
+      "local_instruction_count": 208,
+      "address_byte_differences": [],
+      "all_bytes_decoded": true,
+      "argv": [
+        "/usr/bin/objdump",
+        "--disassemble",
+        "--disassemble-zeroes",
+        "--x86-asm-syntax=intel",
+        "window-0x48e5c0-0x48e976.constructed.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "source": "muse-research-archive-2026-09-26/phase-two/corrected/catalog-phase2-2026-09-26-v2/code-snippets/window-0x4a7600-0x4a7a79.txt",
+      "source_text_sha256": "9b20769218fbb5f9d93d1041cc4baa31319b72e94718d8366ef1b85fb8cf879d",
+      "start": "0x4a7600",
+      "end_exclusive": "0x4a7a79",
+      "bytes_extracted_from_supplied_text": 1145,
+      "extracted_bytes_sha256": "6ee069a5bb356fc552936a51b6488671225a20afafbce38920ca817ba68480e1",
+      "supplied_instruction_count": 292,
+      "local_instruction_count": 292,
+      "address_byte_differences": [],
+      "all_bytes_decoded": true,
+      "argv": [
+        "/usr/bin/objdump",
+        "--disassemble",
+        "--disassemble-zeroes",
+        "--x86-asm-syntax=intel",
+        "window-0x4a7600-0x4a7a79.constructed.elf"
+      ],
+      "exit_code": 0
+    },
+    {
+      "source": "muse-research-archive-2026-09-26/phase-two/corrected/catalog-phase2-2026-09-26-v2/code-snippets/window-0x4bc7f0-0x4bc9fd.txt",
+      "source_text_sha256": "09b08550398ac7d09c41ca39106ee06fd9ec6ba373e7aa93d03f789f54320f30",
+      "start": "0x4bc7f0",
+      "end_exclusive": "0x4bc9fd",
+      "bytes_extracted_from_supplied_text": 525,
+      "extracted_bytes_sha256": "1acb684481baece3a393ded8a5f819b11a98d47f7d01a778edc88c28f40bedb0",
+      "supplied_instruction_count": 133,
+      "local_instruction_count": 133,
+      "address_byte_differences": [],
+      "all_bytes_decoded": true,
+      "argv": [
+        "/usr/bin/objdump",
+        "--disassemble",
+        "--disassemble-zeroes",
+        "--x86-asm-syntax=intel",
+        "window-0x4bc7f0-0x4bc9fd.constructed.elf"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "total_bytes": 7370,
+  "total_instructions": 1642,
+  "all_match": true
+}

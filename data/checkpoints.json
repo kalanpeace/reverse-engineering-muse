@@ -1,0 +1,30 @@
+{
+  "runs": 185,
+  "products": 6314,
+  "cohort_runs": {
+    "boundary36": 36,
+    "brand63": 63,
+    "followup60": 60,
+    "misen21": 21,
+    "modes4": 4,
+    "neutral_baseline": 1
+  },
+  "new_subprocess_calls": 163,
+  "new_catalog_calls": 160,
+  "new_zero_exit_calls": 163,
+  "brand_records": 2821,
+  "strong_brand_calls": 18,
+  "strong_brand_prefix_with_score_upturn": 18,
+  "strong_brand_group_then_score_failures": 12,
+  "neutral_baseline_count": 43,
+  "neutral_baseline_upturns": [
+    [
+      40,
+      41
+    ]
+  ],
+  "neutral_brand_calls_with_upturns": 6,
+  "parsed_output_calls": 3,
+  "output_mode_sidecars_created": 0,
+  "output_mode_sidecar_attempts": 7
+}

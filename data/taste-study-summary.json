@@ -1,0 +1,855 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "calls": 72,
+  "record_occurrences": 3827,
+  "unique_product_ids": 1125,
+  "scored_occurrences": 3827,
+  "score_min": "0.451172",
+  "score_max": "0.824219",
+  "original_within_pair_count": 60,
+  "original_within_mean_jaccard": 0.9076257571034727,
+  "original_baseline_pair_count": 54,
+  "original_baseline_mean_jaccard": 0.030516397994904257,
+  "shared_score_comparisons": 203,
+  "changed_score_comparisons": 194,
+  "conditions": [
+    {
+      "condition_id": "T01",
+      "query": "women's dresses",
+      "counts": [
+        68,
+        68,
+        68
+      ],
+      "repeat_jaccards": [
+        0.863013698630137,
+        0.863013698630137,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T02",
+      "query": "fashionable women's dresses",
+      "counts": [
+        72,
+        72,
+        72
+      ],
+      "repeat_jaccards": [
+        0.92,
+        0.9459459459459459,
+        0.9459459459459459
+      ]
+    },
+    {
+      "condition_id": "T03",
+      "query": "stylish women's dresses",
+      "counts": [
+        72,
+        70,
+        71
+      ],
+      "repeat_jaccards": [
+        0.868421052631579,
+        0.881578947368421,
+        0.9583333333333334
+      ]
+    },
+    {
+      "condition_id": "T04",
+      "query": "trendy women's dresses",
+      "counts": [
+        66,
+        67,
+        67
+      ],
+      "repeat_jaccards": [
+        0.927536231884058,
+        0.927536231884058,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T05",
+      "query": "designer women's dresses",
+      "counts": [
+        65,
+        64,
+        64
+      ],
+      "repeat_jaccards": [
+        0.8970588235294118,
+        0.8970588235294118,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T06",
+      "query": "luxury women's dresses",
+      "counts": [
+        67,
+        68,
+        68
+      ],
+      "repeat_jaccards": [
+        0.9285714285714286,
+        0.9285714285714286,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T07",
+      "query": "minimalist women's dresses",
+      "counts": [
+        75,
+        74,
+        74
+      ],
+      "repeat_jaccards": [
+        0.7738095238095238,
+        0.7738095238095238,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T08",
+      "query": "quiet luxury women's dresses",
+      "counts": [
+        31,
+        31,
+        31
+      ],
+      "repeat_jaccards": [
+        0.9375,
+        0.9375,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T09",
+      "query": "bold women's dresses",
+      "counts": [
+        61,
+        61,
+        60
+      ],
+      "repeat_jaccards": [
+        0.8769230769230769,
+        0.890625,
+        0.9516129032258065
+      ]
+    },
+    {
+      "condition_id": "T10",
+      "query": "timeless women's dresses",
+      "counts": [
+        50,
+        54,
+        52
+      ],
+      "repeat_jaccards": [
+        0.7333333333333333,
+        0.7288135593220338,
+        0.9272727272727272
+      ]
+    },
+    {
+      "condition_id": "T11",
+      "query": "Show me women's dresses.",
+      "counts": [
+        70,
+        69,
+        69
+      ],
+      "repeat_jaccards": [
+        0.8783783783783784,
+        0.8533333333333334,
+        0.9714285714285714
+      ]
+    },
+    {
+      "condition_id": "T12",
+      "query": "Show me fashionable women's dresses.",
+      "counts": [
+        71,
+        71,
+        71
+      ],
+      "repeat_jaccards": [
+        0.8205128205128205,
+        0.775,
+        0.9452054794520548
+      ]
+    },
+    {
+      "condition_id": "T13",
+      "query": "I'm going out for the evening. Show me women's dresses.",
+      "counts": [
+        69,
+        69,
+        69
+      ],
+      "repeat_jaccards": [
+        0.9436619718309859,
+        0.9436619718309859,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T14",
+      "query": "I'm going out for the evening. Show me stylish women's dresses.",
+      "counts": [
+        66,
+        65,
+        65
+      ],
+      "repeat_jaccards": [
+        0.8714285714285714,
+        0.8714285714285714,
+        0.9696969696969697
+      ]
+    },
+    {
+      "condition_id": "T15",
+      "query": "I'm going to dinner at an upscale restaurant. Show me women's dresses.",
+      "counts": [
+        39,
+        40,
+        40
+      ],
+      "repeat_jaccards": [
+        0.8809523809523809,
+        0.8809523809523809,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T16",
+      "query": "I'm going to an art gallery opening. Show me women's dresses.",
+      "counts": [
+        17,
+        18,
+        19
+      ],
+      "repeat_jaccards": [
+        0.8421052631578947,
+        0.8,
+        0.9473684210526315
+      ]
+    },
+    {
+      "condition_id": "T17",
+      "query": "I'm attending a summer wedding as a guest. Show me women's dresses.",
+      "counts": [
+        62,
+        63,
+        62
+      ],
+      "repeat_jaccards": [
+        0.8939393939393939,
+        0.9076923076923077,
+        0.9841269841269841
+      ]
+    },
+    {
+      "condition_id": "T18",
+      "query": "I'm meeting friends for a casual brunch. Show me women's dresses.",
+      "counts": [
+        33,
+        34,
+        34
+      ],
+      "repeat_jaccards": [
+        0.9142857142857143,
+        0.9142857142857143,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T19",
+      "query": "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos.",
+      "counts": [
+        57,
+        60,
+        58
+      ],
+      "repeat_jaccards": [
+        0.8571428571428571,
+        0.8852459016393442,
+        0.9344262295081968
+      ]
+    },
+    {
+      "condition_id": "T20",
+      "query": "Show me women's dresses. I prefer bold colors, expressive prints, and statement details.",
+      "counts": [
+        59,
+        59,
+        59
+      ],
+      "repeat_jaccards": [
+        0.84375,
+        0.84375,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T21",
+      "query": "Show me women's dresses from lesser-known designer labels.",
+      "counts": [
+        0,
+        0,
+        0
+      ],
+      "repeat_jaccards": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "condition_id": "T22",
+      "query": "Show me women's dresses from widely recognized designer labels.",
+      "counts": [
+        32,
+        32,
+        32
+      ],
+      "repeat_jaccards": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T23",
+      "query": "Show me women's dresses that are trending now, as of September 27, 2026.",
+      "counts": [
+        26,
+        25,
+        25
+      ],
+      "repeat_jaccards": [
+        0.9615384615384616,
+        0.9615384615384616,
+        1.0
+      ]
+    },
+    {
+      "condition_id": "T24",
+      "query": "What women's dress styles are fashion writers and shoppers talking about now, as of September 27, 2026? Show me dresses that fit.",
+      "counts": [
+        45,
+        45,
+        45
+      ],
+      "repeat_jaccards": [
+        0.9148936170212766,
+        0.9148936170212766,
+        1.0
+      ]
+    }
+  ],
+  "order_checks": [
+    {
+      "run_id": "R1-T20",
+      "phase": "original",
+      "records": 59,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T12",
+      "phase": "original",
+      "records": 71,
+      "adjacent_score_rise_positions": [
+        65
+      ]
+    },
+    {
+      "run_id": "R1-T05",
+      "phase": "original",
+      "records": 65,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T17",
+      "phase": "original",
+      "records": 62,
+      "adjacent_score_rise_positions": [
+        62
+      ]
+    },
+    {
+      "run_id": "R1-T03",
+      "phase": "original",
+      "records": 72,
+      "adjacent_score_rise_positions": [
+        66
+      ]
+    },
+    {
+      "run_id": "R1-T14",
+      "phase": "original",
+      "records": 66,
+      "adjacent_score_rise_positions": [
+        63
+      ]
+    },
+    {
+      "run_id": "R1-T11",
+      "phase": "original",
+      "records": 70,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T01",
+      "phase": "original",
+      "records": 68,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T19",
+      "phase": "original",
+      "records": 57,
+      "adjacent_score_rise_positions": [
+        52
+      ]
+    },
+    {
+      "run_id": "R1-T15",
+      "phase": "original",
+      "records": 39,
+      "adjacent_score_rise_positions": [
+        38
+      ]
+    },
+    {
+      "run_id": "R1-T16",
+      "phase": "original",
+      "records": 17,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T10",
+      "phase": "original",
+      "records": 50,
+      "adjacent_score_rise_positions": [
+        50
+      ]
+    },
+    {
+      "run_id": "R1-T06",
+      "phase": "original",
+      "records": 67,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T08",
+      "phase": "original",
+      "records": 31,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T13",
+      "phase": "original",
+      "records": 69,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T04",
+      "phase": "original",
+      "records": 66,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T07",
+      "phase": "original",
+      "records": 75,
+      "adjacent_score_rise_positions": [
+        75
+      ]
+    },
+    {
+      "run_id": "R1-T02",
+      "phase": "original",
+      "records": 72,
+      "adjacent_score_rise_positions": [
+        65
+      ]
+    },
+    {
+      "run_id": "R1-T09",
+      "phase": "original",
+      "records": 61,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T18",
+      "phase": "original",
+      "records": 33,
+      "adjacent_score_rise_positions": [
+        33
+      ]
+    },
+    {
+      "run_id": "R2-T11",
+      "phase": "original",
+      "records": 69,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T19",
+      "phase": "original",
+      "records": 60,
+      "adjacent_score_rise_positions": [
+        51
+      ]
+    },
+    {
+      "run_id": "R2-T20",
+      "phase": "original",
+      "records": 59,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T14",
+      "phase": "original",
+      "records": 65,
+      "adjacent_score_rise_positions": [
+        62
+      ]
+    },
+    {
+      "run_id": "R2-T12",
+      "phase": "original",
+      "records": 71,
+      "adjacent_score_rise_positions": [
+        63
+      ]
+    },
+    {
+      "run_id": "R2-T16",
+      "phase": "original",
+      "records": 18,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T03",
+      "phase": "original",
+      "records": 70,
+      "adjacent_score_rise_positions": [
+        66
+      ]
+    },
+    {
+      "run_id": "R2-T01",
+      "phase": "original",
+      "records": 68,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T09",
+      "phase": "original",
+      "records": 61,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T02",
+      "phase": "original",
+      "records": 72,
+      "adjacent_score_rise_positions": [
+        65
+      ]
+    },
+    {
+      "run_id": "R2-T08",
+      "phase": "original",
+      "records": 31,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T06",
+      "phase": "original",
+      "records": 68,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T18",
+      "phase": "original",
+      "records": 34,
+      "adjacent_score_rise_positions": [
+        33
+      ]
+    },
+    {
+      "run_id": "R2-T04",
+      "phase": "original",
+      "records": 67,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T07",
+      "phase": "original",
+      "records": 74,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T05",
+      "phase": "original",
+      "records": 64,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T15",
+      "phase": "original",
+      "records": 40,
+      "adjacent_score_rise_positions": [
+        39
+      ]
+    },
+    {
+      "run_id": "R2-T10",
+      "phase": "original",
+      "records": 54,
+      "adjacent_score_rise_positions": [
+        54
+      ]
+    },
+    {
+      "run_id": "R2-T17",
+      "phase": "original",
+      "records": 63,
+      "adjacent_score_rise_positions": [
+        63
+      ]
+    },
+    {
+      "run_id": "R2-T13",
+      "phase": "original",
+      "records": 69,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T03",
+      "phase": "original",
+      "records": 71,
+      "adjacent_score_rise_positions": [
+        66
+      ]
+    },
+    {
+      "run_id": "R3-T02",
+      "phase": "original",
+      "records": 72,
+      "adjacent_score_rise_positions": [
+        65
+      ]
+    },
+    {
+      "run_id": "R3-T11",
+      "phase": "original",
+      "records": 69,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T06",
+      "phase": "original",
+      "records": 68,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T04",
+      "phase": "original",
+      "records": 67,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T12",
+      "phase": "original",
+      "records": 71,
+      "adjacent_score_rise_positions": [
+        63
+      ]
+    },
+    {
+      "run_id": "R3-T09",
+      "phase": "original",
+      "records": 60,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T19",
+      "phase": "original",
+      "records": 58,
+      "adjacent_score_rise_positions": [
+        52
+      ]
+    },
+    {
+      "run_id": "R3-T07",
+      "phase": "original",
+      "records": 74,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T18",
+      "phase": "original",
+      "records": 34,
+      "adjacent_score_rise_positions": [
+        33
+      ]
+    },
+    {
+      "run_id": "R3-T05",
+      "phase": "original",
+      "records": 64,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T17",
+      "phase": "original",
+      "records": 62,
+      "adjacent_score_rise_positions": [
+        62
+      ]
+    },
+    {
+      "run_id": "R3-T20",
+      "phase": "original",
+      "records": 59,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T01",
+      "phase": "original",
+      "records": 68,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T16",
+      "phase": "original",
+      "records": 19,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T14",
+      "phase": "original",
+      "records": 65,
+      "adjacent_score_rise_positions": [
+        62
+      ]
+    },
+    {
+      "run_id": "R3-T10",
+      "phase": "original",
+      "records": 52,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T08",
+      "phase": "original",
+      "records": 31,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T13",
+      "phase": "original",
+      "records": 69,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T15",
+      "phase": "original",
+      "records": 40,
+      "adjacent_score_rise_positions": [
+        39
+      ]
+    },
+    {
+      "run_id": "R1-T24",
+      "phase": "extension",
+      "records": 45,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R1-T22",
+      "phase": "extension",
+      "records": 32,
+      "adjacent_score_rise_positions": [
+        29
+      ]
+    },
+    {
+      "run_id": "R1-T23",
+      "phase": "extension",
+      "records": 26,
+      "adjacent_score_rise_positions": [
+        26
+      ]
+    },
+    {
+      "run_id": "R1-T21",
+      "phase": "extension",
+      "records": 0,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T22",
+      "phase": "extension",
+      "records": 32,
+      "adjacent_score_rise_positions": [
+        29
+      ]
+    },
+    {
+      "run_id": "R2-T21",
+      "phase": "extension",
+      "records": 0,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R2-T23",
+      "phase": "extension",
+      "records": 25,
+      "adjacent_score_rise_positions": [
+        25
+      ]
+    },
+    {
+      "run_id": "R2-T24",
+      "phase": "extension",
+      "records": 45,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T21",
+      "phase": "extension",
+      "records": 0,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T24",
+      "phase": "extension",
+      "records": 45,
+      "adjacent_score_rise_positions": []
+    },
+    {
+      "run_id": "R3-T23",
+      "phase": "extension",
+      "records": 25,
+      "adjacent_score_rise_positions": [
+        25
+      ]
+    },
+    {
+      "run_id": "R3-T22",
+      "phase": "extension",
+      "records": 32,
+      "adjacent_score_rise_positions": [
+        29
+      ]
+    }
+  ],
+  "nonempty_calls_with_adjacent_score_rise": 33,
+  "nonempty_calls": 69
+}

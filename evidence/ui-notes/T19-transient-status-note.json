@@ -1,0 +1,8 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "recorded_utc": "2026-09-27T17:14:30.020308+00:00",
+  "origin": "Manual transcription by lead of CUA tool output in this conversation; not original AX bytes saved at time",
+  "observed_tool_output_excerpt": "~ 477 text Browser Opening region selector\n~ 495 text Visiting Google",
+  "meaning": "The Muse UI displayed a Google-navigation status during T19. Does not by itself prove a search completed or expose its exact query.",
+  "subsequent_capture_caveat": "15-case-T19-google-status-ax.txt and16-case-T19-google-status.png were captured after the transient label changed; their names do not establish Google is visible. Preserve originals, rely on their actual contents."
+}

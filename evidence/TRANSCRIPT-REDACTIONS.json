@@ -1,0 +1,21 @@
+{
+  "what": "account id and access token in muse.ai/files share links replaced with REDACTED; domain, file id and file name kept; nothing else changed",
+  "files": [
+    {
+      "file": "transcript/muse-chat-2026-09-28.txt",
+      "original_name": "Conversation with Muse AI_09-28-2026_1790560494.txt",
+      "original_sha256": "e8f7bf893a52b7c2c6805483b4e23d4ae93ced5276b298d76c7cd9ea1272c461",
+      "original_bytes": 952458,
+      "redacted_sha256": "15daf0db50843e140a0b794044694fe51899794d144263ec929d1d0091d2d0ec",
+      "links_redacted": 120
+    },
+    {
+      "file": "transcript/muse-chat-2026-09-28.manifest.json",
+      "original_name": "manifest.json",
+      "original_sha256": "d87af99682ba7653eac90b609ec18bd51d54c6caddb7458eaca273f5841c2d70",
+      "original_bytes": 1467963,
+      "redacted_sha256": "f01303c4d19211968e59a00acea603b00354c865959d429ccda7b6cf88e1b77d",
+      "links_redacted": 120
+    }
+  ]
+}

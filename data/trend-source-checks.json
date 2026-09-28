@@ -1,0 +1,42 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "checked_utc": "2026-09-27T18:29:47.036711+00:00",
+  "method": "Independent public web-tool page extraction; not the original Muse browser trace",
+  "sources": [
+    {
+      "url": "https://editorialist.com/fashion/fall-fashion-trends/",
+      "displayed_updated_date": "2026-09-18",
+      "displayed_author": "Harry Archer",
+      "muse_transcription_author": "Sara Holzman",
+      "author_agrees": false,
+      "supported_topics": [
+        "Art Deco-influenced dresses",
+        "purple",
+        "satin and velvet in runway discussion"
+      ],
+      "source_type": "fashion editorial with commerce links and commission disclosure",
+      "source_lines": "134-159,188-192,301-303,421-430"
+    },
+    {
+      "url": "https://project-motherhood.com/fall-2026-fashion-trends/",
+      "displayed_dates": [
+        "2026-09-10",
+        "2026-09-13"
+      ],
+      "displayed_author": "Allison Cooper",
+      "supported_topics": [
+        "velvet beyond holiday wear",
+        "romantic details",
+        "dark-background florals"
+      ],
+      "source_type": "personal fashion/lifestyle commentary with shopping links",
+      "source_lines": "5-21,270-349"
+    }
+  ],
+  "limits": [
+    "Both displayed dates are within the prespecified90-day window.",
+    "Page text corroborates topical coverage, not broad public adoption or shoppers discussing it.",
+    "An independent later fetch does not authenticate Muse historical navigation.",
+    "Pages may change; the discrepancy is between captured accounts, not proof of its cause."
+  ]
+}

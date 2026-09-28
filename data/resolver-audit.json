@@ -1,0 +1,695 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "scope": "Five supplied normalized output files for four products from two unchanged saved sources; one additional rejection reported in a transcription and UI activity summary.",
+  "manifests": [
+    {
+      "path": "catalog-code-continuation-2026-09-26/extracted-round-3/resolver-order-evidence-20260927/MANIFEST.csv",
+      "rows_verified": 29,
+      "sha256": "3222616cb2bac5e17cd1ee34f21fcdcd4f8d4bfd40abcaa2b719f6b64b281c62"
+    },
+    {
+      "path": "catalog-code-continuation-2026-09-26/extracted-round-4/resolver-order2-evidence-20260927/MANIFEST.csv",
+      "rows_verified": 26,
+      "sha256": "4a2f2b879b7a46cbbe7a295f7a16582441a95e35c09810792b7af6283a8b612f"
+    }
+  ],
+  "original_input_byte_copies_match": true,
+  "input_sha256": {
+    "catalog": "cf3dc36017c30c1782343fd16adb0b364e329b94bd24b44217a6bf6cf256b958",
+    "browser": "0cdb84d582d0925ca9a93be5ad93cac63834a8be30585dacadc740ceac98555c"
+  },
+  "source_product_counts": {
+    "catalog": 55,
+    "browser": 6
+  },
+  "product_values_identical_across_five_outputs": true,
+  "T1_T4_outputs_byte_identical": true,
+  "browser_join": "Exact unique URL in saved browser source; result_id is omitted in normalized browser products.",
+  "tests": [
+    {
+      "test": "T1",
+      "input_ids": [
+        "8846811678756793",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67",
+        "browser:3c000d8908c61fee39e253bb"
+      ],
+      "output_ids_joined_to_source": [
+        "8846811678756793",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67",
+        "browser:3c000d8908c61fee39e253bb"
+      ],
+      "matches_first_occurrence_unique_input_order": true,
+      "output_count": 4,
+      "source_file_order": [
+        "catalog",
+        "browser"
+      ],
+      "request_sha256": "c2243a7f45535281f56cfcbfb3a6a98b8de7fc9dc20f128f78f95a55407ff0f6",
+      "returned_file_sha256": "d5b4b87f1e1ab82aded810f362dcced2a1004419a4160850a149f8ef9f35b65c",
+      "field_projection": [
+        {
+          "selected_id": "8846811678756793",
+          "type": "catalog",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "28048618051435399",
+          "type": "catalog",
+          "output_field_names": [
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "brand",
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "sale_price",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:39aac415da9cab9d0f488b67",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:3c000d8908c61fee39e253bb",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        }
+      ]
+    },
+    {
+      "test": "T2",
+      "input_ids": [
+        "browser:3c000d8908c61fee39e253bb",
+        "browser:39aac415da9cab9d0f488b67",
+        "28048618051435399",
+        "8846811678756793"
+      ],
+      "output_ids_joined_to_source": [
+        "browser:3c000d8908c61fee39e253bb",
+        "browser:39aac415da9cab9d0f488b67",
+        "28048618051435399",
+        "8846811678756793"
+      ],
+      "matches_first_occurrence_unique_input_order": true,
+      "output_count": 4,
+      "source_file_order": [
+        "catalog",
+        "browser"
+      ],
+      "request_sha256": "b8b81e463b1052c5e6885ef91c4f352f45e337a4ced632e23f724b24e6422b03",
+      "returned_file_sha256": "6525548654b9c6e98ad24cdd5e9b42b10cb438a8b37c0c4fdf07b839de4a6254",
+      "field_projection": [
+        {
+          "selected_id": "browser:3c000d8908c61fee39e253bb",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:39aac415da9cab9d0f488b67",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "28048618051435399",
+          "type": "catalog",
+          "output_field_names": [
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "brand",
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "sale_price",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "8846811678756793",
+          "type": "catalog",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "size"
+          ],
+          "changed_shared_fields": []
+        }
+      ]
+    },
+    {
+      "test": "T3",
+      "input_ids": [
+        "28048618051435399",
+        "8846811678756793",
+        "28048618051435399",
+        "browser:3c000d8908c61fee39e253bb",
+        "browser:39aac415da9cab9d0f488b67"
+      ],
+      "output_ids_joined_to_source": [
+        "28048618051435399",
+        "8846811678756793",
+        "browser:3c000d8908c61fee39e253bb",
+        "browser:39aac415da9cab9d0f488b67"
+      ],
+      "matches_first_occurrence_unique_input_order": true,
+      "output_count": 4,
+      "source_file_order": [
+        "catalog",
+        "browser"
+      ],
+      "request_sha256": "7808f5d64e5877b501383821d5d11edb5ca0883bc39f22cce8e653f9d19d8fa3",
+      "returned_file_sha256": "9f81745ec533f6063f6b475d983353b663c04080e5d6c225d5f7403d295d9702",
+      "field_projection": [
+        {
+          "selected_id": "28048618051435399",
+          "type": "catalog",
+          "output_field_names": [
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "brand",
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "sale_price",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "8846811678756793",
+          "type": "catalog",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:3c000d8908c61fee39e253bb",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:39aac415da9cab9d0f488b67",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        }
+      ]
+    },
+    {
+      "test": "T4",
+      "input_ids": [
+        "8846811678756793",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67",
+        "browser:3c000d8908c61fee39e253bb"
+      ],
+      "output_ids_joined_to_source": [
+        "8846811678756793",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67",
+        "browser:3c000d8908c61fee39e253bb"
+      ],
+      "matches_first_occurrence_unique_input_order": true,
+      "output_count": 4,
+      "source_file_order": [
+        "browser",
+        "catalog"
+      ],
+      "request_sha256": "126aac57a0662e0c2f26a0dd7988876ba66064eeef88379cf8f8dcedd05ec502",
+      "returned_file_sha256": "d5b4b87f1e1ab82aded810f362dcced2a1004419a4160850a149f8ef9f35b65c",
+      "field_projection": [
+        {
+          "selected_id": "8846811678756793",
+          "type": "catalog",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "28048618051435399",
+          "type": "catalog",
+          "output_field_names": [
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "brand",
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "sale_price",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:39aac415da9cab9d0f488b67",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:3c000d8908c61fee39e253bb",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        }
+      ]
+    },
+    {
+      "test": "T5",
+      "input_ids": [
+        "browser:3c000d8908c61fee39e253bb",
+        "8846811678756793",
+        "browser:3c000d8908c61fee39e253bb",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67"
+      ],
+      "output_ids_joined_to_source": [
+        "browser:3c000d8908c61fee39e253bb",
+        "8846811678756793",
+        "28048618051435399",
+        "browser:39aac415da9cab9d0f488b67"
+      ],
+      "matches_first_occurrence_unique_input_order": true,
+      "output_count": 4,
+      "source_file_order": [
+        "catalog",
+        "browser"
+      ],
+      "request_sha256": "210fbf95ca14a9dd09ad567de1876b8556b90132d217e335fbbe4f319b018e5b",
+      "returned_file_sha256": "70d70e606a3437cae450b8be9290fb6504c72d6a38ce1980a688b6090bbe528a",
+      "field_projection": [
+        {
+          "selected_id": "browser:3c000d8908c61fee39e253bb",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "8846811678756793",
+          "type": "catalog",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "28048618051435399",
+          "type": "catalog",
+          "output_field_names": [
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "product_id",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "brand",
+            "category",
+            "color",
+            "description",
+            "gender",
+            "material",
+            "pattern",
+            "rank",
+            "rating",
+            "sale_price",
+            "size"
+          ],
+          "changed_shared_fields": []
+        },
+        {
+          "selected_id": "browser:39aac415da9cab9d0f488b67",
+          "type": "browser",
+          "output_field_names": [
+            "brand",
+            "citation_id",
+            "image_url",
+            "is_agentic_checkout_completion_enabled",
+            "is_agentic_checkout_creation_enabled",
+            "is_image_available",
+            "name",
+            "price",
+            "sale_price",
+            "type",
+            "url"
+          ],
+          "source_only_fields": [
+            "availability",
+            "result_id"
+          ],
+          "changed_shared_fields": []
+        }
+      ]
+    }
+  ],
+  "limit_test": {
+    "test": "T6",
+    "selected_count": 51,
+    "distinct_count": 51,
+    "first_51_distinct_catalog_ids_match": true,
+    "reported_error": "shopping.resolve_results requires 1 to 50 selected_ids",
+    "request_sha256": "ad9c77aff1175dc22378b6d61c5da89ed0ea3a1b223c23d1e4da2d19c35a0d2e",
+    "response_transcription_sha256": "36da7129f25f3cf01429b7996b2c0a0b4e77defb896b493d5c50c21f8657af98",
+    "returned_file_present": false,
+    "provenance": "Muse-authored transcription corroborated by displayed UI activity summary; no native raw call/response export."
+  },
+  "limits": [
+    "No original implementation source recovered or supplied code executed.",
+    "No widget created in this experiment; normalized order is distinct from visible UI order.",
+    "No new catalog retrieval calls; no conclusion about scoring or catalog order.",
+    "Consistency checks do not independently authenticate remote execution or origin.",
+    "Unknown IDs, identity collisions, other record types, and 50 valid IDs were not tested."
+  ]
+}

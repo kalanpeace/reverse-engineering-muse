@@ -1,0 +1,130 @@
+{
+  "responses_indexed": 446,
+  "setting_groups": 92,
+  "comparisons": [
+    {
+      "change": "--brand",
+      "baseline": "--query 32 oz stainless steel insulated water bottle -n 50",
+      "changed": "--query 32 oz stainless steel insulated water bottle --brand Hydro Flask -n 50",
+      "pool_shared_of_100": 5,
+      "output_shared": 3,
+      "output_sizes": [
+        40,
+        47
+      ]
+    },
+    {
+      "change": "--color",
+      "baseline": "--query 32 oz stainless steel insulated water bottle -n 50",
+      "changed": "--query 32 oz stainless steel insulated water bottle --color green -n 50",
+      "pool_shared_of_100": 90,
+      "output_shared": 35,
+      "output_sizes": [
+        40,
+        42
+      ]
+    },
+    {
+      "change": "--prefer-brand",
+      "baseline": "--query 32 oz stainless steel insulated water bottle -n 50",
+      "changed": "--query 32 oz stainless steel insulated water bottle --prefer-brand Hydro Flask -n 50",
+      "pool_shared_of_100": 97,
+      "output_shared": 38,
+      "output_sizes": [
+        40,
+        41
+      ]
+    },
+    {
+      "change": "--brand",
+      "baseline": "--query stainless steel frying pan -n 50",
+      "changed": "--query stainless steel frying pan --brand Misen -n 50",
+      "pool_shared_of_100": 7,
+      "output_shared": 0,
+      "output_sizes": [
+        43,
+        17
+      ]
+    },
+    {
+      "change": "--prefer-brand",
+      "baseline": "--query stainless steel frying pan -n 50",
+      "changed": "--query stainless steel frying pan --prefer-brand Misen -n 50",
+      "pool_shared_of_100": 99,
+      "output_shared": 42,
+      "output_sizes": [
+        43,
+        43
+      ]
+    },
+    {
+      "change": "brand word in the query",
+      "baseline": "--query stainless steel frying pan -n 50",
+      "changed": "--query Misen stainless steel frying pan -n 50",
+      "pool_shared_of_100": 37,
+      "output_shared": 14,
+      "output_sizes": [
+        43,
+        52
+      ]
+    },
+    {
+      "change": "-n 10 instead of 50",
+      "baseline": "--query small air purifier for a bedroom --brand Levoit -n 50",
+      "changed": "--query small air purifier for a bedroom --brand Levoit -n 10",
+      "pool_shared_of_100": 24,
+      "output_shared": 10,
+      "output_sizes": [
+        50,
+        62
+      ]
+    },
+    {
+      "change": "-n 11 instead of 50",
+      "baseline": "--query stainless steel frying pan --brand Misen -n 50",
+      "changed": "--query stainless steel frying pan --brand Misen -n 11",
+      "pool_shared_of_100": 22,
+      "output_shared": 4,
+      "output_sizes": [
+        17,
+        5
+      ]
+    },
+    {
+      "change": "\"Show me … .\" wording",
+      "baseline": "--query women's dresses -n 50",
+      "changed": "--query Show me women's dresses. -n 50",
+      "pool_shared_of_100": 32,
+      "output_shared": 17,
+      "output_sizes": [
+        68,
+        70
+      ]
+    },
+    {
+      "change": "\"fashionable\" added",
+      "baseline": "--query women's dresses -n 50",
+      "changed": "--query fashionable women's dresses -n 50",
+      "pool_shared_of_100": 28,
+      "output_shared": 19,
+      "output_sizes": [
+        68,
+        72
+      ]
+    }
+  ],
+  "repeats": {
+    "groups_with_2_or_more_runs": 92,
+    "groups_with_identical_pool_every_run": 63,
+    "of_those_output_still_changed": 23
+  },
+  "multiple_queries": {
+    "unicorn_lists_for_two_queries": 2,
+    "lists_identical_to_solo_searches": true,
+    "combined_output_within_union_of_lists": true,
+    "union_of_lists": 186,
+    "returned_by_neither_solo_search": 3,
+    "of_those_in_frying_pan_list": 1,
+    "of_those_in_skillet_list": 2
+  }
+}

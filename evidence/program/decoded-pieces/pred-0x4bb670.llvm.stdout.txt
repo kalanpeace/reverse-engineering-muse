@@ -1,0 +1,120 @@
+
+pred-0x4bb670.constructed.elf:	file format elf64-x86-64
+
+Disassembly of section .text:
+
+00000000004bb670 <.text>:
+  4bb670: 48 85 d2                     	test	rdx, rdx
+  4bb673: 0f 84 7f 00 00 00            	je	0x4bb6f8 <.text+0x88>
+  4bb679: 48 83 fa 01                  	cmp	rdx, 0x1
+  4bb67d: 0f 85 7c 00 00 00            	jne	0x4bb6ff <.text+0x8f>
+  4bb683: 0f b6 3e                     	movzx	edi, byte ptr [rsi]
+  4bb686: 31 c0                        	xor	eax, eax
+  4bb688: 83 ff 2b                     	cmp	edi, 0x2b
+  4bb68b: 0f 84 c8 00 00 00            	je	0x4bb759 <.text+0xe9>
+  4bb691: 83 ff 2d                     	cmp	edi, 0x2d
+  4bb694: 0f 84 bf 00 00 00            	je	0x4bb759 <.text+0xe9>
+  4bb69a: 40 80 ff 2d                  	cmp	dil, 0x2d
+  4bb69e: 74 68                        	je	0x4bb708 <.text+0x98>
+  4bb6a0: 40 0f b6 c7                  	movzx	eax, dil
+  4bb6a4: 83 f8 2b                     	cmp	eax, 0x2b
+  4bb6a7: 75 06                        	jne	0x4bb6af <.text+0x3f>
+  4bb6a9: 48 ff c6                     	inc	rsi
+  4bb6ac: 48 ff ca                     	dec	rdx
+  4bb6af: 48 83 fa 10                  	cmp	rdx, 0x10
+  4bb6b3: 0f 83 a4 00 00 00            	jae	0x4bb75d <.text+0xed>
+  4bb6b9: b8 01 00 00 00               	mov	eax, 0x1
+  4bb6be: 48 85 d2                     	test	rdx, rdx
+  4bb6c1: 0f 84 21 01 00 00            	je	0x4bb7e8 <.text+0x178>
+  4bb6c7: 31 ff                        	xor	edi, edi
+  4bb6c9: 31 c9                        	xor	ecx, ecx
+  4bb6cb: 0f 1f 44 00 00               	nop	dword ptr [rax + rax]
+  4bb6d0: 44 0f b6 04 3e               	movzx	r8d, byte ptr [rsi + rdi]
+  4bb6d5: 41 83 c0 d0                  	add	r8d, -0x30
+  4bb6d9: 41 83 f8 09                  	cmp	r8d, 0x9
+  4bb6dd: 0f 87 ff 00 00 00            	ja	0x4bb7e2 <.text+0x172>
+  4bb6e3: 48 8d 0c 89                  	lea	rcx, [rcx + 4*rcx]
+  4bb6e7: 45 89 c0                     	mov	r8d, r8d
+  4bb6ea: 49 8d 0c 48                  	lea	rcx, [r8 + 2*rcx]
+  4bb6ee: 48 ff c7                     	inc	rdi
+  4bb6f1: 48 39 fa                     	cmp	rdx, rdi
+  4bb6f4: 75 da                        	jne	0x4bb6d0 <.text+0x60>
+  4bb6f6: eb 61                        	jmp	0x4bb759 <.text+0xe9>
+  4bb6f8: 48 89 d0                     	mov	rax, rdx
+  4bb6fb: 48 89 ca                     	mov	rdx, rcx
+  4bb6fe: c3                           	ret
+  4bb6ff: 0f b6 3e                     	movzx	edi, byte ptr [rsi]
+  4bb702: 40 80 ff 2d                  	cmp	dil, 0x2d
+  4bb706: 75 98                        	jne	0x4bb6a0 <.text+0x30>
+  4bb708: 48 83 fa 11                  	cmp	rdx, 0x11
+  4bb70c: 0f 83 8c 00 00 00            	jae	0x4bb79e <.text+0x12e>
+  4bb712: 48 89 d0                     	mov	rax, rdx
+  4bb715: 48 ff c8                     	dec	rax
+  4bb718: 0f 84 d0 00 00 00            	je	0x4bb7ee <.text+0x17e>
+  4bb71e: bf 01 00 00 00               	mov	edi, 0x1
+  4bb723: 31 c9                        	xor	ecx, ecx
+  4bb725: 66 66 2e 0f 1f 84 00 00 00 00 00     	nop	word ptr cs:[rax + rax]
+  4bb730: 0f b6 04 3e                  	movzx	eax, byte ptr [rsi + rdi]
+  4bb734: 83 c0 d0                     	add	eax, -0x30
+  4bb737: 83 f8 09                     	cmp	eax, 0x9
+  4bb73a: 0f 87 a2 00 00 00            	ja	0x4bb7e2 <.text+0x172>
+  4bb740: 48 01 c9                     	add	rcx, rcx
+  4bb743: 48 8d 0c 89                  	lea	rcx, [rcx + 4*rcx]
+  4bb747: 89 c0                        	mov	eax, eax
+  4bb749: 48 29 c1                     	sub	rcx, rax
+  4bb74c: 48 ff c7                     	inc	rdi
+  4bb74f: b8 01 00 00 00               	mov	eax, 0x1
+  4bb754: 48 39 fa                     	cmp	rdx, rdi
+  4bb757: 75 d7                        	jne	0x4bb730 <.text+0xc0>
+  4bb759: 48 89 ca                     	mov	rdx, rcx
+  4bb75c: c3                           	ret
+  4bb75d: 31 c0                        	xor	eax, eax
+  4bb75f: 31 ff                        	xor	edi, edi
+  4bb761: 31 c9                        	xor	ecx, ecx
+  4bb763: 66 66 66 66 2e 0f 1f 84 00 00 00 00 00       	nop	word ptr cs:[rax + rax]
+  4bb770: 48 6b c9 0a                  	imul	rcx, rcx, 0xa
+  4bb774: 70 68                        	jo	0x4bb7de <.text+0x16e>
+  4bb776: 44 0f b6 04 3e               	movzx	r8d, byte ptr [rsi + rdi]
+  4bb77b: 41 83 c0 d0                  	add	r8d, -0x30
+  4bb77f: 41 83 f8 09                  	cmp	r8d, 0x9
+  4bb783: 77 59                        	ja	0x4bb7de <.text+0x16e>
+  4bb785: 45 89 c0                     	mov	r8d, r8d
+  4bb788: 4c 01 c1                     	add	rcx, r8
+  4bb78b: 70 51                        	jo	0x4bb7de <.text+0x16e>
+  4bb78d: 48 ff c7                     	inc	rdi
+  4bb790: 48 39 fa                     	cmp	rdx, rdi
+  4bb793: 75 db                        	jne	0x4bb770 <.text+0x100>
+  4bb795: b8 01 00 00 00               	mov	eax, 0x1
+  4bb79a: 48 89 ca                     	mov	rdx, rcx
+  4bb79d: c3                           	ret
+  4bb79e: bf 01 00 00 00               	mov	edi, 0x1
+  4bb7a3: 31 c0                        	xor	eax, eax
+  4bb7a5: 31 c9                        	xor	ecx, ecx
+  4bb7a7: 66 0f 1f 84 00 00 00 00 00   	nop	word ptr [rax + rax]
+  4bb7b0: 48 6b c9 0a                  	imul	rcx, rcx, 0xa
+  4bb7b4: 70 28                        	jo	0x4bb7de <.text+0x16e>
+  4bb7b6: 44 0f b6 04 3e               	movzx	r8d, byte ptr [rsi + rdi]
+  4bb7bb: 41 83 c0 d0                  	add	r8d, -0x30
+  4bb7bf: 41 83 f8 09                  	cmp	r8d, 0x9
+  4bb7c3: 77 19                        	ja	0x4bb7de <.text+0x16e>
+  4bb7c5: 45 89 c0                     	mov	r8d, r8d
+  4bb7c8: 4c 29 c1                     	sub	rcx, r8
+  4bb7cb: 70 11                        	jo	0x4bb7de <.text+0x16e>
+  4bb7cd: 48 ff c7                     	inc	rdi
+  4bb7d0: 48 39 fa                     	cmp	rdx, rdi
+  4bb7d3: 75 db                        	jne	0x4bb7b0 <.text+0x140>
+  4bb7d5: b8 01 00 00 00               	mov	eax, 0x1
+  4bb7da: 48 89 ca                     	mov	rdx, rcx
+  4bb7dd: c3                           	ret
+  4bb7de: 48 89 ca                     	mov	rdx, rcx
+  4bb7e1: c3                           	ret
+  4bb7e2: 31 c0                        	xor	eax, eax
+  4bb7e4: 48 89 ca                     	mov	rdx, rcx
+  4bb7e7: c3                           	ret
+  4bb7e8: 31 c9                        	xor	ecx, ecx
+  4bb7ea: 48 89 ca                     	mov	rdx, rcx
+  4bb7ed: c3                           	ret
+  4bb7ee: b8 01 00 00 00               	mov	eax, 0x1
+  4bb7f3: 31 c9                        	xor	ecx, ecx
+  4bb7f5: 48 89 ca                     	mov	rdx, rcx
+  4bb7f8: c3                           	ret

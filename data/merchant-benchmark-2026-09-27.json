@@ -1,0 +1,1055 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "local_analyzers": "GPT-6 Luna, max; independent raw recount and lead verification",
+  "sample": "100 controlled catalog calls, not100 autonomous shopping conversations",
+  "date": "2026-09-27",
+  "query_schedule_sha256": "b2de67843849e3bb65af04ce59b6425dd957d9059d49bdf9aab6290589c3f471",
+  "queries": 100,
+  "successful_calls": 100,
+  "requested_per_call": 50,
+  "returned_occurrences": 4088,
+  "distinct_product_ids": 3827,
+  "zero_result_successes": 6,
+  "returned_count": {
+    "min": 0,
+    "median": 47,
+    "max": 67,
+    "over50_calls": 41
+  },
+  "numeric_score_order": {
+    "adjacent_pairs": 3994,
+    "increases": 41,
+    "calls_with_increases": 41
+  },
+  "fields": {
+    "name": {
+      "present_product_occurrences": 4070,
+      "nonempty_product_occurrences": 4070,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "brand": {
+      "present_product_occurrences": 2645,
+      "nonempty_product_occurrences": 2645,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "description": {
+      "present_product_occurrences": 4058,
+      "nonempty_product_occurrences": 4056,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "price": {
+      "present_product_occurrences": 4088,
+      "nonempty_product_occurrences": 4088,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "category": {
+      "present_product_occurrences": 1854,
+      "nonempty_product_occurrences": 1854,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "ranking_score": {
+      "present_product_occurrences": 4088,
+      "nonempty_product_occurrences": 4088,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "url": {
+      "present_product_occurrences": 4088,
+      "nonempty_product_occurrences": 4088,
+      "top_level_product_occurrences_denominator": 4088
+    },
+    "variants": {
+      "present_product_occurrences": 975,
+      "nonempty_product_occurrences": 975,
+      "top_level_product_occurrences_denominator": 4088
+    }
+  },
+  "intent_blocks": {
+    "broad": {
+      "calls": 20,
+      "returned_records": 1047,
+      "median": 52.0,
+      "min": 35,
+      "max": 67
+    },
+    "budget": {
+      "calls": 20,
+      "returned_records": 100,
+      "median": 2.5,
+      "min": 0,
+      "max": 19
+    },
+    "specification": {
+      "calls": 20,
+      "returned_records": 982,
+      "median": 50.0,
+      "min": 29,
+      "max": 65
+    },
+    "use_case": {
+      "calls": 20,
+      "returned_records": 1024,
+      "median": 52.0,
+      "min": 35,
+      "max": 66
+    },
+    "attribute": {
+      "calls": 20,
+      "returned_records": 935,
+      "median": 48.0,
+      "min": 18,
+      "max": 64
+    }
+  },
+  "runs": [
+    {
+      "query_id": "Q041",
+      "query": "Find me womens rain jacket.",
+      "category": "rain_jacket",
+      "intent": "broad",
+      "schedule_position": 1,
+      "returned_records": 43,
+      "stdout_sha256": "654d16dac154225cd8b2a8ccb85cd8f90198147f5eb71f169f1a511725a92276"
+    },
+    {
+      "query_id": "Q001",
+      "query": "Find me stainless steel frying pan.",
+      "category": "frying_pan",
+      "intent": "broad",
+      "schedule_position": 2,
+      "returned_records": 38,
+      "stdout_sha256": "91daf6ac5f476f10b54414e4e88aaad3422f49ae5901ad55f38fa2284a91b861"
+    },
+    {
+      "query_id": "Q061",
+      "query": "Find me bookshelf.",
+      "category": "bookshelf",
+      "intent": "broad",
+      "schedule_position": 3,
+      "returned_records": 40,
+      "stdout_sha256": "2bcc629750229aa34ceb6f0cc0f29157580a25e0bc530acbb2c89d01e85768ca"
+    },
+    {
+      "query_id": "Q091",
+      "query": "Find me dog bed.",
+      "category": "dog_bed",
+      "intent": "broad",
+      "schedule_position": 4,
+      "returned_records": 60,
+      "stdout_sha256": "7dcc5573205e4e92c2bd45f1abea8bca2088cfee6c415a15f5c162303a3b7b16"
+    },
+    {
+      "query_id": "Q081",
+      "query": "Find me laundry basket.",
+      "category": "laundry_basket",
+      "intent": "broad",
+      "schedule_position": 5,
+      "returned_records": 48,
+      "stdout_sha256": "3065cc14b62875dbacdd49391643c2bbfa6c4bdfe314679962ab2d30576eb1f2"
+    },
+    {
+      "query_id": "Q056",
+      "query": "Find me desk lamp.",
+      "category": "desk_lamp",
+      "intent": "broad",
+      "schedule_position": 6,
+      "returned_records": 67,
+      "stdout_sha256": "e459e342c32970471d202243c87465138e44f6c31c0e6429f4dff8f81e0ef660"
+    },
+    {
+      "query_id": "Q066",
+      "query": "Find me queen bed sheets.",
+      "category": "bed_sheets",
+      "intent": "broad",
+      "schedule_position": 7,
+      "returned_records": 57,
+      "stdout_sha256": "152e678d5e819fe982e617d143d70a5d8818b11c203e527e76e375aa287aa7ff"
+    },
+    {
+      "query_id": "Q046",
+      "query": "Find me yoga mat.",
+      "category": "yoga_mat",
+      "intent": "broad",
+      "schedule_position": 8,
+      "returned_records": 60,
+      "stdout_sha256": "562439f73eedfa193b22301829ab37d6755556963eb9652814994be29e609686"
+    },
+    {
+      "query_id": "Q021",
+      "query": "Find me insulated water bottle.",
+      "category": "water_bottle",
+      "intent": "broad",
+      "schedule_position": 9,
+      "returned_records": 49,
+      "stdout_sha256": "a885e4872e8693671495c9641f02cc77e884dc2df608f4dbfd5e45e923e14f3e"
+    },
+    {
+      "query_id": "Q071",
+      "query": "Find me throw blanket.",
+      "category": "throw_blanket",
+      "intent": "broad",
+      "schedule_position": 10,
+      "returned_records": 52,
+      "stdout_sha256": "dc8a67c400382ca545a49e70d1389fbaf18d3887f44d38bc319f529b68f17acf"
+    },
+    {
+      "query_id": "Q086",
+      "query": "Find me home storage bins.",
+      "category": "storage_bins",
+      "intent": "broad",
+      "schedule_position": 11,
+      "returned_records": 61,
+      "stdout_sha256": "fac840d94b930949644442c72798ed7024fc9a5e72b666d6065449e96dce40a0"
+    },
+    {
+      "query_id": "Q026",
+      "query": "Find me everyday backpack.",
+      "category": "backpack",
+      "intent": "broad",
+      "schedule_position": 12,
+      "returned_records": 64,
+      "stdout_sha256": "a34e7252cc89d195ca733d546c11e5a305fa64e95f188371696af8a54bae9373"
+    },
+    {
+      "query_id": "Q031",
+      "query": "Find me carry on suitcase.",
+      "category": "carry_on",
+      "intent": "broad",
+      "schedule_position": 13,
+      "returned_records": 49,
+      "stdout_sha256": "ba943ab043b63f63335b0352afc6a6bbbd9d142612837a2a9381df68f037f655"
+    },
+    {
+      "query_id": "Q096",
+      "query": "Find me cat tree.",
+      "category": "cat_tree",
+      "intent": "broad",
+      "schedule_position": 14,
+      "returned_records": 35,
+      "stdout_sha256": "a9992f4ad1b46adf9c0a7c2c358f00b8e9d63a6e42eb23ea27d185dd7cf4a3dc"
+    },
+    {
+      "query_id": "Q006",
+      "query": "Find me wood cutting board.",
+      "category": "cutting_board",
+      "intent": "broad",
+      "schedule_position": 15,
+      "returned_records": 65,
+      "stdout_sha256": "f52d572da1ecbbfd73923d52a9d6fa3f73b4ec8f65da2317d271d3289c33dd86"
+    },
+    {
+      "query_id": "Q011",
+      "query": "Find me electric kettle.",
+      "category": "electric_kettle",
+      "intent": "broad",
+      "schedule_position": 16,
+      "returned_records": 61,
+      "stdout_sha256": "7d46de749f1b7f8dc57b5c22d41f66de95680aa18e036089e4e02bed6b4b4a65"
+    },
+    {
+      "query_id": "Q016",
+      "query": "Find me insulated lunch box.",
+      "category": "lunch_box",
+      "intent": "broad",
+      "schedule_position": 17,
+      "returned_records": 42,
+      "stdout_sha256": "f90daca58cd0c8ca85280fa69211cb359dd32b5e1e03d3bac6e2b91ee508001e"
+    },
+    {
+      "query_id": "Q051",
+      "query": "Find me office desk chair.",
+      "category": "desk_chair",
+      "intent": "broad",
+      "schedule_position": 18,
+      "returned_records": 64,
+      "stdout_sha256": "f06b0faaff0ef2b2e419f18ce25e173451efc30c072ee695b1b64c2dd5b70a9c"
+    },
+    {
+      "query_id": "Q076",
+      "query": "Find me bath towels.",
+      "category": "bath_towels",
+      "intent": "broad",
+      "schedule_position": 19,
+      "returned_records": 40,
+      "stdout_sha256": "11bd8f7e92f659276fcb54386c4a3f95c7c822580c9170af221ae07fb2311714"
+    },
+    {
+      "query_id": "Q036",
+      "query": "Find me mens running shoes.",
+      "category": "running_shoes",
+      "intent": "broad",
+      "schedule_position": 20,
+      "returned_records": 52,
+      "stdout_sha256": "bd2f0fcb40fc82183986f908c3dd422e13e5cb7c5ff92707421023eb063f9bab"
+    },
+    {
+      "query_id": "Q052",
+      "query": "Find me office desk chair under $200.",
+      "category": "desk_chair",
+      "intent": "budget",
+      "schedule_position": 21,
+      "returned_records": 6,
+      "stdout_sha256": "f513affff5eed5b2ef5bb43ac26b121be9ef7778ea69d82e2dd3e534f4f154ef"
+    },
+    {
+      "query_id": "Q027",
+      "query": "Find me everyday backpack under $60.",
+      "category": "backpack",
+      "intent": "budget",
+      "schedule_position": 22,
+      "returned_records": 2,
+      "stdout_sha256": "92e16b7313e8e68697cf3c75ce816fc72ea65c8d099fd503062b1e26ce1d2d34"
+    },
+    {
+      "query_id": "Q062",
+      "query": "Find me bookshelf under $100.",
+      "category": "bookshelf",
+      "intent": "budget",
+      "schedule_position": 23,
+      "returned_records": 19,
+      "stdout_sha256": "2d48a9cc406d95b585fb802e9587e2199e36b494c207e8b280e670c74cec2c27"
+    },
+    {
+      "query_id": "Q047",
+      "query": "Find me yoga mat under $40.",
+      "category": "yoga_mat",
+      "intent": "budget",
+      "schedule_position": 24,
+      "returned_records": 9,
+      "stdout_sha256": "65a904fd43ba6637f5b7af528437d749d4746e1c756f0ac9a95fda0563af3cb9"
+    },
+    {
+      "query_id": "Q037",
+      "query": "Find me mens running shoes under $100.",
+      "category": "running_shoes",
+      "intent": "budget",
+      "schedule_position": 25,
+      "returned_records": 6,
+      "stdout_sha256": "8a05e8acc288edfffec1e5e731aaf98c1b89bb7c97a620835011dc4e50fbe741"
+    },
+    {
+      "query_id": "Q092",
+      "query": "Find me dog bed under $60.",
+      "category": "dog_bed",
+      "intent": "budget",
+      "schedule_position": 26,
+      "returned_records": 0,
+      "stdout_sha256": "0451830125a98c780cd7ad9cc30c64b1137c53815228fe20e323a0ce216970cc"
+    },
+    {
+      "query_id": "Q077",
+      "query": "Find me bath towel set under $50.",
+      "category": "bath_towels",
+      "intent": "budget",
+      "schedule_position": 27,
+      "returned_records": 0,
+      "stdout_sha256": "d7b69b8cdab1c6c19d6c20ff06b9ffb8c030e6a87664ee5c2b08ad2558045b4a"
+    },
+    {
+      "query_id": "Q082",
+      "query": "Find me laundry basket under $40.",
+      "category": "laundry_basket",
+      "intent": "budget",
+      "schedule_position": 28,
+      "returned_records": 8,
+      "stdout_sha256": "4d15d54b5f39b0fc7b597a429ad7c1142e1fc11ae7a09e597706173395404d1a"
+    },
+    {
+      "query_id": "Q017",
+      "query": "Find me insulated lunch box under $30.",
+      "category": "lunch_box",
+      "intent": "budget",
+      "schedule_position": 29,
+      "returned_records": 7,
+      "stdout_sha256": "695711d1676cff1714bc7daa8d11405cfd205664c09266347a5fbcea36fcb99b"
+    },
+    {
+      "query_id": "Q097",
+      "query": "Find me cat tree under $80.",
+      "category": "cat_tree",
+      "intent": "budget",
+      "schedule_position": 30,
+      "returned_records": 0,
+      "stdout_sha256": "4929c2d5999d63a0cdcc087e07e5091bef797b41d15b2dc8ae645749e1c3c0a0"
+    },
+    {
+      "query_id": "Q007",
+      "query": "Find me wood cutting board under $40.",
+      "category": "cutting_board",
+      "intent": "budget",
+      "schedule_position": 31,
+      "returned_records": 4,
+      "stdout_sha256": "0ac3840bbe008be6dfb2abd0cd7b27fea0fafff9c3050f212133212cdf546628"
+    },
+    {
+      "query_id": "Q067",
+      "query": "Find me queen bed sheets under $60.",
+      "category": "bed_sheets",
+      "intent": "budget",
+      "schedule_position": 32,
+      "returned_records": 0,
+      "stdout_sha256": "304b184e7959990fd2b67caa807b1adfb4a453bf27a109968b69f01665490ab8"
+    },
+    {
+      "query_id": "Q012",
+      "query": "Find me electric kettle under $50.",
+      "category": "electric_kettle",
+      "intent": "budget",
+      "schedule_position": 33,
+      "returned_records": 13,
+      "stdout_sha256": "071d5b07ab630faae0e4d1d66b5c82344220c4edf511c24e122e868208c47b92"
+    },
+    {
+      "query_id": "Q042",
+      "query": "Find me womens rain jacket under $100.",
+      "category": "rain_jacket",
+      "intent": "budget",
+      "schedule_position": 34,
+      "returned_records": 3,
+      "stdout_sha256": "3ad3e3572e53f0315d1ac50b3db1a7c99943b4257b86eeaf757fe394df6d84f0"
+    },
+    {
+      "query_id": "Q072",
+      "query": "Find me throw blanket under $40.",
+      "category": "throw_blanket",
+      "intent": "budget",
+      "schedule_position": 35,
+      "returned_records": 0,
+      "stdout_sha256": "b97b99fe3cbbd9dad4063c08f81318092896cf6fb1cad609acf16dc611564c82"
+    },
+    {
+      "query_id": "Q002",
+      "query": "Find me stainless steel frying pan under $80.",
+      "category": "frying_pan",
+      "intent": "budget",
+      "schedule_position": 36,
+      "returned_records": 2,
+      "stdout_sha256": "37a907fce4324cf306ac20b6c1a4e66562723eaefe69d372f3eaabb39a029b4d"
+    },
+    {
+      "query_id": "Q032",
+      "query": "Find me carry on suitcase under $120.",
+      "category": "carry_on",
+      "intent": "budget",
+      "schedule_position": 37,
+      "returned_records": 1,
+      "stdout_sha256": "997cfae089049479f93cb1abf7c675f20291144382097924fda2a096dfbdc0d3"
+    },
+    {
+      "query_id": "Q087",
+      "query": "Find me home storage bins under $40.",
+      "category": "storage_bins",
+      "intent": "budget",
+      "schedule_position": 38,
+      "returned_records": 18,
+      "stdout_sha256": "45cd58d46df1465bd29cbe9f25815dfd9f07bc9523f126984f86f0ced47e9f1b"
+    },
+    {
+      "query_id": "Q057",
+      "query": "Find me desk lamp under $40.",
+      "category": "desk_lamp",
+      "intent": "budget",
+      "schedule_position": 39,
+      "returned_records": 0,
+      "stdout_sha256": "04a9b83cac554a3d1f8c148bb4f1db657032fdb9d27c15c56f1c2933113ce963"
+    },
+    {
+      "query_id": "Q022",
+      "query": "Find me insulated water bottle under $35.",
+      "category": "water_bottle",
+      "intent": "budget",
+      "schedule_position": 40,
+      "returned_records": 2,
+      "stdout_sha256": "f6ef59c270280364af67b51f159aa12a26045153ecdf68579e47910de08f6d33"
+    },
+    {
+      "query_id": "Q018",
+      "query": "Find me large insulated lunch bag.",
+      "category": "lunch_box",
+      "intent": "specification",
+      "schedule_position": 41,
+      "returned_records": 51,
+      "stdout_sha256": "dea4df97731ac04e0c9b5c554f17d474d69969de8e7354a445331771d93ff621"
+    },
+    {
+      "query_id": "Q088",
+      "query": "Find me clear storage bins with lids.",
+      "category": "storage_bins",
+      "intent": "specification",
+      "schedule_position": 42,
+      "returned_records": 65,
+      "stdout_sha256": "3647afd514d4518d0b59167a268bd6895ea20c09ccd1c77f98572f00ef641203"
+    },
+    {
+      "query_id": "Q083",
+      "query": "Find me large laundry basket with handles.",
+      "category": "laundry_basket",
+      "intent": "specification",
+      "schedule_position": 43,
+      "returned_records": 65,
+      "stdout_sha256": "d785e63cb8a9ef164545d83094419bd6fa742a44f668baf8b4dbc1397099d1da"
+    },
+    {
+      "query_id": "Q033",
+      "query": "Find me 22 inch carry on suitcase.",
+      "category": "carry_on",
+      "intent": "specification",
+      "schedule_position": 44,
+      "returned_records": 51,
+      "stdout_sha256": "78153fd10f2cd2579e70546b2aa01b233d6de5a29912d6386bd5bf2134ae6aef"
+    },
+    {
+      "query_id": "Q028",
+      "query": "Find me backpack with a 15 inch laptop compartment.",
+      "category": "backpack",
+      "intent": "specification",
+      "schedule_position": 45,
+      "returned_records": 53,
+      "stdout_sha256": "61bc835654c178ded5e6d9a6ea0c3a58b4c1d6032683254b13b3a4515cc94dc8"
+    },
+    {
+      "query_id": "Q073",
+      "query": "Find me 50 by 60 inch throw blanket.",
+      "category": "throw_blanket",
+      "intent": "specification",
+      "schedule_position": 46,
+      "returned_records": 33,
+      "stdout_sha256": "b3f2eb1fd8c62d2e709b8414706005ccdcaca56ba845973b9f357e747762c1d4"
+    },
+    {
+      "query_id": "Q098",
+      "query": "Find me tall cat tree with scratching posts.",
+      "category": "cat_tree",
+      "intent": "specification",
+      "schedule_position": 47,
+      "returned_records": 62,
+      "stdout_sha256": "152e4ad7af7136481491c6379db4aa8caf0747cf9d8c5054269d723d21497cf4"
+    },
+    {
+      "query_id": "Q093",
+      "query": "Find me large dog bed with washable cover.",
+      "category": "dog_bed",
+      "intent": "specification",
+      "schedule_position": 48,
+      "returned_records": 44,
+      "stdout_sha256": "5cd19826e600137326bd986d7cedc2b3307b3d7565c88594f81a7b10ef897483"
+    },
+    {
+      "query_id": "Q078",
+      "query": "Find me large cotton bath towels.",
+      "category": "bath_towels",
+      "intent": "specification",
+      "schedule_position": 49,
+      "returned_records": 49,
+      "stdout_sha256": "e7b9ecdc1d5ea53fafcc2b316e57b600c0079062b9a211ac40cba102ce10a8ce"
+    },
+    {
+      "query_id": "Q058",
+      "query": "Find me LED desk lamp with adjustable brightness.",
+      "category": "desk_lamp",
+      "intent": "specification",
+      "schedule_position": 50,
+      "returned_records": 62,
+      "stdout_sha256": "b5095c3a6812445fad63200307be0c008a68d440c1c5906486f39f07596a54c2"
+    },
+    {
+      "query_id": "Q048",
+      "query": "Find me 6 mm yoga mat.",
+      "category": "yoga_mat",
+      "intent": "specification",
+      "schedule_position": 51,
+      "returned_records": 33,
+      "stdout_sha256": "ff07dd0431d7114a6aabcf41b3919f26141a8af6cd996d6aac622ddd918434b4"
+    },
+    {
+      "query_id": "Q068",
+      "query": "Find me queen cotton percale bed sheets.",
+      "category": "bed_sheets",
+      "intent": "specification",
+      "schedule_position": 52,
+      "returned_records": 47,
+      "stdout_sha256": "36934c80ac6caed27d58261d7dac194f2f8ee48126521274cf4a90b3146715f5"
+    },
+    {
+      "query_id": "Q038",
+      "query": "Find me mens running shoes size 10.",
+      "category": "running_shoes",
+      "intent": "specification",
+      "schedule_position": 53,
+      "returned_records": 45,
+      "stdout_sha256": "cf238cada30ded8d9fbca8b8aa76124513a390779ed0de3e76314d083e74f2d1"
+    },
+    {
+      "query_id": "Q013",
+      "query": "Find me 1 liter electric kettle.",
+      "category": "electric_kettle",
+      "intent": "specification",
+      "schedule_position": 54,
+      "returned_records": 48,
+      "stdout_sha256": "af7426e32ced6bdd29f4ef369c6e17c6ec6bdeaaeceff34b74e72b8db71137d0"
+    },
+    {
+      "query_id": "Q003",
+      "query": "Find me 10 inch stainless steel frying pan.",
+      "category": "frying_pan",
+      "intent": "specification",
+      "schedule_position": 55,
+      "returned_records": 38,
+      "stdout_sha256": "9fdc4229518df67e20802671a9993a0d62db893d5524dbdf92d9d04b60b0e78c"
+    },
+    {
+      "query_id": "Q053",
+      "query": "Find me office desk chair with adjustable arms.",
+      "category": "desk_chair",
+      "intent": "specification",
+      "schedule_position": 56,
+      "returned_records": 52,
+      "stdout_sha256": "4b4b0889829bcbcb51ae345b3dfc95418ea96964f509d9dd57341e27a17e64e6"
+    },
+    {
+      "query_id": "Q043",
+      "query": "Find me womens rain jacket size medium.",
+      "category": "rain_jacket",
+      "intent": "specification",
+      "schedule_position": 57,
+      "returned_records": 29,
+      "stdout_sha256": "786997d12c2e9bd865968e9dc099a1533b8a006c92ba4f19038ad07417dacc5a"
+    },
+    {
+      "query_id": "Q023",
+      "query": "Find me 32 oz stainless steel water bottle.",
+      "category": "water_bottle",
+      "intent": "specification",
+      "schedule_position": 58,
+      "returned_records": 46,
+      "stdout_sha256": "69f2c43de75475d262c4ff566b84edfa0424b5ae317e10662a37a80766933305"
+    },
+    {
+      "query_id": "Q008",
+      "query": "Find me large wood cutting board with juice groove.",
+      "category": "cutting_board",
+      "intent": "specification",
+      "schedule_position": 59,
+      "returned_records": 55,
+      "stdout_sha256": "f2bb40198ad0c1e627573aabd6214a0b1f6348ef901b7650ca7a54354c127b6c"
+    },
+    {
+      "query_id": "Q063",
+      "query": "Find me narrow 5 shelf bookcase.",
+      "category": "bookshelf",
+      "intent": "specification",
+      "schedule_position": 60,
+      "returned_records": 54,
+      "stdout_sha256": "d57d1f2cc66b73b2bdc5741e266a8616c5c4774c3d3587f4b2aef60b56970e78"
+    },
+    {
+      "query_id": "Q034",
+      "query": "Find me lightweight carry on suitcase with spinner wheels.",
+      "category": "carry_on",
+      "intent": "use_case",
+      "schedule_position": 61,
+      "returned_records": 43,
+      "stdout_sha256": "1d3ea9dadbd709a8b5409679ef8ba6e6a91c829798c9941d8ee775841c7ef37e"
+    },
+    {
+      "query_id": "Q089",
+      "query": "Find me under bed storage bins.",
+      "category": "storage_bins",
+      "intent": "use_case",
+      "schedule_position": 62,
+      "returned_records": 47,
+      "stdout_sha256": "e24854bb2687e37d462da270cc7506b949dd862aa9fbe5c5f8f8f6e1ddc09de8"
+    },
+    {
+      "query_id": "Q059",
+      "query": "Find me small desk lamp for reading.",
+      "category": "desk_lamp",
+      "intent": "use_case",
+      "schedule_position": 63,
+      "returned_records": 59,
+      "stdout_sha256": "a59ba8172c36911c6c0fe8eb80d271c54a539bccc2e0f136bce1d3a2563de960"
+    },
+    {
+      "query_id": "Q029",
+      "query": "Find me lightweight backpack for commuting.",
+      "category": "backpack",
+      "intent": "use_case",
+      "schedule_position": 64,
+      "returned_records": 56,
+      "stdout_sha256": "41975694e2ab4781d33512ac0bbbfc4e15a7165bdbef840c8d23c76dc1f8736c"
+    },
+    {
+      "query_id": "Q084",
+      "query": "Find me collapsible laundry basket for a small apartment.",
+      "category": "laundry_basket",
+      "intent": "use_case",
+      "schedule_position": 65,
+      "returned_records": 60,
+      "stdout_sha256": "cb5e2e7a8d845fe921b057ecebf4bbb70326c3226526deea48b71d0e5fd0b01a"
+    },
+    {
+      "query_id": "Q069",
+      "query": "Find me deep pocket queen bed sheets.",
+      "category": "bed_sheets",
+      "intent": "use_case",
+      "schedule_position": 66,
+      "returned_records": 47,
+      "stdout_sha256": "46027cb3e2de780affff6696a5426bcffbeb3bd219adb39d226d994bbbc8ba35"
+    },
+    {
+      "query_id": "Q004",
+      "query": "Find me induction compatible stainless steel frying pan.",
+      "category": "frying_pan",
+      "intent": "use_case",
+      "schedule_position": 67,
+      "returned_records": 49,
+      "stdout_sha256": "dd01090b7961a80ea2b472f0d28a698b312bd3a659cc87cdf5c408877fb2b287"
+    },
+    {
+      "query_id": "Q064",
+      "query": "Find me small bookshelf for a home office.",
+      "category": "bookshelf",
+      "intent": "use_case",
+      "schedule_position": 68,
+      "returned_records": 65,
+      "stdout_sha256": "2c2ffb8337a58a6acc69054353f49f7e962730226bce13e21446fcfe63996614"
+    },
+    {
+      "query_id": "Q044",
+      "query": "Find me lightweight packable womens rain jacket.",
+      "category": "rain_jacket",
+      "intent": "use_case",
+      "schedule_position": 69,
+      "returned_records": 36,
+      "stdout_sha256": "a07732109a3946c0b7c42f14935fb6cf051b68ad0c1a32f277578e0752f6583d"
+    },
+    {
+      "query_id": "Q049",
+      "query": "Find me non slip yoga mat for home workouts.",
+      "category": "yoga_mat",
+      "intent": "use_case",
+      "schedule_position": 70,
+      "returned_records": 53,
+      "stdout_sha256": "e57e5d610c51eeac480c51680c42a06d27300ea9e99089243f6bdbe42202e4aa"
+    },
+    {
+      "query_id": "Q039",
+      "query": "Find me mens running shoes for road running.",
+      "category": "running_shoes",
+      "intent": "use_case",
+      "schedule_position": 71,
+      "returned_records": 45,
+      "stdout_sha256": "656412ace507a6e62e0fc5814fe69f935807e63209b8393585c9dc4d45c60e6b"
+    },
+    {
+      "query_id": "Q019",
+      "query": "Find me leakproof lunch box for office meals.",
+      "category": "lunch_box",
+      "intent": "use_case",
+      "schedule_position": 72,
+      "returned_records": 62,
+      "stdout_sha256": "71bbdc0ae19564eeb5db6d166dcf45c172b985fcf28d11583605d58ea66fb8a7"
+    },
+    {
+      "query_id": "Q079",
+      "query": "Find me quick drying bath towels.",
+      "category": "bath_towels",
+      "intent": "use_case",
+      "schedule_position": 73,
+      "returned_records": 48,
+      "stdout_sha256": "73dba4b5aae66c9975c2242459adf7d09b6190f871c4a7186d9515e5e18ca6c1"
+    },
+    {
+      "query_id": "Q024",
+      "query": "Find me leakproof water bottle for a backpack.",
+      "category": "water_bottle",
+      "intent": "use_case",
+      "schedule_position": 74,
+      "returned_records": 35,
+      "stdout_sha256": "4191db467de47e76cd3f9a94a72d86d3cde1c195184d5723a806baab638fc5bc"
+    },
+    {
+      "query_id": "Q054",
+      "query": "Find me mesh office chair for a small desk.",
+      "category": "desk_chair",
+      "intent": "use_case",
+      "schedule_position": 75,
+      "returned_records": 51,
+      "stdout_sha256": "2d977e86c7660102dad5aa44b43fe86431d87ffcafc15c35d7f6f702c7712eed"
+    },
+    {
+      "query_id": "Q099",
+      "query": "Find me compact cat tree for an apartment.",
+      "category": "cat_tree",
+      "intent": "use_case",
+      "schedule_position": 76,
+      "returned_records": 54,
+      "stdout_sha256": "2a1ee9f2437b0abcee9917219c0d9960012d0d58d88785c52345e78046f00a9d"
+    },
+    {
+      "query_id": "Q094",
+      "query": "Find me compact dog bed for a small dog.",
+      "category": "dog_bed",
+      "intent": "use_case",
+      "schedule_position": 77,
+      "returned_records": 56,
+      "stdout_sha256": "0f487360e8ebaa3764c6de4df05aed356a497a889378f213bfb203c2ec14613b"
+    },
+    {
+      "query_id": "Q014",
+      "query": "Find me electric kettle with temperature control.",
+      "category": "electric_kettle",
+      "intent": "use_case",
+      "schedule_position": 78,
+      "returned_records": 54,
+      "stdout_sha256": "28dae37c9a9fb3603f639093c8d7f3d0e5db1ad698b8c2cbb63e2e53bac5bf1a"
+    },
+    {
+      "query_id": "Q074",
+      "query": "Find me machine washable throw blanket for a sofa.",
+      "category": "throw_blanket",
+      "intent": "use_case",
+      "schedule_position": 79,
+      "returned_records": 38,
+      "stdout_sha256": "212193776bb7cfd1dd6983bb98c83c73f104a55d549fbe390b4351442ef4b998"
+    },
+    {
+      "query_id": "Q009",
+      "query": "Find me small wood cutting board for an apartment kitchen.",
+      "category": "cutting_board",
+      "intent": "use_case",
+      "schedule_position": 80,
+      "returned_records": 66,
+      "stdout_sha256": "050ba34cbe69eb4f1b5ac08e68d09d049fd9c53d9cc7458c46355ed3f48c005d"
+    },
+    {
+      "query_id": "Q100",
+      "query": "Find me cat tree for a large cat.",
+      "category": "cat_tree",
+      "intent": "attribute",
+      "schedule_position": 81,
+      "returned_records": 60,
+      "stdout_sha256": "8fee70b2e4a3f9a7d0d72f00c545782a6f98af0218b572cd4cd301fd95852bd4"
+    },
+    {
+      "query_id": "Q070",
+      "query": "Find me queen linen bed sheets.",
+      "category": "bed_sheets",
+      "intent": "attribute",
+      "schedule_position": 82,
+      "returned_records": 49,
+      "stdout_sha256": "140b4c2409e9736d2bf8995053c00a471a1232f11af8d6fa09e2c8a5559f6532"
+    },
+    {
+      "query_id": "Q015",
+      "query": "Find me gooseneck electric kettle for pour over coffee.",
+      "category": "electric_kettle",
+      "intent": "attribute",
+      "schedule_position": 83,
+      "returned_records": 39,
+      "stdout_sha256": "53166720b78f201e33babb3f694af10537572fb9ce9496ba4a6dead7ab90fec2"
+    },
+    {
+      "query_id": "Q080",
+      "query": "Find me waffle weave bath towels.",
+      "category": "bath_towels",
+      "intent": "attribute",
+      "schedule_position": 84,
+      "returned_records": 26,
+      "stdout_sha256": "6ebbc008525ef3bfbdcd58529ecd509b832ff1a18149bc38906ebaa101e5c640"
+    },
+    {
+      "query_id": "Q050",
+      "query": "Find me lightweight travel yoga mat.",
+      "category": "yoga_mat",
+      "intent": "attribute",
+      "schedule_position": 85,
+      "returned_records": 41,
+      "stdout_sha256": "bfc9b01948260314919832a98a3659082368b87965b4a5bccf8de9d437462216"
+    },
+    {
+      "query_id": "Q020",
+      "query": "Find me compact lunch box for commuting.",
+      "category": "lunch_box",
+      "intent": "attribute",
+      "schedule_position": 86,
+      "returned_records": 63,
+      "stdout_sha256": "16a238570d7b5b8278bc5bea660c63b4419de3e9a6c5906e2ea8fb292b9cec2b"
+    },
+    {
+      "query_id": "Q005",
+      "query": "Find me dishwasher safe stainless steel frying pan.",
+      "category": "frying_pan",
+      "intent": "attribute",
+      "schedule_position": 87,
+      "returned_records": 37,
+      "stdout_sha256": "25676643ea149e861a327f6e2102ac505d14bf72b2ed10a24f34980ea1165ac1"
+    },
+    {
+      "query_id": "Q055",
+      "query": "Find me office chair with adjustable seat height.",
+      "category": "desk_chair",
+      "intent": "attribute",
+      "schedule_position": 88,
+      "returned_records": 61,
+      "stdout_sha256": "71abde124fdfe55874a43b2fa11ae9e9153a054e4604ba34e76fa629e6372e06"
+    },
+    {
+      "query_id": "Q085",
+      "query": "Find me laundry hamper with a lid.",
+      "category": "laundry_basket",
+      "intent": "attribute",
+      "schedule_position": 89,
+      "returned_records": 58,
+      "stdout_sha256": "89530c66f5d40a923b307bb89b9f160db29bc5c0a6f804a767cb2315f7747063"
+    },
+    {
+      "query_id": "Q095",
+      "query": "Find me water resistant dog bed.",
+      "category": "dog_bed",
+      "intent": "attribute",
+      "schedule_position": 90,
+      "returned_records": 28,
+      "stdout_sha256": "fc195451850a8e033568a68fb05551140e4810ead2c795d6b7f18c2328c06b41"
+    },
+    {
+      "query_id": "Q040",
+      "query": "Find me mens running shoes with a wide toe box.",
+      "category": "running_shoes",
+      "intent": "attribute",
+      "schedule_position": 91,
+      "returned_records": 23,
+      "stdout_sha256": "63d084e68d7b985e70f92b24fa30b6a1410fecd13ff1d4f27d27f7d96d550e3d"
+    },
+    {
+      "query_id": "Q090",
+      "query": "Find me stackable storage bins for a closet.",
+      "category": "storage_bins",
+      "intent": "attribute",
+      "schedule_position": 92,
+      "returned_records": 57,
+      "stdout_sha256": "b9045a7913c38698056fc1e3b3a1995b79339d540d54c60818b00d2043727057"
+    },
+    {
+      "query_id": "Q075",
+      "query": "Find me cotton throw blanket.",
+      "category": "throw_blanket",
+      "intent": "attribute",
+      "schedule_position": 93,
+      "returned_records": 47,
+      "stdout_sha256": "7d90cd96bce4ab7cf8405c215b599a58f0131ce19b3f87bfb6cedd56e5b8f012"
+    },
+    {
+      "query_id": "Q065",
+      "query": "Find me solid wood bookshelf.",
+      "category": "bookshelf",
+      "intent": "attribute",
+      "schedule_position": 94,
+      "returned_records": 52,
+      "stdout_sha256": "2c894b361f850d819872e940e60f3ac9cec7af4ddb3286d0956b93123b9d3b33"
+    },
+    {
+      "query_id": "Q010",
+      "query": "Find me reversible wood cutting board.",
+      "category": "cutting_board",
+      "intent": "attribute",
+      "schedule_position": 95,
+      "returned_records": 58,
+      "stdout_sha256": "7137c1806638817a3268db9cd3c9fe836ce60c17b299dc2d8f92468e40ce3873"
+    },
+    {
+      "query_id": "Q025",
+      "query": "Find me dishwasher safe insulated water bottle.",
+      "category": "water_bottle",
+      "intent": "attribute",
+      "schedule_position": 96,
+      "returned_records": 18,
+      "stdout_sha256": "5e797f05689ee2c1de46ca46c5b55fd84de1b6afdeede2abb93d138ed20d331d"
+    },
+    {
+      "query_id": "Q060",
+      "query": "Find me desk lamp with a USB charging port.",
+      "category": "desk_lamp",
+      "intent": "attribute",
+      "schedule_position": 97,
+      "returned_records": 64,
+      "stdout_sha256": "a7414cfa04716e9ababecbc39206886b8de5417c5d97079d1c15034fa25e23e3"
+    },
+    {
+      "query_id": "Q030",
+      "query": "Find me water resistant everyday backpack.",
+      "category": "backpack",
+      "intent": "attribute",
+      "schedule_position": 98,
+      "returned_records": 61,
+      "stdout_sha256": "6e50b441fa6eaa613a0d8b0d907b012e783b30f965c23beccc8e20337d1248c6"
+    },
+    {
+      "query_id": "Q035",
+      "query": "Find me hard shell carry on suitcase.",
+      "category": "carry_on",
+      "intent": "attribute",
+      "schedule_position": 99,
+      "returned_records": 47,
+      "stdout_sha256": "1843854044bf12fb785739e52d1bb6aa24bb75141d2f7c2b0c18e281654cd65f"
+    },
+    {
+      "query_id": "Q045",
+      "query": "Find me womens rain jacket with a hood.",
+      "category": "rain_jacket",
+      "intent": "attribute",
+      "schedule_position": 100,
+      "returned_records": 46,
+      "stdout_sha256": "d6896e6f76e8b0e7be18055794cfc2a485d9f6d6443f79609419686287d6d312"
+    }
+  ],
+  "limits": [
+    "Literal text constraints; no structured price flags",
+    "One call per query; sequential intent blocks",
+    "Same research chat/account, notindependent consumer sessions",
+    "IDs are not verified physical products; records not recommendations",
+    "No listing edits or causal merchant improvement measured",
+    "CLI raw output not proven untouched HTTP response"
+  ],
+  "separate_shopping_cases": [
+    {
+      "query_id": "Q002",
+      "catalog_records": 48,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "06d492c38e8e9799829d9810fed62607d01f6447613b0267d2f3c9e2506f36fb"
+    },
+    {
+      "query_id": "Q022",
+      "catalog_records": 40,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "b93a621e3aef77ef59d890e9e52ecd5034bde2d5ab46aa2176fd6e701f431044"
+    },
+    {
+      "query_id": "Q027",
+      "catalog_records": 61,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "4b3f9395d41df32cfa02d95fdc34406cbce8093ec2d6b93c0c0779537eed5fdb"
+    },
+    {
+      "query_id": "Q052",
+      "catalog_records": 63,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "71c102aadf83f62e02234def0f4ee111b591930238a1098f947ddcb9433a9f0e"
+    },
+    {
+      "query_id": "Q077",
+      "catalog_records": 58,
+      "selected_ids": 2,
+      "displayed_cards": 2,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "ce5f16efb1019556e172118022f53b1ba6d529c840b15e13a81314468d15d068"
+    }
+  ]
+}

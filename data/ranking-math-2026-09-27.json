@@ -1,0 +1,2765 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "scope": "Recalculation of existing saved observations; no new remote data or fitted internal coefficients.",
+  "sources": [
+    {
+      "path": "data/catalog-runs.jsonl",
+      "sha256": "e0f53be846db5e06faa50500cdb3533750b01697cd3deb573a587b854ceaa7d4"
+    },
+    {
+      "path": "data/upstream-runs.jsonl",
+      "sha256": "1d7ff8de946a81f2a12822e0932ff295f8277b177e74a58f5110b295054ba8d0"
+    },
+    {
+      "path": "data/query-multiplicity-runs.jsonl",
+      "sha256": "6ee7d8905516e8d09389c1c0e0b0657380b5f8b2b02aa1167c58d17159f91a2b"
+    },
+    {
+      "path": "data/merchant-benchmark-2026-09-27.json",
+      "sha256": "87b9d513d598c01316742602c91ec8295055be15316248db5f366be517a855be"
+    },
+    {
+      "path": "data/tie-audit.json",
+      "sha256": "c8279a38fe394c5b47806aae36fba1ff7afa432fc75a29f3915da96e01acb87c"
+    },
+    {
+      "path": "data/resolver-audit.json",
+      "sha256": "8011c2d7f8183df096ea036c853e4dff90093d4f5f855750949a7d6e15708034"
+    }
+  ],
+  "historical": {
+    "total_invocations": 185,
+    "eligible_scored_runs": 173,
+    "nonmonotone_runs": 130,
+    "single_upturn_runs": 99,
+    "adjacent_pairs": 6022,
+    "adjacent_upturns": 161,
+    "all_pairs": 131973,
+    "discordant_pairs": 14202,
+    "tied_pairs": 3836,
+    "scored_occurrences": 6207,
+    "unique_printed_numeric_scores": 139,
+    "min_printed_score": "0.233398",
+    "max_printed_score": "0.839844",
+    "within_half_last_decimal_of_k_over_256": 5702
+  },
+  "run_order_statistics": [
+    {
+      "run_id": "brand63/R01-L-C2",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R02-A-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R03-L-C1",
+      "records": 54,
+      "adjacent_pairs": 53,
+      "adjacent_upturns": 1,
+      "all_pairs": 1431,
+      "discordant_pairs": 113,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R04-H-C0",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 0,
+      "all_pairs": 780,
+      "discordant_pairs": 0,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R05-H-C3",
+      "records": 41,
+      "adjacent_pairs": 40,
+      "adjacent_upturns": 0,
+      "all_pairs": 820,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "brand63/R06-L-C5",
+      "records": 48,
+      "adjacent_pairs": 47,
+      "adjacent_upturns": 2,
+      "all_pairs": 1128,
+      "discordant_pairs": 256,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R07-L-C6",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 1,
+      "all_pairs": 1225,
+      "discordant_pairs": 46,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R08-H-C5",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R09-L-C4",
+      "records": 51,
+      "adjacent_pairs": 50,
+      "adjacent_upturns": 1,
+      "all_pairs": 1275,
+      "discordant_pairs": 47,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R10-A-C4",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "brand63/R11-A-C1",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 0,
+      "all_pairs": 780,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "brand63/R12-H-C4",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 238,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R13-A-C5",
+      "records": 39,
+      "adjacent_pairs": 38,
+      "adjacent_upturns": 2,
+      "all_pairs": 741,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R14-A-C6",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "brand63/R15-H-C6",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 241,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R16-H-C2",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R17-A-C2",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 173,
+      "tied_pairs": 13
+    },
+    {
+      "run_id": "brand63/R18-A-C3",
+      "records": 42,
+      "adjacent_pairs": 41,
+      "adjacent_upturns": 1,
+      "all_pairs": 861,
+      "discordant_pairs": 15,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R19-L-C3",
+      "records": 60,
+      "adjacent_pairs": 59,
+      "adjacent_upturns": 1,
+      "all_pairs": 1770,
+      "discordant_pairs": 49,
+      "tied_pairs": 65
+    },
+    {
+      "run_id": "brand63/R20-H-C1",
+      "records": 53,
+      "adjacent_pairs": 52,
+      "adjacent_upturns": 0,
+      "all_pairs": 1378,
+      "discordant_pairs": 0,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R21-L-C0",
+      "records": 61,
+      "adjacent_pairs": 60,
+      "adjacent_upturns": 1,
+      "all_pairs": 1830,
+      "discordant_pairs": 50,
+      "tied_pairs": 68
+    },
+    {
+      "run_id": "brand63/R22-H-C5",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R23-H-C0",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 0,
+      "all_pairs": 780,
+      "discordant_pairs": 0,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R24-A-C2",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R25-A-C5",
+      "records": 39,
+      "adjacent_pairs": 38,
+      "adjacent_upturns": 2,
+      "all_pairs": 741,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R26-L-C5",
+      "records": 48,
+      "adjacent_pairs": 47,
+      "adjacent_upturns": 2,
+      "all_pairs": 1128,
+      "discordant_pairs": 256,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R27-L-C0",
+      "records": 61,
+      "adjacent_pairs": 60,
+      "adjacent_upturns": 1,
+      "all_pairs": 1830,
+      "discordant_pairs": 50,
+      "tied_pairs": 68
+    },
+    {
+      "run_id": "brand63/R28-H-C2",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 187,
+      "tied_pairs": 30
+    },
+    {
+      "run_id": "brand63/R29-L-C3",
+      "records": 60,
+      "adjacent_pairs": 59,
+      "adjacent_upturns": 1,
+      "all_pairs": 1770,
+      "discordant_pairs": 49,
+      "tied_pairs": 65
+    },
+    {
+      "run_id": "brand63/R30-L-C6",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 1,
+      "all_pairs": 1225,
+      "discordant_pairs": 46,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R31-H-C4",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 238,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R32-L-C2",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R33-A-C3",
+      "records": 42,
+      "adjacent_pairs": 41,
+      "adjacent_upturns": 1,
+      "all_pairs": 861,
+      "discordant_pairs": 15,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R34-H-C1",
+      "records": 53,
+      "adjacent_pairs": 52,
+      "adjacent_upturns": 0,
+      "all_pairs": 1378,
+      "discordant_pairs": 0,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R35-A-C1",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 0,
+      "all_pairs": 780,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "brand63/R36-L-C1",
+      "records": 55,
+      "adjacent_pairs": 54,
+      "adjacent_upturns": 1,
+      "all_pairs": 1485,
+      "discordant_pairs": 120,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R37-H-C6",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 241,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R38-A-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R39-A-C6",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "brand63/R40-H-C3",
+      "records": 41,
+      "adjacent_pairs": 40,
+      "adjacent_upturns": 0,
+      "all_pairs": 820,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "brand63/R41-L-C4",
+      "records": 51,
+      "adjacent_pairs": 50,
+      "adjacent_upturns": 1,
+      "all_pairs": 1275,
+      "discordant_pairs": 47,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R42-A-C4",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "brand63/R43-H-C3",
+      "records": 41,
+      "adjacent_pairs": 40,
+      "adjacent_upturns": 0,
+      "all_pairs": 820,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "brand63/R44-H-C1",
+      "records": 53,
+      "adjacent_pairs": 52,
+      "adjacent_upturns": 0,
+      "all_pairs": 1378,
+      "discordant_pairs": 0,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R45-H-C4",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 238,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R46-A-C6",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "brand63/R47-H-C5",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R48-L-C5",
+      "records": 48,
+      "adjacent_pairs": 47,
+      "adjacent_upturns": 2,
+      "all_pairs": 1128,
+      "discordant_pairs": 256,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R49-H-C0",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 0,
+      "all_pairs": 780,
+      "discordant_pairs": 0,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R50-H-C2",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "brand63/R51-A-C3",
+      "records": 42,
+      "adjacent_pairs": 41,
+      "adjacent_upturns": 1,
+      "all_pairs": 861,
+      "discordant_pairs": 15,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R52-H-C6",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 1,
+      "all_pairs": 780,
+      "discordant_pairs": 241,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R53-L-C4",
+      "records": 51,
+      "adjacent_pairs": 50,
+      "adjacent_upturns": 1,
+      "all_pairs": 1275,
+      "discordant_pairs": 47,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R54-L-C6",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 1,
+      "all_pairs": 1225,
+      "discordant_pairs": 46,
+      "tied_pairs": 6
+    },
+    {
+      "run_id": "brand63/R55-L-C2",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R56-A-C2",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R57-L-C0",
+      "records": 61,
+      "adjacent_pairs": 60,
+      "adjacent_upturns": 1,
+      "all_pairs": 1830,
+      "discordant_pairs": 50,
+      "tied_pairs": 65
+    },
+    {
+      "run_id": "brand63/R58-A-C5",
+      "records": 39,
+      "adjacent_pairs": 38,
+      "adjacent_upturns": 2,
+      "all_pairs": 741,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R59-A-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "brand63/R60-L-C3",
+      "records": 60,
+      "adjacent_pairs": 59,
+      "adjacent_upturns": 1,
+      "all_pairs": 1770,
+      "discordant_pairs": 49,
+      "tied_pairs": 65
+    },
+    {
+      "run_id": "brand63/R61-L-C1",
+      "records": 55,
+      "adjacent_pairs": 54,
+      "adjacent_upturns": 1,
+      "all_pairs": 1485,
+      "discordant_pairs": 120,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "brand63/R62-A-C4",
+      "records": 27,
+      "adjacent_pairs": 26,
+      "adjacent_upturns": 1,
+      "all_pairs": 351,
+      "discordant_pairs": 21,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "brand63/R63-A-C1",
+      "records": 39,
+      "adjacent_pairs": 38,
+      "adjacent_upturns": 0,
+      "all_pairs": 741,
+      "discordant_pairs": 0,
+      "tied_pairs": 11
+    },
+    {
+      "run_id": "followup60/R01-count-L-n10",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 310
+    },
+    {
+      "run_id": "followup60/R02-count-A-n100",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 162,
+      "tied_pairs": 31
+    },
+    {
+      "run_id": "followup60/R03-count-H-n10",
+      "records": 7,
+      "adjacent_pairs": 6,
+      "adjacent_upturns": 0,
+      "all_pairs": 21,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "followup60/R04-count-M-n50",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R05-count-M-n100",
+      "records": 15,
+      "adjacent_pairs": 14,
+      "adjacent_upturns": 1,
+      "all_pairs": 105,
+      "discordant_pairs": 12,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "followup60/R06-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 195,
+      "tied_pairs": 89
+    },
+    {
+      "run_id": "followup60/R07-count-H-n100",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R08-count-A-n10",
+      "records": 10,
+      "adjacent_pairs": 9,
+      "adjacent_upturns": 1,
+      "all_pairs": 45,
+      "discordant_pairs": 8,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "followup60/R09-count-M-n10",
+      "records": 19,
+      "adjacent_pairs": 18,
+      "adjacent_upturns": 0,
+      "all_pairs": 171,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "followup60/R10-count-A-n50",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 174,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "followup60/R11-count-L-n100",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 304,
+      "tied_pairs": 49
+    },
+    {
+      "run_id": "followup60/R12-count-H-n50",
+      "records": 49,
+      "adjacent_pairs": 48,
+      "adjacent_upturns": 1,
+      "all_pairs": 1176,
+      "discordant_pairs": 143,
+      "tied_pairs": 23
+    },
+    {
+      "run_id": "followup60/R13-count-M-n50",
+      "records": 19,
+      "adjacent_pairs": 18,
+      "adjacent_upturns": 1,
+      "all_pairs": 171,
+      "discordant_pairs": 17,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R14-count-M-n100",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 36,
+      "tied_pairs": 4
+    },
+    {
+      "run_id": "followup60/R15-count-H-n10",
+      "records": 7,
+      "adjacent_pairs": 6,
+      "adjacent_upturns": 0,
+      "all_pairs": 21,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "followup60/R16-count-H-n100",
+      "records": 49,
+      "adjacent_pairs": 48,
+      "adjacent_upturns": 1,
+      "all_pairs": 1176,
+      "discordant_pairs": 331,
+      "tied_pairs": 86
+    },
+    {
+      "run_id": "followup60/R17-count-A-n10",
+      "records": 10,
+      "adjacent_pairs": 9,
+      "adjacent_upturns": 1,
+      "all_pairs": 45,
+      "discordant_pairs": 8,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "followup60/R18-count-L-n10",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 69
+    },
+    {
+      "run_id": "followup60/R19-count-A-n100",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "followup60/R20-count-A-n50",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 145,
+      "tied_pairs": 30
+    },
+    {
+      "run_id": "followup60/R21-count-H-n50",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R22-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "followup60/R23-count-M-n10",
+      "records": 22,
+      "adjacent_pairs": 21,
+      "adjacent_upturns": 0,
+      "all_pairs": 231,
+      "discordant_pairs": 0,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "followup60/R24-count-L-n100",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 304,
+      "tied_pairs": 49
+    },
+    {
+      "run_id": "followup60/R25-count-M-n50",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 34,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R26-count-H-n50",
+      "records": 48,
+      "adjacent_pairs": 47,
+      "adjacent_upturns": 1,
+      "all_pairs": 1128,
+      "discordant_pairs": 434,
+      "tied_pairs": 147
+    },
+    {
+      "run_id": "followup60/R27-count-H-n10",
+      "records": 7,
+      "adjacent_pairs": 6,
+      "adjacent_upturns": 0,
+      "all_pairs": 21,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "followup60/R28-count-L-n10",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 240
+    },
+    {
+      "run_id": "followup60/R29-count-M-n100",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R30-count-H-n100",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R31-count-A-n100",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "followup60/R32-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "followup60/R33-count-A-n10",
+      "records": 10,
+      "adjacent_pairs": 9,
+      "adjacent_upturns": 1,
+      "all_pairs": 45,
+      "discordant_pairs": 8,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "followup60/R34-count-M-n10",
+      "records": 21,
+      "adjacent_pairs": 20,
+      "adjacent_upturns": 0,
+      "all_pairs": 210,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "followup60/R35-count-L-n100",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "followup60/R36-count-A-n50",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 145,
+      "tied_pairs": 30
+    },
+    {
+      "run_id": "followup60/R37-context-H-fresh",
+      "records": 49,
+      "adjacent_pairs": 48,
+      "adjacent_upturns": 1,
+      "all_pairs": 1176,
+      "discordant_pairs": 143,
+      "tied_pairs": 23
+    },
+    {
+      "run_id": "followup60/R38-context-H-fixed",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R39-context-M-fixed",
+      "records": 18,
+      "adjacent_pairs": 17,
+      "adjacent_upturns": 1,
+      "all_pairs": 153,
+      "discordant_pairs": 17,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "followup60/R40-context-M-fresh",
+      "records": 19,
+      "adjacent_pairs": 18,
+      "adjacent_upturns": 1,
+      "all_pairs": 171,
+      "discordant_pairs": 32,
+      "tied_pairs": 8
+    },
+    {
+      "run_id": "followup60/R41-context-H-fixed",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R42-context-H-fresh",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R43-context-M-fixed",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R44-context-M-fresh",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R45-context-H-fresh",
+      "records": 47,
+      "adjacent_pairs": 46,
+      "adjacent_upturns": 1,
+      "all_pairs": 1081,
+      "discordant_pairs": 186,
+      "tied_pairs": 25
+    },
+    {
+      "run_id": "followup60/R46-context-M-fixed",
+      "records": 18,
+      "adjacent_pairs": 17,
+      "adjacent_upturns": 1,
+      "all_pairs": 153,
+      "discordant_pairs": 34,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R47-context-M-fresh",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R48-context-H-fixed",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 1,
+      "all_pairs": 1225,
+      "discordant_pairs": 143,
+      "tied_pairs": 34
+    },
+    {
+      "run_id": "followup60/R49-bracket-A-1-raw",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 173,
+      "tied_pairs": 13
+    },
+    {
+      "run_id": "followup60/R51-bracket-A-3-raw",
+      "records": 40,
+      "adjacent_pairs": 39,
+      "adjacent_upturns": 2,
+      "all_pairs": 780,
+      "discordant_pairs": 175,
+      "tied_pairs": 12
+    },
+    {
+      "run_id": "followup60/R52-bracket-L-1-raw",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "followup60/R54-bracket-L-3-raw",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "followup60/R55-dual-M-raw",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "followup60/R56-dual-M-json",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "boundary36/R01-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 165,
+      "tied_pairs": 38
+    },
+    {
+      "run_id": "boundary36/R03-count-M-n50",
+      "records": 18,
+      "adjacent_pairs": 17,
+      "adjacent_upturns": 1,
+      "all_pairs": 153,
+      "discordant_pairs": 17,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "boundary36/R04-count-L-n20",
+      "records": 26,
+      "adjacent_pairs": 25,
+      "adjacent_upturns": 1,
+      "all_pairs": 325,
+      "discordant_pairs": 82,
+      "tied_pairs": 8
+    },
+    {
+      "run_id": "boundary36/R05-count-L-n11",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 20
+    },
+    {
+      "run_id": "boundary36/R06-count-M-n9",
+      "records": 6,
+      "adjacent_pairs": 5,
+      "adjacent_upturns": 0,
+      "all_pairs": 15,
+      "discordant_pairs": 0,
+      "tied_pairs": 15
+    },
+    {
+      "run_id": "boundary36/R07-count-M-n11",
+      "records": 5,
+      "adjacent_pairs": 4,
+      "adjacent_upturns": 0,
+      "all_pairs": 10,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "boundary36/R08-count-M-n10",
+      "records": 21,
+      "adjacent_pairs": 20,
+      "adjacent_upturns": 0,
+      "all_pairs": 210,
+      "discordant_pairs": 0,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "boundary36/R09-count-L-n9",
+      "records": 13,
+      "adjacent_pairs": 12,
+      "adjacent_upturns": 0,
+      "all_pairs": 78,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R10-count-M-n20",
+      "records": 9,
+      "adjacent_pairs": 8,
+      "adjacent_upturns": 1,
+      "all_pairs": 36,
+      "discordant_pairs": 8,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R11-count-L-n10",
+      "records": 63,
+      "adjacent_pairs": 62,
+      "adjacent_upturns": 0,
+      "all_pairs": 1953,
+      "discordant_pairs": 0,
+      "tied_pairs": 118
+    },
+    {
+      "run_id": "boundary36/R13-count-M-n9",
+      "records": 6,
+      "adjacent_pairs": 5,
+      "adjacent_upturns": 0,
+      "all_pairs": 15,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "boundary36/R14-count-L-n20",
+      "records": 26,
+      "adjacent_pairs": 25,
+      "adjacent_upturns": 1,
+      "all_pairs": 325,
+      "discordant_pairs": 82,
+      "tied_pairs": 8
+    },
+    {
+      "run_id": "boundary36/R15-count-M-n10",
+      "records": 21,
+      "adjacent_pairs": 20,
+      "adjacent_upturns": 0,
+      "all_pairs": 210,
+      "discordant_pairs": 0,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "boundary36/R16-count-M-n50",
+      "records": 15,
+      "adjacent_pairs": 14,
+      "adjacent_upturns": 1,
+      "all_pairs": 105,
+      "discordant_pairs": 12,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R17-count-L-n11",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 94
+    },
+    {
+      "run_id": "boundary36/R18-count-L-n9",
+      "records": 13,
+      "adjacent_pairs": 12,
+      "adjacent_upturns": 0,
+      "all_pairs": 78,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R19-count-M-n11",
+      "records": 5,
+      "adjacent_pairs": 4,
+      "adjacent_upturns": 0,
+      "all_pairs": 10,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "boundary36/R21-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 262,
+      "tied_pairs": 17
+    },
+    {
+      "run_id": "boundary36/R22-count-M-n20",
+      "records": 9,
+      "adjacent_pairs": 8,
+      "adjacent_upturns": 1,
+      "all_pairs": 36,
+      "discordant_pairs": 8,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R24-count-L-n10",
+      "records": 63,
+      "adjacent_pairs": 62,
+      "adjacent_upturns": 0,
+      "all_pairs": 1953,
+      "discordant_pairs": 0,
+      "tied_pairs": 310
+    },
+    {
+      "run_id": "boundary36/R25-count-M-n11",
+      "records": 5,
+      "adjacent_pairs": 4,
+      "adjacent_upturns": 0,
+      "all_pairs": 10,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "boundary36/R26-count-L-n20",
+      "records": 26,
+      "adjacent_pairs": 25,
+      "adjacent_upturns": 1,
+      "all_pairs": 325,
+      "discordant_pairs": 49,
+      "tied_pairs": 5
+    },
+    {
+      "run_id": "boundary36/R27-count-M-n50",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "boundary36/R28-count-M-n20",
+      "records": 9,
+      "adjacent_pairs": 8,
+      "adjacent_upturns": 1,
+      "all_pairs": 36,
+      "discordant_pairs": 8,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R29-count-L-n11",
+      "records": 61,
+      "adjacent_pairs": 60,
+      "adjacent_upturns": 0,
+      "all_pairs": 1830,
+      "discordant_pairs": 0,
+      "tied_pairs": 105
+    },
+    {
+      "run_id": "boundary36/R30-count-L-n10",
+      "records": 62,
+      "adjacent_pairs": 61,
+      "adjacent_upturns": 0,
+      "all_pairs": 1891,
+      "discordant_pairs": 0,
+      "tied_pairs": 20
+    },
+    {
+      "run_id": "boundary36/R31-count-M-n9",
+      "records": 6,
+      "adjacent_pairs": 5,
+      "adjacent_upturns": 0,
+      "all_pairs": 15,
+      "discordant_pairs": 0,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "boundary36/R33-count-L-n9",
+      "records": 13,
+      "adjacent_pairs": 12,
+      "adjacent_upturns": 0,
+      "all_pairs": 78,
+      "discordant_pairs": 0,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "boundary36/R34-count-M-n10",
+      "records": 22,
+      "adjacent_pairs": 21,
+      "adjacent_upturns": 0,
+      "all_pairs": 231,
+      "discordant_pairs": 0,
+      "tied_pairs": 5
+    },
+    {
+      "run_id": "boundary36/R36-count-L-n50",
+      "records": 50,
+      "adjacent_pairs": 49,
+      "adjacent_upturns": 2,
+      "all_pairs": 1225,
+      "discordant_pairs": 153,
+      "tied_pairs": 54
+    },
+    {
+      "run_id": "modes4/R01-modes-M-raw,stdout",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "modes4/R02-modes-M-raw,json",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "modes4/R03-modes-M-json,stdout",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "modes4/R04-modes-M-raw,json,stdout",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "misen21/R01-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 61,
+      "tied_pairs": 19
+    },
+    {
+      "run_id": "misen21/R02-C1",
+      "records": 52,
+      "adjacent_pairs": 51,
+      "adjacent_upturns": 0,
+      "all_pairs": 1326,
+      "discordant_pairs": 0,
+      "tied_pairs": 36
+    },
+    {
+      "run_id": "misen21/R03-C2",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "misen21/R04-C3",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 16
+    },
+    {
+      "run_id": "misen21/R05-C4",
+      "records": 15,
+      "adjacent_pairs": 14,
+      "adjacent_upturns": 0,
+      "all_pairs": 105,
+      "discordant_pairs": 0,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "misen21/R06-C5",
+      "records": 19,
+      "adjacent_pairs": 18,
+      "adjacent_upturns": 1,
+      "all_pairs": 171,
+      "discordant_pairs": 28,
+      "tied_pairs": 8
+    },
+    {
+      "run_id": "misen21/R07-C6",
+      "records": 16,
+      "adjacent_pairs": 15,
+      "adjacent_upturns": 1,
+      "all_pairs": 120,
+      "discordant_pairs": 5,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "misen21/R08-C1",
+      "records": 51,
+      "adjacent_pairs": 50,
+      "adjacent_upturns": 0,
+      "all_pairs": 1275,
+      "discordant_pairs": 0,
+      "tied_pairs": 28
+    },
+    {
+      "run_id": "misen21/R09-C2",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "misen21/R10-C3",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 16
+    },
+    {
+      "run_id": "misen21/R11-C4",
+      "records": 16,
+      "adjacent_pairs": 15,
+      "adjacent_upturns": 1,
+      "all_pairs": 120,
+      "discordant_pairs": 4,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "misen21/R12-C5",
+      "records": 18,
+      "adjacent_pairs": 17,
+      "adjacent_upturns": 1,
+      "all_pairs": 153,
+      "discordant_pairs": 6,
+      "tied_pairs": 16
+    },
+    {
+      "run_id": "misen21/R13-C6",
+      "records": 16,
+      "adjacent_pairs": 15,
+      "adjacent_upturns": 1,
+      "all_pairs": 120,
+      "discordant_pairs": 6,
+      "tied_pairs": 0
+    },
+    {
+      "run_id": "misen21/R14-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 41,
+      "tied_pairs": 35
+    },
+    {
+      "run_id": "misen21/R15-C2",
+      "records": 17,
+      "adjacent_pairs": 16,
+      "adjacent_upturns": 1,
+      "all_pairs": 136,
+      "discordant_pairs": 23,
+      "tied_pairs": 3
+    },
+    {
+      "run_id": "misen21/R16-C3",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 16
+    },
+    {
+      "run_id": "misen21/R17-C4",
+      "records": 16,
+      "adjacent_pairs": 15,
+      "adjacent_upturns": 1,
+      "all_pairs": 120,
+      "discordant_pairs": 2,
+      "tied_pairs": 1
+    },
+    {
+      "run_id": "misen21/R18-C5",
+      "records": 18,
+      "adjacent_pairs": 17,
+      "adjacent_upturns": 1,
+      "all_pairs": 153,
+      "discordant_pairs": 11,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "misen21/R19-C6",
+      "records": 16,
+      "adjacent_pairs": 15,
+      "adjacent_upturns": 1,
+      "all_pairs": 120,
+      "discordant_pairs": 6,
+      "tied_pairs": 2
+    },
+    {
+      "run_id": "misen21/R20-C0",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 61,
+      "tied_pairs": 19
+    },
+    {
+      "run_id": "misen21/R21-C1",
+      "records": 52,
+      "adjacent_pairs": 51,
+      "adjacent_upturns": 0,
+      "all_pairs": 1326,
+      "discordant_pairs": 0,
+      "tied_pairs": 36
+    },
+    {
+      "run_id": "neutral_baseline/ncap-n50-run2",
+      "records": 43,
+      "adjacent_pairs": 42,
+      "adjacent_upturns": 1,
+      "all_pairs": 903,
+      "discordant_pairs": 55,
+      "tied_pairs": 21
+    }
+  ],
+  "neutral": {
+    "run_id": "neutral_baseline/ncap-n50-run2",
+    "products": [
+      {
+        "product_id": "5783497841778259",
+        "position": 1,
+        "ranking_score": "0.839844",
+        "url_host": "www.lecreuset.com"
+      },
+      {
+        "product_id": "9194566153896895",
+        "position": 2,
+        "ranking_score": "0.824219",
+        "url_host": "rockbrosbike.us"
+      },
+      {
+        "product_id": "27201411416180447",
+        "position": 3,
+        "ranking_score": "0.812500",
+        "url_host": "farberwarecookware.com"
+      },
+      {
+        "product_id": "27587334437536240",
+        "position": 4,
+        "ranking_score": "0.812500",
+        "url_host": "misen.com"
+      },
+      {
+        "product_id": "25816479151361173",
+        "position": 5,
+        "ranking_score": "0.812500",
+        "url_host": "www.misen.com"
+      },
+      {
+        "product_id": "25677133075283301",
+        "position": 6,
+        "ranking_score": "0.804688",
+        "url_host": "www.lecreuset.com"
+      },
+      {
+        "product_id": "9603628096400462",
+        "position": 7,
+        "ranking_score": "0.804688",
+        "url_host": "rachaelray.com"
+      },
+      {
+        "product_id": "27790335453920342",
+        "position": 8,
+        "ranking_score": "0.800781",
+        "url_host": "www.lecreuset.com"
+      },
+      {
+        "product_id": "8041182402614559",
+        "position": 9,
+        "ranking_score": "0.800781",
+        "url_host": "farberwarecookware.com"
+      },
+      {
+        "product_id": "34552121987765559",
+        "position": 10,
+        "ranking_score": "0.800781",
+        "url_host": "www.zwilling.com"
+      },
+      {
+        "product_id": "27110991968552978",
+        "position": 11,
+        "ranking_score": "0.800781",
+        "url_host": "www.misen.com"
+      },
+      {
+        "product_id": "25362822463335514",
+        "position": 12,
+        "ranking_score": "0.792969",
+        "url_host": "www.kathykuohome.com"
+      },
+      {
+        "product_id": "8741507649211365",
+        "position": 13,
+        "ranking_score": "0.792969",
+        "url_host": "www.cuisinart.com"
+      },
+      {
+        "product_id": "27376279568716220",
+        "position": 14,
+        "ranking_score": "0.789062",
+        "url_host": "anolon.com"
+      },
+      {
+        "product_id": "25024678077190650",
+        "position": 15,
+        "ranking_score": "0.789062",
+        "url_host": "www.zwilling.com"
+      },
+      {
+        "product_id": "5977457175711794",
+        "position": 16,
+        "ranking_score": "0.789062",
+        "url_host": "www.scanpan.com"
+      },
+      {
+        "product_id": "25677744465189376",
+        "position": 17,
+        "ranking_score": "0.785156",
+        "url_host": "anolon.com"
+      },
+      {
+        "product_id": "28391073783841289",
+        "position": 18,
+        "ranking_score": "0.785156",
+        "url_host": "www.scanpan.com"
+      },
+      {
+        "product_id": "25795385270108167",
+        "position": 19,
+        "ranking_score": "0.777344",
+        "url_host": "www.scanpan.com"
+      },
+      {
+        "product_id": "26183276394672473",
+        "position": 20,
+        "ranking_score": "0.769531",
+        "url_host": "www.zwilling.com"
+      },
+      {
+        "product_id": "4063840850323060",
+        "position": 21,
+        "ranking_score": "0.757812",
+        "url_host": "anolon.com"
+      },
+      {
+        "product_id": "27969261416043371",
+        "position": 22,
+        "ranking_score": "0.750000",
+        "url_host": "lexihome.com"
+      },
+      {
+        "product_id": "26874880625498552",
+        "position": 23,
+        "ranking_score": "0.742188",
+        "url_host": "www.zwilling.com"
+      },
+      {
+        "product_id": "27568639629387374",
+        "position": 24,
+        "ranking_score": "0.722656",
+        "url_host": "www.zwilling.com"
+      },
+      {
+        "product_id": "26720967674245340",
+        "position": 25,
+        "ranking_score": "0.722656",
+        "url_host": "www.all-clad.com"
+      },
+      {
+        "product_id": "38006198978971274",
+        "position": 26,
+        "ranking_score": "0.703125",
+        "url_host": "www.lecreuset.com"
+      },
+      {
+        "product_id": "27625920290368173",
+        "position": 27,
+        "ranking_score": "0.699219",
+        "url_host": "www.greenpan.us"
+      },
+      {
+        "product_id": "28139516839070990",
+        "position": 28,
+        "ranking_score": "0.695312",
+        "url_host": "www.lecreuset.com"
+      },
+      {
+        "product_id": "9191385837590262",
+        "position": 29,
+        "ranking_score": "0.695312",
+        "url_host": "gibsonhomewares.com"
+      },
+      {
+        "product_id": "9188799877849283",
+        "position": 30,
+        "ranking_score": "0.695312",
+        "url_host": "gibsonhomewares.com"
+      },
+      {
+        "product_id": "38139105689021067",
+        "position": 31,
+        "ranking_score": "0.675781",
+        "url_host": "www.heritagesteel.us"
+      },
+      {
+        "product_id": "24221858614150582",
+        "position": 32,
+        "ranking_score": "0.667969",
+        "url_host": "www.specialtyengraving.com"
+      },
+      {
+        "product_id": "27367373246294821",
+        "position": 33,
+        "ranking_score": "0.667969",
+        "url_host": "www.gothamsteel.com"
+      },
+      {
+        "product_id": "26800459739626824",
+        "position": 34,
+        "ranking_score": "0.656250",
+        "url_host": "imarku.net"
+      },
+      {
+        "product_id": "28116154471404959",
+        "position": 35,
+        "ranking_score": "0.640625",
+        "url_host": "www.heritagesteel.us"
+      },
+      {
+        "product_id": "27685453554479339",
+        "position": 36,
+        "ranking_score": "0.632812",
+        "url_host": "www.heritagesteel.us"
+      },
+      {
+        "product_id": "28255627734032317",
+        "position": 37,
+        "ranking_score": "0.628906",
+        "url_host": "cruciblecookware.com"
+      },
+      {
+        "product_id": "25714265311604107",
+        "position": 38,
+        "ranking_score": "0.597656",
+        "url_host": "hexclad.com"
+      },
+      {
+        "product_id": "28068825899397069",
+        "position": 39,
+        "ranking_score": "0.582031",
+        "url_host": "www.debuyer-usa.com"
+      },
+      {
+        "product_id": "28631522856449032",
+        "position": 40,
+        "ranking_score": "0.558594",
+        "url_host": "hestanculinary.com"
+      },
+      {
+        "product_id": "25671310895791560",
+        "position": 41,
+        "ranking_score": "0.773438",
+        "url_host": "www.quince.com"
+      },
+      {
+        "product_id": "10032539040102979",
+        "position": 42,
+        "ranking_score": "0.757812",
+        "url_host": "www.all-clad.com"
+      },
+      {
+        "product_id": "23952170757785423",
+        "position": 43,
+        "ranking_score": "0.718750",
+        "url_host": "rachaelray.com"
+      }
+    ],
+    "quince_score_only_rank_range": [
+      20,
+      20
+    ],
+    "position_40_to_41_delta": "0.214844"
+  },
+  "levoit": {
+    "run_id": "brand63/R01-L-C2",
+    "products": [
+      {
+        "product_id": "25761395740124999",
+        "position": 1,
+        "ranking_score": "0.820312",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "7064965500270783",
+        "position": 2,
+        "ranking_score": "0.808594",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "28069000642787233",
+        "position": 3,
+        "ranking_score": "0.800781",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "29194051426848921",
+        "position": 4,
+        "ranking_score": "0.789062",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "27862453756697427",
+        "position": 5,
+        "ranking_score": "0.785156",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "8885149148270394",
+        "position": 6,
+        "ranking_score": "0.781250",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "6482615885190280",
+        "position": 7,
+        "ranking_score": "0.773438",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "27715752141457685",
+        "position": 8,
+        "ranking_score": "0.765625",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "28240373902254292",
+        "position": 9,
+        "ranking_score": "0.746094",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "37261282676848556",
+        "position": 10,
+        "ranking_score": "0.738281",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "27859507520334798",
+        "position": 11,
+        "ranking_score": "0.730469",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "26524761823892624",
+        "position": 12,
+        "ranking_score": "0.730469",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "27970364275908372",
+        "position": 13,
+        "ranking_score": "0.636719",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "26717614697920323",
+        "position": 14,
+        "ranking_score": "0.570312",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "37361543933489662",
+        "position": 15,
+        "ranking_score": "0.507812",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "9793286250746188",
+        "position": 16,
+        "ranking_score": "0.382812",
+        "url_host": "levoit.com"
+      },
+      {
+        "product_id": "32638295752485579",
+        "position": 17,
+        "ranking_score": "0.808594",
+        "url_host": "www.bjs.com"
+      },
+      {
+        "product_id": "24312765025076427",
+        "position": 18,
+        "ranking_score": "0.808594",
+        "url_host": "www.bestbuy.com"
+      },
+      {
+        "product_id": "6097943306963353",
+        "position": 19,
+        "ranking_score": "0.808594",
+        "url_host": "www.homedepot.com"
+      },
+      {
+        "product_id": "26840018855594203",
+        "position": 20,
+        "ranking_score": "0.804688",
+        "url_host": "www.newegg.com"
+      },
+      {
+        "product_id": "26597784853163903",
+        "position": 21,
+        "ranking_score": "0.804688",
+        "url_host": "www.chewy.com"
+      },
+      {
+        "product_id": "25004985732512955",
+        "position": 22,
+        "ranking_score": "0.800781",
+        "url_host": "www.walmart.com"
+      },
+      {
+        "product_id": "7877586818973787",
+        "position": 23,
+        "ranking_score": "0.789062",
+        "url_host": "www.macys.com"
+      },
+      {
+        "product_id": "6484586268329348",
+        "position": 24,
+        "ranking_score": "0.785156",
+        "url_host": "www.lowes.com"
+      },
+      {
+        "product_id": "6357520284360781",
+        "position": 25,
+        "ranking_score": "0.761719",
+        "url_host": "www.macys.com"
+      },
+      {
+        "product_id": "25335751859411072",
+        "position": 26,
+        "ranking_score": "0.757812",
+        "url_host": "www.bjs.com"
+      },
+      {
+        "product_id": "6957813920897085",
+        "position": 27,
+        "ranking_score": "0.742188",
+        "url_host": "www.homedepot.com"
+      },
+      {
+        "product_id": "8005152662863508",
+        "position": 28,
+        "ranking_score": "0.722656",
+        "url_host": "www.macys.com"
+      },
+      {
+        "product_id": "26896344813395372",
+        "position": 29,
+        "ranking_score": "0.714844",
+        "url_host": "vxb.com"
+      },
+      {
+        "product_id": "9505720336208113",
+        "position": 30,
+        "ranking_score": "0.710938",
+        "url_host": "www.acehardware.com"
+      },
+      {
+        "product_id": "4695187643928155",
+        "position": 31,
+        "ranking_score": "0.683594",
+        "url_host": "www.chewy.com"
+      },
+      {
+        "product_id": "24868188759513507",
+        "position": 32,
+        "ranking_score": "0.660156",
+        "url_host": "www.bestbuy.com"
+      },
+      {
+        "product_id": "27639985225673375",
+        "position": 33,
+        "ranking_score": "0.648438",
+        "url_host": "www.sylvane.com"
+      },
+      {
+        "product_id": "24875782552017144",
+        "position": 34,
+        "ranking_score": "0.648438",
+        "url_host": "www.lowes.com"
+      },
+      {
+        "product_id": "27849244051364621",
+        "position": 35,
+        "ranking_score": "0.644531",
+        "url_host": "tracspurifiers.com"
+      },
+      {
+        "product_id": "27870728812572492",
+        "position": 36,
+        "ranking_score": "0.644531",
+        "url_host": "www.dkhardware.com"
+      },
+      {
+        "product_id": "26384891844448954",
+        "position": 37,
+        "ranking_score": "0.636719",
+        "url_host": "www.bestbuy.com"
+      },
+      {
+        "product_id": "35630658889881949",
+        "position": 38,
+        "ranking_score": "0.621094",
+        "url_host": "www.chewy.com"
+      },
+      {
+        "product_id": "37424996687115048",
+        "position": 39,
+        "ranking_score": "0.617188",
+        "url_host": "finest-filters.co.uk"
+      },
+      {
+        "product_id": "6182540125163967",
+        "position": 40,
+        "ranking_score": "0.582031",
+        "url_host": "www.staples.com"
+      },
+      {
+        "product_id": "9880422091983818",
+        "position": 41,
+        "ranking_score": "0.562500",
+        "url_host": "www.staples.com"
+      },
+      {
+        "product_id": "28018947104389060",
+        "position": 42,
+        "ranking_score": "0.558594",
+        "url_host": "vxb.com"
+      },
+      {
+        "product_id": "37325208803793507",
+        "position": 43,
+        "ranking_score": "0.546875",
+        "url_host": "vxb.com"
+      },
+      {
+        "product_id": "27512703638323336",
+        "position": 44,
+        "ranking_score": "0.539062",
+        "url_host": "vxb.com"
+      },
+      {
+        "product_id": "25675149698854369",
+        "position": 45,
+        "ranking_score": "0.519531",
+        "url_host": "hajjelectronics.com"
+      },
+      {
+        "product_id": "5876116465763974",
+        "position": 46,
+        "ranking_score": "0.488281",
+        "url_host": "www.homedepot.com"
+      },
+      {
+        "product_id": "27479615175034704",
+        "position": 47,
+        "ranking_score": "0.447266",
+        "url_host": "www.homedepot.com"
+      },
+      {
+        "product_id": "26784884121171158",
+        "position": 48,
+        "ranking_score": "0.388672",
+        "url_host": "www.filtersfast.com"
+      },
+      {
+        "product_id": "7754237524631809",
+        "position": 49,
+        "ranking_score": "0.820312",
+        "url_host": "www.macys.com"
+      },
+      {
+        "product_id": "8923832431077978",
+        "position": 50,
+        "ranking_score": "0.730469",
+        "url_host": "www.macys.com"
+      }
+    ]
+  },
+  "strong_brand_tests": [
+    {
+      "run_id": "brand63/R01-L-C2",
+      "case": "L",
+      "condition": "C2",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R06-L-C5",
+      "case": "L",
+      "condition": "C5",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R08-H-C5",
+      "case": "H",
+      "condition": "C5",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R13-A-C5",
+      "case": "A",
+      "condition": "C5",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R16-H-C2",
+      "case": "H",
+      "condition": "C2",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R17-A-C2",
+      "case": "A",
+      "condition": "C2",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R22-H-C5",
+      "case": "H",
+      "condition": "C5",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R24-A-C2",
+      "case": "A",
+      "condition": "C2",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R25-A-C5",
+      "case": "A",
+      "condition": "C5",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R26-L-C5",
+      "case": "L",
+      "condition": "C5",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R28-H-C2",
+      "case": "H",
+      "condition": "C2",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R32-L-C2",
+      "case": "L",
+      "condition": "C2",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R47-H-C5",
+      "case": "H",
+      "condition": "C5",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R48-L-C5",
+      "case": "L",
+      "condition": "C5",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R50-H-C2",
+      "case": "H",
+      "condition": "C2",
+      "prefix": 14,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": false
+    },
+    {
+      "run_id": "brand63/R55-L-C2",
+      "case": "L",
+      "condition": "C2",
+      "prefix": 16,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R56-A-C2",
+      "case": "A",
+      "condition": "C2",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    },
+    {
+      "run_id": "brand63/R58-A-C5",
+      "case": "A",
+      "condition": "C5",
+      "prefix": 11,
+      "contiguous_own_prefix": true,
+      "boundary_upturn": true,
+      "group_then_score_fails": true
+    }
+  ],
+  "ties": {
+    "calls": 84,
+    "argument_groups": 28,
+    "within_call_tied_pair_occurrences": 1389,
+    "repeated_pair_groups": 452,
+    "reversing_pair_groups": 0
+  },
+  "preference": {
+    "BASE": {
+      "records_per_repeat": [
+        40,
+        40,
+        40
+      ],
+      "matched_ids": 40,
+      "changed_matched_scores": 0,
+      "common_relative_order_equal": true,
+      "primary": [
+        {
+          "product_id": "27333065053055404",
+          "position": 15,
+          "ranking_score": "0.753906",
+          "url_host": "www.hydroflask.com"
+        },
+        {
+          "product_id": "27333065053055404",
+          "position": 15,
+          "ranking_score": "0.753906",
+          "url_host": "www.hydroflask.com"
+        },
+        {
+          "product_id": "27333065053055404",
+          "position": 15,
+          "ranking_score": "0.753906",
+          "url_host": "www.hydroflask.com"
+        }
+      ]
+    },
+    "BRAND": {
+      "records_per_repeat": [
+        47,
+        47,
+        47
+      ],
+      "matched_ids": 3,
+      "changed_matched_scores": 2,
+      "common_relative_order_equal": true,
+      "primary": [
+        {
+          "product_id": "27333065053055404",
+          "position": 6,
+          "ranking_score": "0.750000",
+          "url_host": "www.hydroflask.com"
+        },
+        {
+          "product_id": "27333065053055404",
+          "position": 6,
+          "ranking_score": "0.750000",
+          "url_host": "www.hydroflask.com"
+        },
+        {
+          "product_id": "27333065053055404",
+          "position": 6,
+          "ranking_score": "0.750000",
+          "url_host": "www.hydroflask.com"
+        }
+      ]
+    },
+    "GREEN": {
+      "records_per_repeat": [
+        42,
+        42,
+        42
+      ],
+      "matched_ids": 35,
+      "changed_matched_scores": 0,
+      "common_relative_order_equal": true,
+      "primary": [
+        null,
+        null,
+        null
+      ]
+    },
+    "PREFER": {
+      "records_per_repeat": [
+        41,
+        41,
+        41
+      ],
+      "matched_ids": 38,
+      "changed_matched_scores": 0,
+      "common_relative_order_equal": true,
+      "primary": [
+        null,
+        null,
+        null
+      ]
+    }
+  },
+  "fusion_scores": {
+    "A": [
+      "0.781250"
+    ],
+    "B": [
+      "0.773438"
+    ],
+    "AB": [
+      "0.785156"
+    ],
+    "BA": [
+      "0.785156"
+    ],
+    "AA": [
+      "0.781250"
+    ]
+  },
+  "literal_fusion_tests": [
+    {
+      "rule": "max",
+      "prediction": "0.781250",
+      "observed": "0.785156",
+      "observed_minus_prediction": "0.003906"
+    },
+    {
+      "rule": "mean",
+      "prediction": "0.777344",
+      "observed": "0.785156",
+      "observed_minus_prediction": "0.007812"
+    },
+    {
+      "rule": "sum",
+      "prediction": "1.554688",
+      "observed": "0.785156",
+      "observed_minus_prediction": "-0.769532"
+    }
+  ],
+  "query_composition": [
+    {
+      "repeat": 1,
+      "solo_intersection": 0,
+      "AB_records": 56,
+      "from_A": 27,
+      "from_B": 26,
+      "absent_from_solo_union": [
+        "26061255096884715",
+        "27703952109192589",
+        "7753718698060520"
+      ],
+      "matched_unchanged_scores": 53,
+      "AB_JOIN_intersection": 5,
+      "AB_JOIN_union": 99,
+      "AB_JOIN_jaccard": "0.05050505050505050505050505051"
+    },
+    {
+      "repeat": 2,
+      "solo_intersection": 0,
+      "AB_records": 56,
+      "from_A": 27,
+      "from_B": 26,
+      "absent_from_solo_union": [
+        "26061255096884715",
+        "27703952109192589",
+        "7753718698060520"
+      ],
+      "matched_unchanged_scores": 53,
+      "AB_JOIN_intersection": 5,
+      "AB_JOIN_union": 99,
+      "AB_JOIN_jaccard": "0.05050505050505050505050505051"
+    },
+    {
+      "repeat": 3,
+      "solo_intersection": 0,
+      "AB_records": 56,
+      "from_A": 27,
+      "from_B": 26,
+      "absent_from_solo_union": [
+        "26061255096884715",
+        "27703952109192589",
+        "7753718698060520"
+      ],
+      "matched_unchanged_scores": 53,
+      "AB_JOIN_intersection": 5,
+      "AB_JOIN_union": 99,
+      "AB_JOIN_jaccard": "0.05050505050505050505050505051"
+    }
+  ],
+  "query_stability": {
+    "A": {
+      "counts": [
+        43,
+        43,
+        43
+      ],
+      "common_ids": 43,
+      "stable_score_ids": 43,
+      "distinct_id_sequences": 1
+    },
+    "AAB": {
+      "counts": [
+        56,
+        56,
+        56
+      ],
+      "common_ids": 55,
+      "stable_score_ids": 50,
+      "distinct_id_sequences": 2
+    },
+    "AB": {
+      "counts": [
+        56,
+        56,
+        56
+      ],
+      "common_ids": 56,
+      "stable_score_ids": 56,
+      "distinct_id_sequences": 1
+    },
+    "ABB": {
+      "counts": [
+        56,
+        56,
+        56
+      ],
+      "common_ids": 55,
+      "stable_score_ids": 49,
+      "distinct_id_sequences": 2
+    },
+    "B": {
+      "counts": [
+        53,
+        53,
+        53
+      ],
+      "common_ids": 53,
+      "stable_score_ids": 53,
+      "distinct_id_sequences": 1
+    },
+    "BA": {
+      "counts": [
+        56,
+        56,
+        56
+      ],
+      "common_ids": 56,
+      "stable_score_ids": 47,
+      "distinct_id_sequences": 3
+    },
+    "JOIN": {
+      "counts": [
+        48,
+        48,
+        48
+      ],
+      "common_ids": 48,
+      "stable_score_ids": 48,
+      "distinct_id_sequences": 1
+    }
+  },
+  "count_boundary": {
+    "L/n1": [
+      2,
+      2,
+      2
+    ],
+    "L/n10": [
+      63,
+      63,
+      62
+    ],
+    "L/n11": [
+      62,
+      62,
+      61
+    ],
+    "L/n20": [
+      26,
+      26,
+      26
+    ],
+    "L/n50": [
+      50,
+      50,
+      50
+    ],
+    "L/n9": [
+      13,
+      13,
+      13
+    ],
+    "M/n1": [
+      2,
+      2,
+      2
+    ],
+    "M/n10": [
+      21,
+      21,
+      22
+    ],
+    "M/n11": [
+      5,
+      5,
+      5
+    ],
+    "M/n20": [
+      9,
+      9,
+      9
+    ],
+    "M/n50": [
+      18,
+      15,
+      17
+    ],
+    "M/n9": [
+      6,
+      6,
+      6
+    ]
+  },
+  "merchant_panel": {
+    "queries": 100,
+    "returned_occurrences": 4088,
+    "distinct_product_ids": 3827,
+    "zero_result_successes": 6,
+    "returned_count": {
+      "min": 0,
+      "median": 47,
+      "max": 67,
+      "over50_calls": 41
+    },
+    "numeric_score_order": {
+      "adjacent_pairs": 3994,
+      "increases": 41,
+      "calls_with_increases": 41
+    },
+    "fields": {
+      "name": {
+        "present_product_occurrences": 4070,
+        "nonempty_product_occurrences": 4070,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "brand": {
+        "present_product_occurrences": 2645,
+        "nonempty_product_occurrences": 2645,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "description": {
+        "present_product_occurrences": 4058,
+        "nonempty_product_occurrences": 4056,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "price": {
+        "present_product_occurrences": 4088,
+        "nonempty_product_occurrences": 4088,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "category": {
+        "present_product_occurrences": 1854,
+        "nonempty_product_occurrences": 1854,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "ranking_score": {
+        "present_product_occurrences": 4088,
+        "nonempty_product_occurrences": 4088,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "url": {
+        "present_product_occurrences": 4088,
+        "nonempty_product_occurrences": 4088,
+        "top_level_product_occurrences_denominator": 4088
+      },
+      "variants": {
+        "present_product_occurrences": 975,
+        "nonempty_product_occurrences": 975,
+        "top_level_product_occurrences_denominator": 4088
+      }
+    }
+  },
+  "shopping_cases": [
+    {
+      "query_id": "Q002",
+      "catalog_records": 48,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "06d492c38e8e9799829d9810fed62607d01f6447613b0267d2f3c9e2506f36fb"
+    },
+    {
+      "query_id": "Q022",
+      "catalog_records": 40,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "b93a621e3aef77ef59d890e9e52ecd5034bde2d5ab46aa2176fd6e701f431044"
+    },
+    {
+      "query_id": "Q027",
+      "catalog_records": 61,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "4b3f9395d41df32cfa02d95fdc34406cbce8093ec2d6b93c0c0779537eed5fdb"
+    },
+    {
+      "query_id": "Q052",
+      "catalog_records": 63,
+      "selected_ids": 3,
+      "displayed_cards": 3,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "71c102aadf83f62e02234def0f4ee111b591930238a1098f947ddcb9433a9f0e"
+    },
+    {
+      "query_id": "Q077",
+      "catalog_records": 58,
+      "selected_ids": 2,
+      "displayed_cards": 2,
+      "staged_names_match_ax_order": true,
+      "stage_sha256": "ce5f16efb1019556e172118022f53b1ba6d529c840b15e13a81314468d15d068"
+    }
+  ],
+  "resolver_fixed_source_tests": 5,
+  "resolver_all_follow_first_unique_id_order": true
+}

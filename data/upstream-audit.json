@@ -1,0 +1,382 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "catalog_calls": 27,
+  "returned_record_occurrences": 1200,
+  "conditions": [
+    {
+      "cohort": "color",
+      "condition": "BASE",
+      "runs": 3,
+      "counts": [
+        40,
+        40,
+        40
+      ],
+      "common_ids": 40,
+      "stable_score_ids": 40,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "color",
+      "condition": "BRAND",
+      "runs": 3,
+      "counts": [
+        47,
+        47,
+        47
+      ],
+      "common_ids": 47,
+      "stable_score_ids": 47,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        1,
+        1,
+        1
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "color",
+      "condition": "GREEN",
+      "runs": 3,
+      "counts": [
+        42,
+        42,
+        42
+      ],
+      "common_ids": 42,
+      "stable_score_ids": 42,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "color",
+      "condition": "PREFER",
+      "runs": 3,
+      "counts": [
+        41,
+        41,
+        41
+      ],
+      "common_ids": 41,
+      "stable_score_ids": 41,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "fusion",
+      "condition": "A",
+      "runs": 3,
+      "counts": [
+        43,
+        43,
+        43
+      ],
+      "common_ids": 43,
+      "stable_score_ids": 43,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        1,
+        1,
+        1
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "fusion",
+      "condition": "AA",
+      "runs": 3,
+      "counts": [
+        43,
+        43,
+        43
+      ],
+      "common_ids": 43,
+      "stable_score_ids": 43,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        1,
+        1,
+        1
+      ],
+      "debug_entries_per_run": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "cohort": "fusion",
+      "condition": "AB",
+      "runs": 3,
+      "counts": [
+        47,
+        47,
+        47
+      ],
+      "common_ids": 47,
+      "stable_score_ids": 47,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "cohort": "fusion",
+      "condition": "B",
+      "runs": 3,
+      "counts": [
+        50,
+        50,
+        50
+      ],
+      "common_ids": 50,
+      "stable_score_ids": 50,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 1,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cohort": "fusion",
+      "condition": "BA",
+      "runs": 3,
+      "counts": [
+        47,
+        47,
+        47
+      ],
+      "common_ids": 47,
+      "stable_score_ids": 45,
+      "distinct_id_sequences": 1,
+      "distinct_id_score_sequences": 2,
+      "score_upturn_counts": [
+        0,
+        0,
+        0
+      ],
+      "debug_entries_per_run": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "fusion_A_and_AA_all_id_score_sequences_equal": true,
+  "fusion_literal_formula_comparisons": [
+    {
+      "combined_condition": "AB",
+      "stable_common_ids": 1,
+      "products": [
+        {
+          "product_id": "25362822463335514",
+          "A": "0.781250",
+          "B": "0.773438",
+          "combined": "0.785156",
+          "matches_max": false,
+          "matches_mean": false,
+          "matches_sum": false
+        }
+      ]
+    },
+    {
+      "combined_condition": "BA",
+      "stable_common_ids": 1,
+      "products": [
+        {
+          "product_id": "25362822463335514",
+          "A": "0.781250",
+          "B": "0.773438",
+          "combined": "0.785156",
+          "matches_max": false,
+          "matches_mean": false,
+          "matches_sum": false
+        }
+      ]
+    }
+  ],
+  "color_stable_matched_id_comparisons": [
+    {
+      "condition": "GREEN",
+      "matched_ids_stable_in_both_conditions": 35,
+      "score_changes": []
+    },
+    {
+      "condition": "PREFER",
+      "matched_ids_stable_in_both_conditions": 38,
+      "score_changes": []
+    },
+    {
+      "condition": "BRAND",
+      "matched_ids_stable_in_both_conditions": 3,
+      "score_changes": [
+        {
+          "product_id": "26208743625470719",
+          "baseline_score": "0.785156",
+          "condition_score": "0.789062",
+          "difference": "0.003906"
+        },
+        {
+          "product_id": "27333065053055404",
+          "baseline_score": "0.753906",
+          "condition_score": "0.750000",
+          "difference": "-0.003906"
+        }
+      ]
+    }
+  ],
+  "prespecified_primary_product": {
+    "product_id": "27333065053055404",
+    "observations": [
+      {
+        "run_id": "color/R01-GREEN-1",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      },
+      {
+        "run_id": "color/R02-BASE-1",
+        "present": true,
+        "score": "0.753906",
+        "position": 15,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R03-BRAND-1",
+        "present": true,
+        "score": "0.750000",
+        "position": 6,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R04-PREFER-1",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      },
+      {
+        "run_id": "color/R05-PREFER-2",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      },
+      {
+        "run_id": "color/R06-BRAND-2",
+        "present": true,
+        "score": "0.750000",
+        "position": 6,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R07-BASE-2",
+        "present": true,
+        "score": "0.753906",
+        "position": 15,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R08-GREEN-2",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      },
+      {
+        "run_id": "color/R09-GREEN-3",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      },
+      {
+        "run_id": "color/R10-BASE-3",
+        "present": true,
+        "score": "0.753906",
+        "position": 15,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R11-BRAND-3",
+        "present": true,
+        "score": "0.750000",
+        "position": 6,
+        "present_in_debug_ids": true
+      },
+      {
+        "run_id": "color/R12-PREFER-3",
+        "present": false,
+        "score": null,
+        "position": null,
+        "present_in_debug_ids": false
+      }
+    ]
+  },
+  "scope": "Separate live requests through the supported catalog interface; these are neither a same-response stage trace nor recovered implementation coefficients.",
+  "limitations": [
+    "Three repetitions per condition in one research chat and one CLI context per experiment.",
+    "Stable matched-product subsets exclude absent IDs; missing scores are not zero.",
+    "Debug ID list semantics and stage are undocumented.",
+    "Full URLs, opaque handles and debug links excluded from derived records; originals retained locally."
+  ]
+}

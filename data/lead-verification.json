@@ -1,0 +1,674 @@
+{
+  "author": "Astra (gpt-6-astra)",
+  "independent_regex_parse": true,
+  "calls": 60,
+  "record_occurrences": 3520,
+  "unique_ids": 1045,
+  "within_pairs": 60,
+  "within_mean_jaccard": 0.9076257571034727,
+  "baseline_pairs": 54,
+  "baseline_mean_jaccard": 0.030516397994904257,
+  "shared_score_comparisons": 203,
+  "changed_score_comparisons": 194,
+  "concrete_preference_overlap": [
+    0,
+    0,
+    0
+  ],
+  "conditions": [
+    {
+      "id": "T01",
+      "query": "women's dresses",
+      "within_mean": 0.908675799086758,
+      "baseline_mean": null,
+      "within_pairs": [
+        0.863013698630137,
+        0.863013698630137,
+        1.0
+      ],
+      "baseline_pairs": [],
+      "counts": [
+        68,
+        68,
+        68
+      ]
+    },
+    {
+      "id": "T02",
+      "query": "fashionable women's dresses",
+      "within_mean": 0.9372972972972973,
+      "baseline_mean": 0.15386352346113896,
+      "within_pairs": [
+        0.92,
+        0.9459459459459459,
+        0.9459459459459459
+      ],
+      "baseline_pairs": [
+        0.14754098360655737,
+        0.15702479338842976,
+        0.15702479338842976
+      ],
+      "counts": [
+        72,
+        72,
+        72
+      ]
+    },
+    {
+      "id": "T03",
+      "query": "stylish women's dresses",
+      "within_mean": 0.9027777777777778,
+      "baseline_mean": 0.11200477897252091,
+      "within_pairs": [
+        0.868421052631579,
+        0.881578947368421,
+        0.9583333333333334
+      ],
+      "baseline_pairs": [
+        0.1111111111111111,
+        0.11290322580645161,
+        0.112
+      ],
+      "counts": [
+        72,
+        70,
+        71
+      ]
+    },
+    {
+      "id": "T04",
+      "query": "trendy women's dresses",
+      "within_mean": 0.9516908212560387,
+      "baseline_mean": 0.11294765840220386,
+      "within_pairs": [
+        0.927536231884058,
+        0.927536231884058,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.10743801652892562,
+        0.11570247933884298,
+        0.11570247933884298
+      ],
+      "counts": [
+        66,
+        67,
+        67
+      ]
+    },
+    {
+      "id": "T05",
+      "query": "designer women's dresses",
+      "within_mean": 0.9313725490196079,
+      "baseline_mean": 0.007614311049425553,
+      "within_pairs": [
+        0.8970588235294118,
+        0.8970588235294118,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.007575757575757576,
+        0.007633587786259542,
+        0.007633587786259542
+      ],
+      "counts": [
+        65,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "T06",
+      "query": "luxury women's dresses",
+      "within_mean": 0.9523809523809524,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.9285714285714286,
+        0.9285714285714286,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        67,
+        68,
+        68
+      ]
+    },
+    {
+      "id": "T07",
+      "query": "minimalist women's dresses",
+      "within_mean": 0.8492063492063492,
+      "baseline_mean": 0.014251941911516379,
+      "within_pairs": [
+        0.7738095238095238,
+        0.7738095238095238,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.014184397163120567,
+        0.014285714285714285,
+        0.014285714285714285
+      ],
+      "counts": [
+        75,
+        74,
+        74
+      ]
+    },
+    {
+      "id": "T08",
+      "query": "quiet luxury women's dresses",
+      "within_mean": 0.9583333333333334,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.9375,
+        0.9375,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "id": "T09",
+      "query": "bold women's dresses",
+      "within_mean": 0.9063869933829611,
+      "baseline_mean": 0.013144515789692954,
+      "within_pairs": [
+        0.8769230769230769,
+        0.890625,
+        0.9516129032258065
+      ],
+      "baseline_pairs": [
+        0.0078125,
+        0.015748031496062992,
+        0.015873015873015872
+      ],
+      "counts": [
+        61,
+        61,
+        60
+      ]
+    },
+    {
+      "id": "T10",
+      "query": "timeless women's dresses",
+      "within_mean": 0.7964732066426982,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.7333333333333333,
+        0.7288135593220338,
+        0.9272727272727272
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        50,
+        54,
+        52
+      ]
+    },
+    {
+      "id": "T11",
+      "query": "Show me women's dresses.",
+      "within_mean": 0.9010467610467611,
+      "baseline_mean": null,
+      "within_pairs": [
+        0.8783783783783784,
+        0.8533333333333334,
+        0.9714285714285714
+      ],
+      "baseline_pairs": [],
+      "counts": [
+        70,
+        69,
+        69
+      ]
+    },
+    {
+      "id": "T12",
+      "query": "Show me fashionable women's dresses.",
+      "within_mean": 0.8469060999882918,
+      "baseline_mean": 0.0907051282051282,
+      "within_pairs": [
+        0.8205128205128205,
+        0.775,
+        0.9452054794520548
+      ],
+      "baseline_pairs": [
+        0.08461538461538462,
+        0.09375,
+        0.09375
+      ],
+      "counts": [
+        71,
+        71,
+        71
+      ]
+    },
+    {
+      "id": "T13",
+      "query": "I'm going out for the evening. Show me women's dresses.",
+      "within_mean": 0.9624413145539906,
+      "baseline_mean": 0.007281638985859868,
+      "within_pairs": [
+        0.9436619718309859,
+        0.9436619718309859,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.007246376811594203,
+        0.0072992700729927005,
+        0.0072992700729927005
+      ],
+      "counts": [
+        69,
+        69,
+        69
+      ]
+    },
+    {
+      "id": "T14",
+      "query": "I'm going out for the evening. Show me stylish women's dresses.",
+      "within_mean": 0.9041847041847042,
+      "baseline_mean": 0.007481667130789938,
+      "within_pairs": [
+        0.8714285714285714,
+        0.8714285714285714,
+        0.9696969696969697
+      ],
+      "baseline_pairs": [
+        0.007407407407407408,
+        0.007518796992481203,
+        0.007518796992481203
+      ],
+      "counts": [
+        66,
+        65,
+        65
+      ]
+    },
+    {
+      "id": "T15",
+      "query": "I'm going to dinner at an upscale restaurant. Show me women's dresses.",
+      "within_mean": 0.9206349206349206,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.8809523809523809,
+        0.8809523809523809,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        39,
+        40,
+        40
+      ]
+    },
+    {
+      "id": "T16",
+      "query": "I'm going to an art gallery opening. Show me women's dresses.",
+      "within_mean": 0.8631578947368421,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.8421052631578947,
+        0.8,
+        0.9473684210526315
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "T17",
+      "query": "I'm attending a summer wedding as a guest. Show me women's dresses.",
+      "within_mean": 0.9285862285862285,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.8939393939393939,
+        0.9076923076923077,
+        0.9841269841269841
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        62,
+        63,
+        62
+      ]
+    },
+    {
+      "id": "T18",
+      "query": "I'm meeting friends for a casual brunch. Show me women's dresses.",
+      "within_mean": 0.9428571428571428,
+      "baseline_mean": 0.03,
+      "within_pairs": [
+        0.9142857142857143,
+        0.9142857142857143,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "counts": [
+        33,
+        34,
+        34
+      ]
+    },
+    {
+      "id": "T19",
+      "query": "Show me women's dresses. I prefer clean lines, neutral colors, and no visible logos.",
+      "within_mean": 0.892271662763466,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.8571428571428571,
+        0.8852459016393442,
+        0.9344262295081968
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        57,
+        60,
+        58
+      ]
+    },
+    {
+      "id": "T20",
+      "query": "Show me women's dresses. I prefer bold colors, expressive prints, and statement details.",
+      "within_mean": 0.8958333333333334,
+      "baseline_mean": 0.0,
+      "within_pairs": [
+        0.84375,
+        0.84375,
+        1.0
+      ],
+      "baseline_pairs": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "counts": [
+        59,
+        59,
+        59
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T01/stdout.bin",
+      "sha256": "88ea55cc71e1daad12194d99b4b0ffeec8c61c0e9f93d7ca75f5ada287c2e0b4"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T01/stdout.bin",
+      "sha256": "8532718b8153190d5168baf23837b0ec115182eacb8ab7fb500293110a836e88"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T01/stdout.bin",
+      "sha256": "efbdf36c536cbb9602ee1a521180630f19a4f6bc5eb0db959371e68f6b5f4334"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T02/stdout.bin",
+      "sha256": "88a8efeaacc7fd0681a53cfe7236c17b276fa57bb98c5782b3d90d0010b2667c"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T02/stdout.bin",
+      "sha256": "1fd1d355b16510a636a0c6a57d9d805e47af7a18e008b1a098b3070a59fef2fc"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T02/stdout.bin",
+      "sha256": "b1f73eb12ad2c5d186b69f841f83853c488d59d8d7508c04bf0d078c340a3842"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T03/stdout.bin",
+      "sha256": "86ea2a3febab14ae4900cb0b306a1d6e5c533583bd94081dd53ebc8d34ee5c88"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T03/stdout.bin",
+      "sha256": "fb3521ac245766b2d5abf0cf7f5119666cc0806565fb9c25e87f156b97f1a074"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T03/stdout.bin",
+      "sha256": "c233ac94ccbe7bbeccdfdebcbd49fc2e2518b0d2ccb5461c7af4b4306755efe9"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T04/stdout.bin",
+      "sha256": "d08ac61547fd64c430723c025c009c9b132430c54295c7fa4c70091ca8c21138"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T04/stdout.bin",
+      "sha256": "e4d09bef47992f0ec9810efe432cbb480492c3f2eec02df6d1b197f21384530d"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T04/stdout.bin",
+      "sha256": "ee0fa693a5c7c3ab5828967e8b88f1dca5e3b34c54909b5c43c4351d77c4966a"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T05/stdout.bin",
+      "sha256": "f659be4151cbaf164d498166874be8b90f2942f10395038bddbcbe2cc0fb4ab0"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T05/stdout.bin",
+      "sha256": "cd015e6dfecf60d8b98545c6112b7b6b1ec16d8c916a5b1fafe52460548ac32e"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T05/stdout.bin",
+      "sha256": "67c8291cbc04e743291918b4f4aaeed9cfd4863dfea504354e2107121c3646c1"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T06/stdout.bin",
+      "sha256": "b467dc6ed4f9ce30d17157b59099d6f8832c9742beb45a7a356267b0d77098a8"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T06/stdout.bin",
+      "sha256": "fa9710194cf6f446584694260cad0890e0d13c21a030fa1d748bf7caa6467fb8"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T06/stdout.bin",
+      "sha256": "59aeb045971934812fd3260e6e92f10be1919d7912db6da8b85e12054c961d90"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T07/stdout.bin",
+      "sha256": "d54f78aa9feb6a50c93dec80caaf9fdc7164ec3f0fca45db394904f7f9827434"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T07/stdout.bin",
+      "sha256": "433ff2027da5b6dbc3099062ac6839a52fa44639c0e360e888d78064b255fe29"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T07/stdout.bin",
+      "sha256": "7085e76ecf7521047fdfa9c3beebcd221cee65e3e72529b12771b2906892f0dd"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T08/stdout.bin",
+      "sha256": "389621a67c25d1f7cb119914dbb9b35dc139786f7b82ecb280e8716e19112d36"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T08/stdout.bin",
+      "sha256": "f424f0b98eb552b675f8b4ccf3b6d6270e35e540e2fab80613586fbffb71ce54"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T08/stdout.bin",
+      "sha256": "e0e6480845e684baeb5c87e5f7044f6ac252d69669d4949d3c14aef1b88bfa2e"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T09/stdout.bin",
+      "sha256": "b9391d06b9855fd7e46ff1b2dfa2a5dd79737fb592bfd24d5c7199b7a9865f62"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T09/stdout.bin",
+      "sha256": "1d729efe9fd55f58ec998fad8df9a8f93985841c311d6ae0a4cdb2e0ededc0e0"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T09/stdout.bin",
+      "sha256": "10e769c9e7a91b05b207dc9cf70557ca6529ea8f534dc16986f317e81ea5f427"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T10/stdout.bin",
+      "sha256": "e6feb729acfb90145b560a802e9079d3bdc2285758788f196b4c0036ea071f39"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T10/stdout.bin",
+      "sha256": "033da9965b58fe5f3dd92cf73d2cd66390c6b4f25ba72ca47ecec7b64621dd14"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T10/stdout.bin",
+      "sha256": "2765c5c6b48579abde1ec391af5c95cc7ff5e40367352e2bf2267cb5bd925d3e"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T11/stdout.bin",
+      "sha256": "02c79530ec81f6b5d448bc5329494bb82a47b3c1fe1de81f7d6a21ab6a766f13"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T11/stdout.bin",
+      "sha256": "b220c5283d2d0c985c72494b0f360c15b75b0c716a83398e9615dbddbb73d2b8"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T11/stdout.bin",
+      "sha256": "991fcb533e2953037cf5cfe36a35bdfebb73a4fa7b143a5aa520d804c0126a25"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T12/stdout.bin",
+      "sha256": "f45cf7ca10b3b5f7b9f61c6ef37bf2a19149c12ee391ce15e8d3bc3b1e7f19ec"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T12/stdout.bin",
+      "sha256": "d4fcfde32b11afd61c3382b1c87ae4d149f338fe237fd6fe995b0770f7865587"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T12/stdout.bin",
+      "sha256": "62a0eca722b89c4cc8c33ddad7ef08723c607bd526c1b6356b7f83bf252ae664"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T13/stdout.bin",
+      "sha256": "fd4b3fe33046754450efc22230a3c546147cb70e1cd28564651c46fed2183c74"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T13/stdout.bin",
+      "sha256": "0f8ee5c6e3649b187a33d24889e0ecbfd263dd36d01240aae0d76631d33747b5"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T13/stdout.bin",
+      "sha256": "b5623ec0cbc349d25fc52c3ae344ec0c7e80cc3bcc85ef5356a4e3307ac23c43"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T14/stdout.bin",
+      "sha256": "9692550be0c048990d4e9c61e4d41e4c6e2fd6b38985598dfb009efe92188679"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T14/stdout.bin",
+      "sha256": "7963b3f6dba1ea89cc212574d7b1479bac25906a98dc7903685d602732bf310c"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T14/stdout.bin",
+      "sha256": "cfa894e98cab40108aaf065b3b94befb312506be5d39236df304be75dcfe3f65"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T15/stdout.bin",
+      "sha256": "25e8ad9e571668967f1587bee88359fdb36be6400312bbcbb04c5e3222cc736a"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T15/stdout.bin",
+      "sha256": "eb860181e906166ac64e218af6aa3aa108315d87e4cb9b708025963f43476fdd"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T15/stdout.bin",
+      "sha256": "8bbe5d52f511312368999033ab59fbfe2f21c007058c9b117902346c7e4daa12"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T16/stdout.bin",
+      "sha256": "db2ef446ad0c514e89fd4e47c20eecde541e4ef8b87254d6c09c4fb54b893aee"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T16/stdout.bin",
+      "sha256": "82068922661b69a1de57807f57e6a0d3e7d69390f466f447b18f55d85c4935cb"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T16/stdout.bin",
+      "sha256": "56fe07f62ee2f64eb9c733a936a4fe848c7cbc34aa86710f363a435a6bad7a2c"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T17/stdout.bin",
+      "sha256": "c74cb33aea1c960b268b174c16f5c46c2a6b10d40e8ed0251a4ebd11be90f781"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T17/stdout.bin",
+      "sha256": "c23fab8b7ef7f4d72d493a78c5caf88a7280874df6794af1f66561907969a4b7"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T17/stdout.bin",
+      "sha256": "d3f3f4b415cc91a6bbf86e24c37753a5232565d4ff217cc54bf9449a0a298f59"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T18/stdout.bin",
+      "sha256": "880465417fef715cc63cdee3f11623bbdf22778f227ed6fc3655825a631bae60"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T18/stdout.bin",
+      "sha256": "fab716fca1f921afcfe7b15b8a8c3e771da53d6fb97a9894b72c972177691320"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T18/stdout.bin",
+      "sha256": "92b47b5de8113ea3222867709c216692cff114a58641bc7996e6434e4a6a0112"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T19/stdout.bin",
+      "sha256": "06f53f261a481e6b9cf7a2b46078a942dfe5c2bd5bb0e6fe95bcda283f4b9f1c"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T19/stdout.bin",
+      "sha256": "f4085a94e8530beb467223cc7e1227cea538550c480df28fd0ba90cfbb8b1481"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T19/stdout.bin",
+      "sha256": "4d3ceb2e21cf33f5bfe915abb5d58cfbb49344674373ed927b7be586211880d4"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R1-T20/stdout.bin",
+      "sha256": "254e72dfe2c8f62dabe4cfa377e580ab00dfdeeeab58e5763652425a6a187e25"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R2-T20/stdout.bin",
+      "sha256": "a4be2786ad3f158caf45f007f0cac32505c76ecf30a901a1b98166f10351fe42"
+    },
+    {
+      "path": "raw/taste-style-20260927T165255721358Z/R3-T20/stdout.bin",
+      "sha256": "de79024eb1563960a26d7140b38cad7dcfe9c0363bdf90b8c8c349db238dc03b"
+    }
+  ]
+}
